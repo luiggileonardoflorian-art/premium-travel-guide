@@ -1,0 +1,18 @@
+{
+  "name": "premium-travel-guide",
+  "version": "1.0.0",
+  "description": "Premium travel guide platform with 100+ city guides optimized for AdSense",
+  "main": "index.html",
+  "scripts": {
+    "generate": "node generator/city-generator.js",
+    "build": "npm run generate && node generator/sitemap-generator.js",
+    "deploy": "bash deploy.sh"
+  },
+  "keywords": ["travel", "seo", "adsense", "city-guide"],
+  "author": "Travel Guide Team",
+  "license": "MIT",
+  "dependencies": {
+    "fs-extra": "^11.1.1",
+    "slugify": "^1.6.6"
+  }
+}

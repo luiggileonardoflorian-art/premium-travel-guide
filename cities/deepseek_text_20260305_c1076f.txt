@@ -1,0 +1,40 @@
+premium-travel-guide/
+├── index.html
+├── 404.html
+├── robots.txt
+├── sitemap.xml
+├── .gitignore
+├── README.md
+├── package.json
+├── deploy.sh
+├── cities/
+│   ├── new-york.html
+│   ├── paris.html
+│   ├── tokyo.html
+│   ├── london.html
+│   ├── dubai.html
+│   ├── rome.html
+│   ├── barcelona.html
+│   ├── singapore.html
+│   ├── sydney.html
+│   └── ... (100+ city files)
+├── css/
+│   ├── style.css
+│   ├── critical.css
+│   └── responsive.css
+├── js/
+│   ├── main.js
+│   ├── ads.js
+│   ├── schema-generator.js
+│   └── internal-linking.js
+├── images/
+│   ├── logo.svg
+│   ├── favicon.ico
+│   └── og-image.jpg
+├── generator/
+│   ├── city-generator.js
+│   ├── city-data.js
+│   ├── sitemap-generator.js
+│   └── internal-links.js
+└── data/
+    └── cities.json

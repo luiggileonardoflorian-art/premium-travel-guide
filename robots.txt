@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+Disallow: /generator/
+Disallow: /data/
+
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay for non-essential bots
+User-agent: ia_archiver
+Crawl-delay: 10
+
+User-agent: bingbot
+Crawl-delay: 2
+
+User-agent: googlebot
+Crawl-delay: 1
