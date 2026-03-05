@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Loan Compare Hub | Compare Mortgage &amp; Refinance Options</title>
+<meta name="description" content="Compare refinance, cash-out, and home equity loan options. Understand mortgage rates and build a smarter borrowing strategy with Loan Compare Hub." />
+<link rel="canonical" href="https://loancomparehub.net/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Loan Compare Hub | Compare Mortgage &amp; Refinance Options" />
+<meta property="og:description" content="Compare refinance, cash-out, and home equity loan options. Understand mortgage rates and build a smarter borrowing strategy with Loan Compare Hub." />
+<meta property="og:url" content="https://loancomparehub.net/" />
+<meta property="og:site_name" content="Loan Compare Hub" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Loan Compare Hub | Compare Mortgage &amp; Refinance Options" />
+<meta name="twitter:description" content="Compare refinance, cash-out, and home equity loan options. Understand mortgage rates and build a smarter borrowing strategy with Loan Compare Hub." />
+<meta name="twitter:url" content="https://loancomparehub.net/" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Loan Compare Hub",
+  "url": "https://loancomparehub.net",
+  "description": "An independent educational resource helping U.S. homeowners compare mortgage refinance, cash-out refinance, home equity, and mortgage rate options.",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "disclaimer": "Loan Compare Hub provides educational and informational content only. We are not a lender, broker, or financial advisor. Content does not constitute financial, legal, or tax advice. Rates and terms vary by lender and individual qualifications. Consult a licensed professional before making any borrowing decisions."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        fontFamily: {
+          serif: ['Playfair Display', 'Georgia', 'serif'],
+          sans: ['DM Sans', 'system-ui', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; }
+  h1, h2, h3, h4 { font-family: 'Playfair Display', Georgia, serif; }
+
+  .hero-bg {
+    background-color: #0f172a;
+    background-image:
+      radial-gradient(ellipse 70% 55% at 65% -5%, rgba(217,119,6,.22) 0%, transparent 65%),
+      radial-gradient(ellipse 45% 35% at 5% 90%, rgba(217,119,6,.10) 0%, transparent 60%);
+  }
+  .dot-bg {
+    background-image: radial-gradient(circle, rgba(148,163,184,.18) 1px, transparent 1px);
+    background-size: 22px 22px;
+  }
+  .nav-link { position: relative; padding-bottom: 2px; }
+  .nav-link::after {
+    content: ''; position: absolute; left: 0; bottom: 0;
+    width: 0; height: 2px; background: #d97706;
+    transition: width .2s ease;
+  }
+  .nav-link:hover::after { width: 100%; }
+
+  .hub-card { transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease; }
+  .hub-card:hover { transform: translateY(-3px); box-shadow: 0 16px 40px -8px rgba(15,23,42,.14); border-color: #d97706; }
+  .hub-card:hover .card-arrow { transform: translateX(4px); }
+  .card-arrow { transition: transform .2s ease; }
+
+  .city-link { transition: background .18s, color .18s, border-color .18s; }
+  .city-link:hover { background: #d97706; color: #fff; border-color: #d97706; }
+
+  details > summary { list-style: none; cursor: pointer; }
+  details > summary::-webkit-details-marker { display: none; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+  .faq-icon { transition: transform .2s ease; }
+  details[open] { border-color: #d97706; }
+
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+
+  .amber-rule {
+    display: block; width: 48px; height: 3px;
+    background: #d97706; border-radius: 2px; margin-bottom: 1rem;
+  }
+  .step-num {
+    width: 48px; height: 48px; flex-shrink: 0;
+    border: 2px solid #d97706; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif; font-size: 1.2rem;
+    font-weight: 700; color: #d97706;
+  }
+</style>
+</head>
+<body class="antialiased bg-white text-slate-800">
+
+<!-- HEADER -->
+<header class="bg-slate-900 border-b border-slate-800 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <a href="/" class="flex items-center gap-2" aria-label="Loan Compare Hub home">
+        <div class="w-8 h-8 bg-amber-600 rounded-md flex items-center justify-center flex-shrink-0">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
+          </svg>
+        </div>
+        <span class="font-serif font-semibold text-lg leading-none">
+          <span class="text-amber-500">Loan Compare</span><span class="text-white"> Hub</span>
+        </span>
+      </a>
+      <nav class="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
+        <a href="/refinance/" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors">Refinance</a>
+        <a href="/cash-out-refinance/" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors">Cash-Out</a>
+        <a href="/home-equity-loan/" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors">Home Equity</a>
+        <a href="/mortgage-rates/" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors">Mortgage Rates</a>
+        <a href="/contact.html" class="nav-link text-slate-300 hover:text-white text-sm font-medium transition-colors">Contact</a>
+        <a href="/contact.html" class="ml-2 inline-flex items-center gap-1.5 bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold px-4 py-2 rounded-md transition-colors">
+          Compare Offers
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+      </nav>
+      <button id="menu-btn" class="lg:hidden text-slate-300 hover:text-white p-2 rounded-md" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/>
+        </svg>
+        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="lg:hidden border-t border-slate-800 py-3 pb-4" aria-label="Mobile navigation">
+      <div class="flex flex-col gap-1">
+        <a href="/refinance/" class="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2.5 rounded-md text-sm font-medium transition-colors">Refinance</a>
+        <a href="/cash-out-refinance/" class="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2.5 rounded-md text-sm font-medium transition-colors">Cash-Out Refinance</a>
+        <a href="/home-equity-loan/" class="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2.5 rounded-md text-sm font-medium transition-colors">Home Equity</a>
+        <a href="/mortgage-rates/" class="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2.5 rounded-md text-sm font-medium transition-colors">Mortgage Rates</a>
+        <a href="/contact.html" class="text-slate-300 hover:text-white hover:bg-slate-800 px-3 py-2.5 rounded-md text-sm font-medium transition-colors">Contact</a>
+        <a href="/contact.html" class="mt-2 inline-flex items-center justify-center gap-1.5 bg-amber-600 hover:bg-amber-500 text-white text-sm font-semibold px-4 py-2.5 rounded-md transition-colors">
+          Compare Offers
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-bg relative overflow-hidden">
+  <div class="dot-bg absolute inset-0 opacity-50"></div>
+  <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28 lg:py-32">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 bg-amber-600/15 border border-amber-600/25 rounded-full px-4 py-1.5 mb-6">
+        <div class="w-1.5 h-1.5 rounded-full bg-amber-500 flex-shrink-0"></div>
+        <span class="text-amber-400 text-xs font-semibold tracking-widest uppercase">Independent · Educational · No Sales Calls</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-[3.5rem] font-serif font-bold text-white leading-tight mb-5">
+        Understand Your Home Loan Options Before You&nbsp;<span class="text-amber-500">Commit</span>
+      </h1>
+      <p class="text-lg sm:text-xl text-slate-300 font-light leading-relaxed mb-8 max-w-2xl">
+        Loan Compare Hub helps U.S. homeowners learn how refinancing, cash-out loans, home equity products, and mortgage rates actually work—so you can ask better questions and make more confident decisions.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a href="/contact.html" class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 active:bg-amber-700 text-white font-semibold text-sm px-6 py-3.5 rounded-md transition-colors shadow-lg shadow-amber-900/30">
+          Compare Offers
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </a>
+        <a href="/refinance/" class="inline-flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 border border-slate-600 text-slate-200 font-semibold text-sm px-6 py-3.5 rounded-md transition-colors">
+          Browse City Guides
+        </a>
+      </div>
+      <p class="mt-6 text-slate-500 text-xs leading-relaxed max-w-xl">
+        This site provides educational content only. We are not a lender or financial advisor. Content does not constitute financial, legal, or tax advice. Rates and terms vary by lender and individual qualifications.
+      </p>
+    </div>
+  </div>
+  <div class="absolute bottom-0 left-0 right-0 h-10 bg-gradient-to-t from-white to-transparent"></div>
+</section>
+
+
+<!-- HOW IT WORKS -->
+<section class="bg-white py-20 md:py-24" aria-labelledby="how-heading">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12">
+      <span class="amber-rule mx-auto"></span>
+      <h2 id="how-heading" class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-4">How It Works</h2>
+      <p class="text-slate-500 max-w-lg mx-auto leading-relaxed">A straightforward approach to understanding your home loan options.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 lg:gap-10">
+      <div class="flex flex-col items-start gap-4">
+        <div class="step-num" aria-hidden="true">1</div>
+        <div>
+          <h3 class="text-lg font-serif font-bold text-slate-900 mb-2">Identify Your Goal</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Lower your payment, shorten your term, tap equity for renovations, or understand today's rate landscape? Each goal leads to a different product. Start with the hub that matches your situation.</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start gap-4">
+        <div class="step-num" aria-hidden="true">2</div>
+        <div>
+          <h3 class="text-lg font-serif font-bold text-slate-900 mb-2">Compare the Trade-Offs</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Our guides explain rate structures, typical costs, qualification factors, and break-even timelines—then compare each product directly against the alternatives so you see the full picture, not just one option.</p>
+        </div>
+      </div>
+      <div class="flex flex-col items-start gap-4">
+        <div class="step-num" aria-hidden="true">3</div>
+        <div>
+          <h3 class="text-lg font-serif font-bold text-slate-900 mb-2">Talk to a Licensed Professional</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Our content is built to prepare you—not replace professional advice. Use what you learn here to ask sharper questions, spot red flags, and understand the terms a lender puts in front of you.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- EXPLORE BY TOPIC -->
+<section class="bg-slate-50 py-20 md:py-24" aria-labelledby="topics-heading">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10">
+      <span class="amber-rule"></span>
+      <h2 id="topics-heading" class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-3">Explore by Topic</h2>
+      <p class="text-slate-500 max-w-xl leading-relaxed">Each hub contains in-depth guides, comparison breakdowns, and decision frameworks for a specific loan category.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6">
+
+      <a href="/refinance/" class="hub-card bg-white border border-slate-200 rounded-xl p-6 sm:p-7 flex flex-col gap-4 group">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-serif font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Refinance</h3>
+            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Rate-and-term refinancing explained: how it works, what it costs, and how to evaluate whether the numbers make sense for your situation.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Rate reduction</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Term change</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Break-even</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-amber-600 text-sm font-semibold pt-2 border-t border-slate-100 mt-auto">
+          Explore Refinance Guides
+          <svg class="w-4 h-4 card-arrow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="/cash-out-refinance/" class="hub-card bg-white border border-slate-200 rounded-xl p-6 sm:p-7 flex flex-col gap-4 group">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-serif font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Cash-Out Refinance</h3>
+            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Learn how cash-out refinancing lets you replace your mortgage and access equity—and how it compares to a HELOC or home equity loan.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Equity access</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">LTV limits</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">vs. HELOC</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-amber-600 text-sm font-semibold pt-2 border-t border-slate-100 mt-auto">
+          Explore Cash-Out Guides
+          <svg class="w-4 h-4 card-arrow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="/home-equity-loan/" class="hub-card bg-white border border-slate-200 rounded-xl p-6 sm:p-7 flex flex-col gap-4 group">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-serif font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Home Equity Loans &amp; HELOCs</h3>
+            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Compare fixed-rate home equity loans and revolving HELOCs side by side. Understand lump-sum vs. draw-period structures, rate types, and qualification benchmarks.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Fixed vs. variable</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Second lien</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Draw period</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-amber-600 text-sm font-semibold pt-2 border-t border-slate-100 mt-auto">
+          Explore Home Equity Guides
+          <svg class="w-4 h-4 card-arrow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </div>
+      </a>
+
+      <a href="/mortgage-rates/" class="hub-card bg-white border border-slate-200 rounded-xl p-6 sm:p-7 flex flex-col gap-4 group">
+        <div class="flex items-start gap-4">
+          <div class="w-10 h-10 rounded-lg bg-amber-600/10 flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-amber-600" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/>
+            </svg>
+          </div>
+          <div>
+            <h3 class="text-lg font-serif font-bold text-slate-900 group-hover:text-amber-700 transition-colors">Mortgage Rates</h3>
+            <p class="text-slate-500 text-sm mt-1 leading-relaxed">Understand how mortgage rates are set, what drives them, and how rate environments affect which loan product makes the most sense for your goals.</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Rate factors</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">Fixed vs. ARM</span>
+          <span class="text-xs bg-slate-100 text-slate-600 rounded-full px-3 py-1">APR vs. rate</span>
+        </div>
+        <div class="flex items-center gap-1.5 text-amber-600 text-sm font-semibold pt-2 border-t border-slate-100 mt-auto">
+          Explore Rate Guides
+          <svg class="w-4 h-4 card-arrow" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+          </svg>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- FEATURED CITIES -->
+<section class="bg-white py-20 md:py-24" aria-labelledby="cities-heading">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10">
+      <span class="amber-rule"></span>
+      <h2 id="cities-heading" class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-3">Refinance Guides by City</h2>
+      <p class="text-slate-500 max-w-xl leading-relaxed">Local market conditions can affect refinance timing and product suitability. Explore city-specific guides for context relevant to your area.</p>
+    </div>
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 mb-6">
+      <a href="/refinance/miami-fl.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Miami, FL
+      </a>
+      <a href="/refinance/dallas-tx.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Dallas, TX
+      </a>
+      <a href="/refinance/los-angeles-ca.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Los Angeles, CA
+      </a>
+      <a href="/refinance/new-york-ny.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        New York, NY
+      </a>
+      <a href="/refinance/chicago-il.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Chicago, IL
+      </a>
+      <a href="/refinance/houston-tx.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Houston, TX
+      </a>
+      <a href="/refinance/phoenix-az.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Phoenix, AZ
+      </a>
+      <a href="/refinance/atlanta-ga.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Atlanta, GA
+      </a>
+      <a href="/refinance/seattle-wa.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Seattle, WA
+      </a>
+      <a href="/refinance/denver-co.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Denver, CO
+      </a>
+      <a href="/refinance/tampa-fl.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Tampa, FL
+      </a>
+      <a href="/refinance/charlotte-nc.html" class="city-link border border-slate-200 text-slate-700 rounded-lg px-4 py-3 text-sm font-medium flex items-center gap-2">
+        <svg class="w-3.5 h-3.5 text-amber-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path fill-rule="evenodd" d="M9.69 18.933l.003.001C9.89 19.02 10 19 10 19s.11.02.308-.066l.002-.001.006-.003.018-.008a5.741 5.741 0 0 0 .281-.14c.186-.096.446-.24.757-.433.62-.384 1.445-.966 2.274-1.765C14.895 15.051 16.5 12.957 16.5 10a6.5 6.5 0 0 0-13 0c0 2.957 1.606 5.051 3.854 7.185a13.92 13.92 0 0 0 2.274 1.765 11.865 11.865 0 0 0 .757.433 5.742 5.742 0 0 0 .299.148l.006.003ZM10 11.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z" clip-rule="evenodd"/></svg>
+        Charlotte, NC
+      </a>
+    </div>
+    <a href="/refinance/" class="inline-flex items-center gap-2 text-amber-600 hover:text-amber-700 text-sm font-semibold transition-colors">
+      View all city refinance guides
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+      </svg>
+    </a>
+  </div>
+</section>
+
+
+<!-- FAQ -->
+<section class="bg-slate-50 py-20 md:py-24" aria-labelledby="faq-heading">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="mb-10">
+      <span class="amber-rule"></span>
+      <h2 id="faq-heading" class="text-3xl sm:text-4xl font-serif font-bold text-slate-900 mb-3">Frequently Asked Questions</h2>
+      <p class="text-slate-500 leading-relaxed">Common questions about refinancing and home equity borrowing.</p>
+    </div>
+    <div class="space-y-3">
+
+      <details class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5">
+          <span class="font-serif font-semibold text-slate-900 text-base leading-snug">What is the difference between a rate-and-term refinance and a cash-out refinance?</span>
+          <svg class="faq-icon w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          A rate-and-term refinance replaces your existing mortgage with a new one—typically to secure a lower interest rate, change from an adjustable to a fixed rate, or alter your loan term. Your balance stays roughly the same. A cash-out refinance also replaces your mortgage, but with a larger loan than you currently owe; the difference is paid to you as a lump sum, letting you access built-up equity. Because you're borrowing more, cash-out refinances usually carry slightly higher rates and require more equity in your home.
+        </div>
+      </details>
+
+      <details class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5">
+          <span class="font-serif font-semibold text-slate-900 text-base leading-snug">How do I evaluate whether refinancing makes financial sense?</span>
+          <svg class="faq-icon w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          A common starting point is break-even analysis: divide the total closing costs of the refinance by the monthly payment savings to find how many months it takes to recoup those costs. If you plan to stay in the home longer than that period, refinancing may make financial sense. Other factors include your remaining loan term, how significantly your rate would change, and any near-term life changes. Our refinance guides cover this in detail. Always confirm specific numbers with a licensed mortgage professional, as individual results vary.
+        </div>
+      </details>
+
+      <details class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5">
+          <span class="font-serif font-semibold text-slate-900 text-base leading-snug">What is the difference between a home equity loan and a HELOC?</span>
+          <svg class="faq-icon w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          A home equity loan delivers a lump sum at a fixed interest rate, repaid over a set term with predictable monthly payments. A Home Equity Line of Credit (HELOC) works more like a credit card secured by your home: you're approved for a maximum line and draw from it as needed during a draw period, paying interest only on the amount used. After the draw period, you repay what you borrowed—often at a variable rate. Home equity loans suit borrowers who want a defined payment for a specific purpose; HELOCs tend to work better for ongoing or uncertain expenses.
+        </div>
+      </details>
+
+      <details class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5">
+          <span class="font-serif font-semibold text-slate-900 text-base leading-snug">What factors influence the mortgage rate I'll be offered?</span>
+          <svg class="faq-icon w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          Mortgage rates are shaped by both macroeconomic and individual factors. On the macro side, lenders are influenced by bond market yields (especially the 10-year Treasury), inflation expectations, and broader credit conditions. On the individual side, your credit score, debt-to-income ratio, loan-to-value ratio, loan type, and loan term all affect the rate you're quoted. Two borrowers applying on the same day can receive meaningfully different rates depending on their financial profiles and the lenders they approach.
+        </div>
+      </details>
+
+      <details class="bg-white border border-slate-200 rounded-xl overflow-hidden">
+        <summary class="flex items-center justify-between gap-4 px-6 py-5">
+          <span class="font-serif font-semibold text-slate-900 text-base leading-snug">Is the content on Loan Compare Hub financial advice?</span>
+          <svg class="faq-icon w-5 h-5 text-amber-600 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/>
+          </svg>
+        </summary>
+        <div class="px-6 pb-5 text-slate-500 text-sm leading-relaxed border-t border-slate-100 pt-4">
+          No. All content on Loan Compare Hub is for educational and informational purposes only. We are not a lender, mortgage broker, financial advisor, or tax professional. Nothing on this site constitutes financial, legal, or tax advice, and we make no guarantees about the accuracy, completeness, or suitability of the information for your individual situation. Rates and loan terms vary by lender, state, and personal qualifications. Always consult with a licensed mortgage professional and a qualified financial or tax advisor before making any borrowing decision.
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- BOTTOM CTA -->
+<section class="bg-slate-900 py-16 md:py-20" aria-label="Call to action">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mb-4">Ready to Compare Your Options?</h2>
+    <p class="text-slate-300 leading-relaxed mb-8 max-w-xl mx-auto">Use our comparison guides to build a clearer picture of your choices—then bring that knowledge to a licensed professional who can give you personalized guidance.</p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/contact.html" class="inline-flex items-center justify-center gap-2 bg-amber-600 hover:bg-amber-500 text-white font-semibold text-sm px-6 py-3.5 rounded-md transition-colors">
+        Compare Offers
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/>
+        </svg>
+      </a>
+      <a href="/refinance/" class="inline-flex items-center justify-center gap-2 bg-transparent border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white font-semibold text-sm px-6 py-3.5 rounded-md transition-colors">
+        Browse City Guides
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="bg-slate-950 border-t border-slate-800" aria-label="Site footer">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-4" aria-label="Loan Compare Hub home">
+          <div class="w-7 h-7 bg-amber-600 rounded-md flex items-center justify-center">
+            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
+            </svg>
+          </div>
+          <span class="font-serif font-semibold text-base">
+            <span class="text-amber-500">Loan Compare</span><span class="text-white"> Hub</span>
+          </span>
+        </a>
+        <p class="text-slate-500 text-xs leading-relaxed">Independent educational content for U.S. homeowners exploring mortgage and refinance options.</p>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-3">Compare</h3>
+        <ul class="space-y-2">
+          <li><a href="/refinance/" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Refinance</a></li>
+          <li><a href="/cash-out-refinance/" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Cash-Out Refinance</a></li>
+          <li><a href="/home-equity-loan/" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Home Equity</a></li>
+          <li><a href="/mortgage-rates/" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Mortgage Rates</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-3">City Guides</h3>
+        <ul class="space-y-2">
+          <li><a href="/refinance/miami-fl.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Miami, FL</a></li>
+          <li><a href="/refinance/dallas-tx.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Dallas, TX</a></li>
+          <li><a href="/refinance/los-angeles-ca.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Los Angeles, CA</a></li>
+          <li><a href="/refinance/new-york-ny.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">New York, NY</a></li>
+          <li><a href="/refinance/" class="text-amber-600 hover:text-amber-400 text-sm font-medium transition-colors">All cities &rarr;</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-white text-xs font-semibold uppercase tracking-widest mb-3">Legal</h3>
+        <ul class="space-y-2">
+          <li><a href="/privacy.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Privacy Policy</a></li>
+          <li><a href="/terms.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Terms of Use</a></li>
+          <li><a href="/contact.html" class="text-slate-400 hover:text-amber-400 text-sm transition-colors">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-slate-800 pt-8">
+      <div class="bg-slate-900 border border-slate-800 rounded-lg p-4 mb-6">
+        <p class="text-slate-500 text-xs leading-relaxed">
+          <strong class="text-slate-400 font-semibold">Disclaimer:</strong> Loan Compare Hub is an independent educational website. We are not a mortgage lender, mortgage broker, financial advisor, credit counselor, or tax professional. All content is for informational and educational purposes only and does not constitute financial, legal, or tax advice. We make no guarantees regarding the accuracy, completeness, or timeliness of any information on this site. Mortgage rates, loan terms, eligibility requirements, and product availability vary by lender, state, and individual financial qualifications. Always consult a licensed mortgage professional and qualified financial or tax advisor before making any borrowing or financial decisions.
+        </p>
+      </div>
+      <div class="flex flex-col sm:flex-row justify-between items-center gap-3">
+        <p class="text-slate-600 text-xs">&copy; <span id="yr"></span> Loan Compare Hub &mdash; <a href="https://loancomparehub.net" class="hover:text-slate-400 transition-colors">loancomparehub.net</a></p>
+        <p class="text-slate-600 text-xs">Educational content only &middot; United States</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  btn.addEventListener('click', function() {
+    var isOpen = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen);
+    iconOpen.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+</script>
+</body>
+</html>
