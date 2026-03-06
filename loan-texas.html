@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Austin, TX | The Silicon Hills Advantage | Luxe Finance</title>
+<meta name="description" content="Wealth strategy for Austin's tech elite. Zero state income tax, pre-exit planning, Texas homestead protection, and luxury real estate in West Lake Hills, Tarrytown & Lake Austin."/>
+<link rel="canonical" href="https://luxefinance.com/cities/austin-tx/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Austin, TX | The Silicon Hills Advantage | Luxe Finance"/>
+<meta property="og:description" content="Wealth strategy for Austin's tech elite. Zero income tax, pre-exit planning, and luxury real estate advisory for Silicon Hills founders and family offices."/>
+<meta property="og:url" content="https://luxefinance.com/cities/austin-tx/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Austin, TX | The Silicon Hills Advantage | Luxe Finance"/>
+<meta name="twitter:description" content="Wealth strategy for Austin's tech elite. Zero income tax, pre-exit planning, and luxury real estate advisory."/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Luxe Finance – Austin",
+  "url": "https://luxefinance.com/cities/austin-tx/",
+  "description": "Wealth management and financial advisory services for high-net-worth individuals and tech founders in Austin, Texas.",
+  "areaServed": { "@type": "City", "name": "Austin", "containedInPlace": { "@type": "State", "name": "Texas" } },
+  "disclaimer": "Content is for educational and informational purposes only. Not financial, legal, or tax advice. Consult licensed professionals before acting on any information presented."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        gold: {
+          300: '#fcd08a',
+          400: '#f5b942',
+          500: '#d97706',
+          600: '#b45309',
+        }
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root {
+    --slate-950: #020617;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-600: #475569;
+    --slate-400: #94a3b8;
+    --slate-300: #cbd5e1;
+    --amber: #d97706;
+    --amber-light: #f59e0b;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: #0f172a; color: #cbd5e1; }
+  h1,h2,h3,h4,h5 { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  /* Hero */
+  .hero-wrap {
+    position: relative;
+    background-color: #020617;
+    background-image:
+      radial-gradient(ellipse 60% 50% at 80% 20%, rgba(217,119,6,.20) 0%, transparent 60%),
+      radial-gradient(ellipse 40% 35% at 10% 80%, rgba(217,119,6,.10) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(15,23,42,.95) 0%, transparent 100%);
+    overflow: hidden;
+  }
+
+  /* Animated grid lines */
+  .grid-lines {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(217,119,6,.06) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(217,119,6,.06) 1px, transparent 1px);
+    background-size: 80px 80px;
+    animation: gridDrift 30s linear infinite;
+  }
+  @keyframes gridDrift {
+    0%   { transform: translate(0,0); }
+    100% { transform: translate(80px, 80px); }
+  }
+
+  /* Glowing orb */
+  .orb {
+    position: absolute; border-radius: 50%; filter: blur(80px); pointer-events: none;
+  }
+  .orb-1 {
+    width: 500px; height: 500px; top: -100px; right: -100px;
+    background: radial-gradient(circle, rgba(217,119,6,.25) 0%, transparent 70%);
+    animation: pulse 8s ease-in-out infinite alternate;
+  }
+  .orb-2 {
+    width: 300px; height: 300px; bottom: 0; left: 5%;
+    background: radial-gradient(circle, rgba(245,158,11,.15) 0%, transparent 70%);
+    animation: pulse 12s ease-in-out infinite alternate-reverse;
+  }
+  @keyframes pulse {
+    from { transform: scale(1); opacity: .7; }
+    to   { transform: scale(1.15); opacity: 1; }
+  }
+
+  /* Eyebrow tag */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(217,119,6,.35);
+    background: rgba(217,119,6,.08);
+    border-radius: 100px;
+    padding: 6px 16px;
+    font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: #f59e0b; margin-bottom: 1.5rem;
+  }
+  .eyebrow-dot { width: 6px; height: 6px; background: #f59e0b; border-radius: 50%; }
+
+  /* Amber rule */
+  .amber-rule { display: block; width: 52px; height: 2px; background: linear-gradient(90deg, #d97706, #f59e0b); border-radius: 2px; margin-bottom: 1rem; }
+
+  /* Stat cards */
+  .stat-card {
+    position: relative;
+    background: rgba(30,41,59,.60);
+    border: 1px solid rgba(217,119,6,.20);
+    border-radius: 16px;
+    padding: 1.5rem;
+    backdrop-filter: blur(12px);
+    overflow: hidden;
+    transition: border-color .25s, transform .25s;
+  }
+  .stat-card::before {
+    content: '';
+    position: absolute; top: 0; left: 0; right: 0; height: 2px;
+    background: linear-gradient(90deg, transparent, #d97706, transparent);
+    opacity: 0; transition: opacity .25s;
+  }
+  .stat-card:hover { border-color: rgba(217,119,6,.55); transform: translateY(-3px); }
+  .stat-card:hover::before { opacity: 1; }
+
+  /* Section bg variants */
+  .bg-deep   { background: #020617; }
+  .bg-dark   { background: #0f172a; }
+  .bg-medium { background: #1e293b; }
+
+  /* Data table */
+  .data-table th {
+    background: rgba(217,119,6,.12);
+    color: #f59e0b;
+    font-family: 'DM Sans', sans-serif;
+    font-size: .7rem; font-weight: 600;
+    letter-spacing: .1em; text-transform: uppercase;
+    padding: .75rem 1rem; text-align: left;
+  }
+  .data-table td {
+    padding: .85rem 1rem;
+    font-size: .875rem;
+    border-bottom: 1px solid rgba(71,85,105,.3);
+    color: #cbd5e1;
+    transition: background .15s;
+  }
+  .data-table tr:hover td { background: rgba(217,119,6,.04); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .highlight-col { color: #f59e0b !important; font-weight: 600; }
+
+  /* Feature cards */
+  .feature-card {
+    background: rgba(15,23,42,.7);
+    border: 1px solid rgba(71,85,105,.4);
+    border-radius: 14px; padding: 1.75rem;
+    transition: border-color .22s, transform .22s, box-shadow .22s;
+  }
+  .feature-card:hover {
+    border-color: rgba(217,119,6,.5);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 50px -10px rgba(0,0,0,.5);
+  }
+  .feature-icon {
+    width: 44px; height: 44px;
+    background: rgba(217,119,6,.12);
+    border: 1px solid rgba(217,119,6,.3);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  /* FAQ */
+  details { border: 1px solid rgba(71,85,105,.4); border-radius: 12px; overflow: hidden; transition: border-color .2s; }
+  details[open] { border-color: rgba(217,119,6,.45); }
+  details > summary { list-style: none; cursor: pointer; padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: rgba(30,41,59,.5); }
+  details > summary::-webkit-details-marker { display: none; }
+  .faq-icon { flex-shrink: 0; transition: transform .2s; color: #d97706; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+  .faq-body { padding: 1.25rem 1.5rem; background: rgba(15,23,42,.6); font-size: .875rem; line-height: 1.75; color: #94a3b8; }
+
+  /* Nav */
+  .nav-link { position: relative; padding-bottom: 2px; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1.5px; background: #d97706; transition: width .2s; }
+  .nav-link:hover::after { width: 100%; }
+
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+
+  /* Bio card */
+  .bio-card {
+    background: rgba(30,41,59,.6);
+    border: 1px solid rgba(217,119,6,.2);
+    border-radius: 18px;
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+  }
+  .bio-avatar {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem; font-weight: 700; color: #fff;
+    border: 3px solid rgba(217,119,6,.4);
+    flex-shrink: 0;
+  }
+
+  /* Investment cards */
+  .invest-card {
+    position: relative; overflow: hidden;
+    background: rgba(15,23,42,.8);
+    border: 1px solid rgba(71,85,105,.35);
+    border-radius: 14px; padding: 1.75rem;
+    transition: border-color .22s, transform .22s;
+  }
+  .invest-card:hover { border-color: rgba(217,119,6,.4); transform: translateY(-3px); }
+  .invest-card-num {
+    position: absolute; top: 1rem; right: 1.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    color: rgba(217,119,6,.07); line-height: 1;
+    pointer-events: none;
+  }
+
+  /* Pill tags */
+  .pill { display: inline-flex; align-items: center; gap: 4px; background: rgba(217,119,6,.1); border: 1px solid rgba(217,119,6,.25); border-radius: 100px; padding: 3px 12px; font-size: .7rem; font-weight: 600; letter-spacing: .05em; color: #f59e0b; }
+
+  /* Stagger fade in */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp .6s ease forwards; opacity: 0; }
+  .d1 { animation-delay: .1s; } .d2 { animation-delay: .2s; }
+  .d3 { animation-delay: .3s; } .d4 { animation-delay: .4s; }
+  .d5 { animation-delay: .5s; } .d6 { animation-delay: .6s; }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #d97706; }
+
+  /* Divider */
+  .gold-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, rgba(217,119,6,.3), transparent); }
+
+  /* Quote block */
+  .pull-quote {
+    border-left: 3px solid #d97706;
+    padding: .75rem 1.25rem;
+    background: rgba(217,119,6,.06);
+    border-radius: 0 8px 8px 0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem; font-style: italic; color: #fcd08a;
+    line-height: 1.6;
+  }
+
+  /* CTA btn */
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff; font-weight: 600; font-size: .875rem;
+    padding: .85rem 1.75rem; border-radius: 8px;
+    transition: opacity .2s, transform .2s;
+    text-decoration: none;
+  }
+  .btn-gold:hover { opacity: .9; transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(217,119,6,.45);
+    color: #f59e0b; font-weight: 600; font-size: .875rem;
+    padding: .85rem 1.75rem; border-radius: 8px;
+    transition: background .2s, border-color .2s;
+    text-decoration: none;
+  }
+  .btn-outline:hover { background: rgba(217,119,6,.1); border-color: #d97706; }
+
+  /* Responsive table wrapper */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<header style="background:rgba(2,6,23,.95); border-bottom:1px solid rgba(71,85,105,.3); backdrop-filter:blur(12px);" class="sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5" aria-label="Luxe Finance home">
+        <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707m12.02 12.02.708.708M1 12h1m20 0h1M4.927 19.073l.707-.707M18.366 4.634l.707-.707M12 6a6 6 0 1 0 0 12A6 6 0 0 0 12 6Z"/>
+          </svg>
+        </div>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#fff;">
+          Luxe<span style="color:#f59e0b;">Finance</span>
+        </span>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Primary navigation">
+        <a href="/cities/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Cities</a>
+        <a href="/wealth-strategy/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Wealth Strategy</a>
+        <a href="/tax-optimization/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Tax Optimization</a>
+        <a href="/real-estate/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Real Estate</a>
+        <a href="/contact/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Contact</a>
+        <a href="/contact/" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
+          Book a Consultation
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </nav>
+
+      <!-- Mobile toggle -->
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" style="border-top:1px solid rgba(71,85,105,.3);" class="lg:hidden py-3 pb-4" aria-label="Mobile navigation">
+      <div class="flex flex-col gap-1">
+        <a href="/cities/" class="px-3 py-2.5 rounded-md text-sm font-medium transition-colors" style="color:#94a3b8;">Cities</a>
+        <a href="/wealth-strategy/" class="px-3 py-2.5 rounded-md text-sm font-medium transition-colors" style="color:#94a3b8;">Wealth Strategy</a>
+        <a href="/tax-optimization/" class="px-3 py-2.5 rounded-md text-sm font-medium transition-colors" style="color:#94a3b8;">Tax Optimization</a>
+        <a href="/real-estate/" class="px-3 py-2.5 rounded-md text-sm font-medium transition-colors" style="color:#94a3b8;">Real Estate</a>
+        <a href="/contact/" class="px-3 py-2.5 rounded-md text-sm font-medium transition-colors" style="color:#94a3b8;">Contact</a>
+        <a href="/contact/" class="mt-2 btn-gold justify-center" style="font-size:.85rem;">Book a Consultation</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero-wrap">
+  <div class="grid-lines"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-28">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
+      <a href="/" style="color:#94a3b8;" class="hover:text-amber-500 transition-colors">Home</a>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <a href="/cities/" style="color:#94a3b8;" class="hover:text-amber-500 transition-colors">Cities</a>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <span style="color:#f59e0b;">Austin, TX</span>
+    </nav>
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="eyebrow fade-up d1">
+          <div class="eyebrow-dot"></div>
+          Silicon Hills · Austin, Texas · AUS
+        </div>
+
+        <h1 class="fade-up d2" style="font-size:clamp(2.5rem,6vw,4.25rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:1.25rem;">
+          The Silicon Hills<br/>
+          <span style="color:#f59e0b;">Advantage</span>
+        </h1>
+
+        <p class="fade-up d3" style="font-size:1.125rem;line-height:1.75;color:#94a3b8;margin-bottom:2rem;max-width:520px;">
+          Austin has become the financial epicenter of America's Great Migration—where Silicon Valley wealth meets Texas liberty. Zero state income tax, unlimited homestead protection, and a booming tech ecosystem redefining what it means to build generational wealth in the 21st century.
+        </p>
+
+        <div class="fade-up d4 flex flex-col sm:flex-row gap-3">
+          <a href="/contact/" class="btn-gold">
+            Schedule a Strategy Call
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a href="#economic-analysis" class="btn-outline">Explore the Analysis</a>
+        </div>
+
+        <p class="fade-up d5" style="margin-top:1.5rem;font-size:.75rem;color:#475569;line-height:1.6;">
+          <strong style="color:#64748b;">Disclaimer:</strong> This content is for educational purposes only and does not constitute financial, legal, or tax advice. Data reflects projections and published estimates. Consult licensed professionals for advice tailored to your circumstances.
+        </p>
+      </div>
+
+      <!-- Hero stat cards -->
+      <div class="fade-up d3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <div class="stat-card sm:col-span-2">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">Luxury Real Estate Index</p>
+              <p style="font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:#fff;line-height:1;">$3.8M<span style="color:#f59e0b;">+</span></p>
+              <p style="font-size:.8rem;color:#64748b;margin-top:.35rem;">West Lake Hills · Tarrytown · Lake Austin Estates</p>
+            </div>
+            <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
+              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">Median HH Income (2026 Proj.)</p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:700;color:#fff;line-height:1;">$112,000</p>
+          <p style="font-size:.75rem;color:#64748b;margin-top:.3rem;">+18% above national average</p>
+        </div>
+
+        <div class="stat-card">
+          <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">State Income Tax</p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:700;color:#fff;line-height:1;">0<span style="color:#f59e0b;">%</span></p>
+          <p style="font-size:.75rem;color:#64748b;margin-top:.3rem;">The Texas Zero-Tax Advantage</p>
+        </div>
+
+        <div class="stat-card sm:col-span-2">
+          <div class="flex flex-wrap items-center gap-3">
+            <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;">Key Ecosystem Players</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="pill">Tesla Gigafactory</span>
+              <span class="pill">SpaceX Starbase HQ</span>
+              <span class="pill">Apple Campus</span>
+              <span class="pill">Oracle HQ</span>
+              <span class="pill">$40B+ Corporate Capital</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     ECONOMIC ANALYSIS
+══════════════════════════════════════════ -->
+<section id="economic-analysis" class="bg-deep py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-3xl mb-14">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">
+        The Great Migration &amp; The Silicon Hills Economy
+      </h2>
+      <p style="color:#64748b;line-height:1.8;font-size:.95rem;">
+        Austin's transformation from state capital to global technology hub represents one of the most significant wealth concentration events in modern American economic history. Understanding the structural drivers is essential for positioning your capital optimally.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-6 mb-12">
+
+      <div class="feature-card lg:col-span-1">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">$40B+ Corporate Capital Influx</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;">
+          Since 2019, Austin has absorbed over $40 billion in announced corporate relocations and expansions—Tesla's Gigafactory Texas, Oracle's global HQ, Apple's $1B campus, and SpaceX's growing presence have transformed the city's employment base and fundamentally repriced its real estate markets.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">High-Net-Worth Relocation Wave</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;">
+          California's top marginal income tax rate of 13.3% has accelerated the migration of HNW individuals and family offices to Austin. For a founder with $50M in post-exit income, the annual state tax differential alone can exceed $6.5M—a compelling structural incentive that continues to drive population composition changes in Travis and Williamson counties.
+        </p>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Silicon Hills Venture Capital Ecosystem</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;">
+          Austin's venture capital scene has matured rapidly, with local firms deploying capital across PropTech, energy innovation, defense technology, and AI infrastructure. The concentration of engineering talent from UT Austin's graduates, combined with relocated senior tech executives, has created a self-reinforcing ecosystem that increasingly rivals traditional Bay Area deal flow.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Pull quote -->
+    <div class="pull-quote max-w-3xl">
+      Austin is not simply a lower-cost alternative to Silicon Valley. It is a distinct wealth-creation ecosystem with unique structural advantages—particularly for founders navigating liquidity events, family offices seeking asset protection, and institutional capital pursuing emerging-market exposure within domestic borders.
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <div class="feature-card">
+        <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Pre-Exit Planning for Tech Founders</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:1rem;">
+          Establishing bona fide Texas domicile before a liquidity event—whether an IPO, secondary transaction, or M&amp;A exit—is one of the most consequential decisions a founder can make. The timing requirements are stringent and the IRS scrutiny on domicile changes is significant, making early planning essential.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Timing domicile change before exercise of ISOs or RSU vesting events</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Establishing "closer connection" through documented Texas ties, banking, and community involvement</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Coordination with qualified QSBS counsel for §1202 exclusion planning</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Family Limited Partnership structures to transfer pre-appreciation equity to heirs</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Windfall Wealth &amp; Post-Exit Architecture</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:1rem;">
+          Early employees and founders facing sudden liquidity events—often $5M to $200M+—face a distinct set of challenges. The velocity of wealth creation often outpaces the infrastructure to protect and deploy it thoughtfully.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Donor-Advised Funds (DAFs) to manage tax liability in the exit year</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Installment sale structures and Opportunity Zone reinvestment strategies</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Establishing a Texas-sited Single Family Office (SFO) post-liquidity</span>
+          </li>
+          <li style="display:flex;align-items:flex-start;gap:.6rem;font-size:.85rem;color:#94a3b8;">
+            <svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            <span>Concentrated position management: collars, exchange funds, and derivatives</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     DATA TABLE
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-12">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Austin 2026 Market Metrics vs. National Averages
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.7;">
+        Key economic and wealth indicators for the Austin metro area. All figures represent projections or published estimates; verify with primary sources before financial decision-making.
+      </p>
+    </div>
+
+    <div class="table-wrap rounded-xl overflow-hidden" style="border:1px solid rgba(71,85,105,.3);">
+      <table class="data-table w-full" style="border-collapse:collapse;min-width:640px;">
+        <thead>
+          <tr>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Metric</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Austin (2026 Est.)</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">National Average</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Delta / Advantage</th>
+          </tr>
+        </thead>
+        <tbody style="background:rgba(15,23,42,.7);">
+          <tr>
+            <td><strong style="color:#e2e8f0;">Metro GDP Growth (YoY)</strong></td>
+            <td class="highlight-col">6.8%</td>
+            <td>2.4%</td>
+            <td style="color:#22c55e;font-weight:600;">+4.4 pp above avg.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Luxury RE Price ($/sq ft)</strong></td>
+            <td class="highlight-col">$1,240</td>
+            <td>$680</td>
+            <td style="color:#22c55e;font-weight:600;">+82% premium</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Median Age of Wealth Holders</strong></td>
+            <td class="highlight-col">38 years</td>
+            <td>54 years</td>
+            <td style="color:#f59e0b;font-weight:600;">−16 yrs (younger HNW base)</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">HNW Individual Inbound Migration</strong></td>
+            <td class="highlight-col">+4,200/yr</td>
+            <td>N/A</td>
+            <td style="color:#22c55e;font-weight:600;">#2 ranked U.S. city for HNW inflow</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Effective Tax Rate (HNW Earner)</strong></td>
+            <td class="highlight-col">~28–31%</td>
+            <td>~38–43%</td>
+            <td style="color:#22c55e;font-weight:600;">~10–12 pp lower than CA/NY</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">VC &amp; PE Deal Flow (Annual)</strong></td>
+            <td class="highlight-col">$6.2B</td>
+            <td>$1.1B (non-coastal avg.)</td>
+            <td style="color:#22c55e;font-weight:600;">5.6× inland metro average</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p style="margin-top:.75rem;font-size:.7rem;color:#334155;line-height:1.6;">
+      Sources: Bureau of Economic Analysis, Zillow Research, U.S. Census Bureau projections, National Venture Capital Association, Knight Frank Wealth Report 2025. Figures are estimates and projections only. This table is educational and should not be relied upon for investment decisions.
+    </p>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     TAX OPTIMIZATION
+══════════════════════════════════════════ -->
+<section class="bg-deep py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-14">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Texas Tax Optimization Framework
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.7;">
+        Texas's zero income tax structure is well-known—but the sophisticated strategies available to high-net-worth residents go significantly deeper. Understanding the full toolkit is essential for optimal wealth architecture.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+      <!-- Card 1 -->
+      <div class="feature-card xl:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="feature-icon" style="margin-bottom:0;">
+            <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+          </div>
+          <h3 style="font-size:1.3rem;font-weight:600;color:#fff;">Property Tax Protest Strategies</h3>
+        </div>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Texas funds public services almost entirely through property taxes—among the highest effective rates in the nation. For owners of $3M–$15M+ Lake Austin and West Lake Hills estates, annual property tax burdens can reach $75,000–$300,000+ before any intervention. The Texas Comptroller's appraisal protest system offers structured relief mechanisms that sophisticated owners systematically exploit.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
+            <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">ARB Protest Process</p>
+            <p style="font-size:.8rem;color:#94a3b8;line-height:1.65;">File a Notice of Protest by May 15th annually. Present independent appraisals, comparable sales, and income approach analyses to the Appraisal Review Board. High-value properties often justify retaining a licensed property tax consultant on a contingency basis.</p>
+          </div>
+          <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
+            <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Binding Arbitration &amp; Litigation</p>
+            <p style="font-size:.8rem;color:#94a3b8;line-height:1.65;">For properties above $5M, binding arbitration and district court appeals under Texas Tax Code §42 can yield significant reductions. Successful challenges routinely reduce assessed values 15–30%, generating compounding tax savings across subsequent years.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Texas Homestead Protection</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:.75rem;">
+          Under Texas Property Code §41.001, a homeowner's primary residence is protected from forced sale by general creditors without limitation on value. This unlimited homestead exemption—unique among major states—creates a powerful asset protection mechanism.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+          <li style="display:flex;gap:.6rem;font-size:.8rem;color:#94a3b8;">
+            <svg class="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            Unlimited value protection for primary residence
+          </li>
+          <li style="display:flex;gap:.6rem;font-size:.8rem;color:#94a3b8;">
+            <svg class="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            No acreage cap in urban areas (10 acres urban / 100 acres rural)
+          </li>
+          <li style="display:flex;gap:.6rem;font-size:.8rem;color:#94a3b8;">
+            <svg class="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            Protection from business creditors &amp; judgment liens
+          </li>
+          <li style="display:flex;gap:.6rem;font-size:.8rem;color:#94a3b8;">
+            <svg class="w-3.5 h-3.5 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+            Integrates with DAPT and trust structures for layered protection
+          </li>
+        </ul>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Chapter 313 Legacy &amp; Modern Abatement</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:.75rem;">
+          Texas's Chapter 313 agreements (now expired but grandfathered for existing deals) provided substantial school district tax limitations for qualifying investments. The successor framework—Chapter 403/Economic Development Agreements—continues to provide pathways for family offices and operating businesses with qualifying capital deployment.
+        </p>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;">
+          Modern tax abatement strategies for family offices include Texas Enterprise Zone designations, municipal development agreements, and opportunity zone fund structures that defer federal capital gains while funding Austin's own high-growth corridors.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="feature-card md:col-span-2">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="feature-icon" style="margin-bottom:0;">
+            <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/></svg>
+          </div>
+          <h3 style="font-size:1.3rem;font-weight:600;color:#fff;">The Zero-Tax Narrative: Full Picture</h3>
+        </div>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:.85rem;">
+          Texas's 0% state income tax rate is the headline advantage—but the sophisticated HNW resident understands the full equation. Property tax rates of 1.8–2.4% on assessed value mean that a $5M West Lake Hills estate may generate $90,000–$120,000 in annual property tax obligations. The net benefit still overwhelmingly favors Texas for high-income earners, but optimal structuring requires proactive property tax management, not passive assumption of advantage.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div style="background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.15);border-radius:8px;padding:.85rem;text-align:center;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#22c55e;">0%</p>
+            <p style="font-size:.75rem;color:#64748b;margin-top:.25rem;">State Income Tax</p>
+          </div>
+          <div style="background:rgba(245,158,11,.06);border:1px solid rgba(245,158,11,.15);border-radius:8px;padding:.85rem;text-align:center;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#f59e0b;">~2.1%</p>
+            <p style="font-size:.75rem;color:#64748b;margin-top:.25rem;">Avg. Effective Property Tax Rate</p>
+          </div>
+          <div style="background:rgba(34,197,94,.06);border:1px solid rgba(34,197,94,.15);border-radius:8px;padding:.85rem;text-align:center;">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#22c55e;">Net +</p>
+            <p style="font-size:.75rem;color:#64748b;margin-top:.25rem;">Advantage for most HNW earners</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     INVESTMENT OPPORTUNITIES
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-14">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Austin Investment Landscape
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.7;">
+        Three high-conviction opportunity areas for HNW investors and family offices positioned in the Austin market. All investment activity involves risk; the following is educational context, not a solicitation.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="invest-card">
+        <div class="invest-card-num">01</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Real Estate PropTech</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:1rem;">
+          Austin's PropTech ecosystem is among the fastest-growing in the nation, powered by the intersection of real estate demand and engineering talent. Companies leveraging AI for property valuation, transaction platforms, short-term rental optimization, and construction technology are attracting institutional LP interest at early stages.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">AI Valuation</span>
+          <span class="pill">CRE Platforms</span>
+          <span class="pill">Construction Tech</span>
+        </div>
+      </div>
+
+      <div class="invest-card">
+        <div class="invest-card-num">02</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Energy Innovation</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:1rem;">
+          Texas's deregulated ERCOT grid and massive renewable energy buildout have made Austin a natural hub for energy storage, grid software, and clean energy infrastructure investment. The Tesla and SpaceX presence has catalyzed adjacent battery technology, solar deployment, and distributed energy resource management companies with significant VC backing.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">Grid Storage</span>
+          <span class="pill">ERCOT Software</span>
+          <span class="pill">Clean Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="invest-card">
+        <div class="invest-card-num">03</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M7.5 16.5l-1 3m8.5-3 1 3M12 3.75v2.625c0 .621.504 1.125 1.125 1.125H18"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">I-35 Corridor Private Equity</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.75;margin-bottom:1rem;">
+          The I-35 corridor between Austin and San Antonio constitutes one of the fastest-growing economic zones in the United States. Private equity deployment in logistics, semiconductor supply chain, defense manufacturing, and mid-market business services along this corridor is generating deal flow that has historically been unavailable to non-institutional investors.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">Logistics</span>
+          <span class="pill">Semiconductor Supply</span>
+          <span class="pill">Defense Mfg.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-8 feature-card" style="background:rgba(217,119,6,.05);border-color:rgba(217,119,6,.2);">
+      <p style="font-size:.78rem;color:#475569;line-height:1.7;">
+        <strong style="color:#64748b;">Investment Disclaimer:</strong> The investment opportunities described above are presented for educational context only. They do not constitute investment advice, a solicitation to invest, or a recommendation of any specific security or fund. Private equity and venture investments are illiquid, involve substantial risk of loss, and are generally available only to accredited or qualified purchasers. Past performance of any sector or strategy does not guarantee future results. Consult a licensed investment advisor, securities attorney, and tax counsel before making any investment decisions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════ -->
+<section class="bg-deep py-20 md:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-12">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Frequently Asked Questions
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.7;">
+        Common questions from high-net-worth individuals and founders navigating Austin's wealth landscape. Answers are educational overviews only—not legal or tax advice.
+      </p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <details>
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do I legally establish Texas domicile to exit a high-tax state?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.85rem;">Establishing a legally defensible Texas domicile requires demonstrating a genuine intent to make Texas your permanent home—not merely a tax strategy. High-tax states like California and New York conduct residency audits aggressively and have been known to assert claims against former residents for years after departure. The legal standard is "domicile," which is defined as the place you intend to return to and make your permanent home.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Key steps for establishing Texas domicile include:</strong></p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-bottom:.85rem;">
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Purchase or long-term lease of a Texas primary residence of greater quality/value than any retained out-of-state property</span></li>
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>File a Texas Declaration of Domicile and obtain a Texas driver's license and vehicle registration immediately</span></li>
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Register to vote in Texas; update all professional, financial, and legal documents to reflect Texas address</span></li>
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Move primary banking relationships, brokerage accounts, and estate planning documents (will, trusts, powers of attorney) to Texas institutions</span></li>
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Maintain contemporaneous travel logs demonstrating >183 days physically present in Texas per year</span></li>
+            <li style="display:flex;gap:.6rem;"><svg class="w-4 h-4 flex-shrink-0 mt-0.5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Establish social, religious, medical, and community ties in Texas; relocate family members and establish children in Texas schools</span></li>
+          </ul>
+          <p style="color:#64748b;">California specifically applies a "safe harbor" rule requiring former residents to be present in-state for fewer than 546 days over any 24-month period and satisfy multiple additional factors. An experienced tax attorney specializing in multi-state domicile changes is essential before and during this process—particularly when a significant liquidity event is anticipated within 1–3 years.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">What strategies exist for managing property tax burdens on $5M+ Lake Austin estates?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.85rem;">For a $5M–$15M Lake Austin waterfront estate, annual property tax obligations under standard assessments can range from approximately $100,000 to $300,000+. This is not a passive cost—it is a manageable exposure with multiple active mitigation strategies available under Texas law.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Annual Protest Process:</strong> The Travis Central Appraisal District (TCAD) determines assessed values annually. Owners have until May 15th to file a Notice of Protest. For high-value properties, engaging a certified property tax consultant or law firm specializing in §41.01 protests is typically cost-effective on a pure ROI basis. Professional consultants often work on 25–40% contingency of the first year's tax savings.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Methodological arguments for reduction include:</strong> unequal appraisal versus comparable waterfront properties; income approach methodology for income-producing or rentable estates; cost approach discrepancies on unique architectural features; depreciation arguments on older improvements. Each carries different evidentiary requirements.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Homestead Exemption Filing:</strong> Texas's general homestead exemption ($40,000 school district exemption as of recent legislation), the 10% appraisal cap on homestead properties, and the senior/disability exemption for qualifying owners should all be actively evaluated and properly filed.</p>
+          <p style="color:#64748b;"><strong style="color:#cbd5e1;">Agricultural or Open-Space Valuation:</strong> For larger estates with any qualifying land use (wildlife management, timber, agricultural production), Texas Property Code Chapter 23 allows "productivity valuation" rather than market value—a mechanism that can dramatically reduce assessable value on land-heavy lakefront properties. Qualification requirements are specific and must be established before the tax year. Consult a licensed Texas property tax attorney before pursuing any of these strategies.</p>
+        </div>
+      </details>
+
+      <details>
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How should founders and early employees approach wealth preservation for "windfall wealth" events?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.85rem;">Windfall wealth events—IPOs, M&amp;A exits, secondary transactions, or large RSU vestings—present a narrow and often irreversible window for tax planning. The decisions made in the 12–24 months before and the 6–12 months following a liquidity event have disproportionate, permanent consequences on the wealth that ultimately reaches and persists within a family.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Pre-Liquidity (12–24 Months Before):</strong> This is the highest-leverage period. Strategies worth evaluating with qualified counsel include: establishing Texas domicile well before the event; gifting pre-appreciation stock to irrevocable trusts (GRATs, SLATs, IDGTs) to freeze value for estate purposes; evaluating §83(b) election timing for restricted stock; and positioning §1202 QSBS shares to maximize the exclusion (up to $10M or 10× basis, per taxpayer per issuer).</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">At the Liquidity Event:</strong> Consider directing a meaningful portion of the proceeds to a Donor-Advised Fund (DAF) in the exit year to generate a large charitable deduction that offsets the ordinary income spike. For public company lock-up expirations, Charitable Remainder Trusts (CRTs) can allow diversification without immediate capital gains recognition while providing an income stream.</p>
+          <p style="margin-bottom:.85rem;"><strong style="color:#cbd5e1;">Post-Liquidity Architecture:</strong> Rushing to deploy proceeds immediately is among the most common and costly mistakes. A structured "pause period" of 3–6 months—keeping proceeds in Treasury bills or money market vehicles while assembling a coordinated advisory team—typically preserves more value than premature deployment. Priority actions include: establishing or upgrading to a Single Family Office structure; completing estate planning (irrevocable trusts, dynasty trust structures available in favorable states); establishing a defined asset allocation policy framework; and evaluating Qualified Opportunity Zone reinvestment for long-duration capital gains deferral.</p>
+          <p style="color:#64748b;">Every element of windfall wealth planning involves complex interactions between federal tax law, state law, securities regulations, and individual family circumstances. This overview is educational only. Engage a coordinated team including a tax attorney, CPA, estate planning attorney, and registered investment advisor well in advance of any anticipated liquidity event.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     ADVISOR BIO
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-xl mb-10">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;">
+        Your Austin Wealth Strategist
+      </h2>
+    </div>
+
+    <div class="bio-card">
+      <div class="p-8 md:p-10">
+        <div class="flex flex-col md:flex-row gap-7 items-start">
+
+          <!-- Avatar -->
+          <div class="flex-shrink-0">
+            <div class="bio-avatar">LF</div>
+          </div>
+
+          <!-- Content -->
+          <div class="flex-1">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:#fff;line-height:1.1;">Luiggi Leonardo Florian</h3>
+                <p style="color:#d97706;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.35rem;">Senior Wealth Strategist · Luxe Finance</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="pill">CFP®</span>
+                <span class="pill">CFA Candidate</span>
+                <span class="pill">Texas Bar Affiliate</span>
+              </div>
+            </div>
+
+            <p style="color:#94a3b8;font-size:.9rem;line-height:1.8;margin-bottom:1rem;">
+              Luiggi Leonardo Florian leads Luxe Finance's Austin practice, specializing in wealth architecture for technology founders, pre-IPO executives, and family offices navigating complex liquidity events. With deep expertise in multi-state domicile transitions, pre-exit equity planning, and Texas-specific asset protection structures, Luiggi brings a comprehensive, integrated perspective to clients whose financial lives span multiple jurisdictions and asset classes.
+            </p>
+
+            <p style="color:#94a3b8;font-size:.9rem;line-height:1.8;margin-bottom:1.25rem;">
+              Having advised clients through Austin's Silicon Hills transformation since its early stages, Luiggi brings firsthand understanding of the unique dynamics facing relocated tech wealth—from QSBS optimization and concentrated equity management to Texas homestead structuring and family office formation. His work is grounded in coordinated cross-disciplinary teams including tax attorneys, estate planners, and institutional investment advisors.
+            </p>
+
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact/" class="btn-gold" style="font-size:.8rem;padding:.65rem 1.25rem;">
+                Schedule a Consultation
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+              </a>
+              <a href="/team/luiggi-florian/" class="btn-outline" style="font-size:.8rem;padding:.65rem 1.25rem;">View Full Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid rgba(71,85,105,.3);padding:1.25rem 2rem;background:rgba(2,6,23,.4);">
+        <p style="font-size:.72rem;color:#334155;line-height:1.6;">
+          Luxe Finance and its advisors do not provide legal, tax, or accounting advice. Content presented by Luiggi Leonardo Florian or any Luxe Finance professional is for educational and general informational purposes only. Luxe Finance is not a registered investment advisor, law firm, or CPA firm. Always engage licensed and qualified professionals for advice specific to your circumstances.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     CTA BAND
+══════════════════════════════════════════ -->
+<section class="bg-deep py-16 md:py-20" style="background-image:radial-gradient(ellipse 60% 80% at 50% 50%, rgba(217,119,6,.08) 0%, transparent 70%);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="eyebrow" style="display:inline-flex;margin-bottom:1.5rem;">
+      <div class="eyebrow-dot"></div>
+      Austin · Silicon Hills · Wealth Strategy
+    </div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">
+      Ready to Architect Your<br/><span style="color:#f59e0b;">Austin Wealth Strategy?</span>
+    </h2>
+    <p style="color:#64748b;font-size:.95rem;line-height:1.75;margin-bottom:2rem;max-width:520px;margin-left:auto;margin-right:auto;">
+      Whether you're planning a liquidity event, relocating from a high-tax state, or building the foundation of a multi-generational family office in Austin—our team is equipped to support your most complex planning needs.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/contact/" class="btn-gold">
+        Book a Strategy Consultation
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
+      <a href="/cities/" class="btn-outline">Explore Other Cities</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer style="background:#020617;border-top:1px solid rgba(71,85,105,.25);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+      <!-- Brand -->
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-5" aria-label="Luxe Finance home">
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707m12.02 12.02.708.708M1 12h1m20 0h1M4.927 19.073l.707-.707M18.366 4.634l.707-.707M12 6a6 6 0 1 0 0 12A6 6 0 0 0 12 6Z"/></svg>
+          </div>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#fff;">Luxe<span style="color:#f59e0b;">Finance</span></span>
+        </a>
+        <p style="font-size:.8rem;color:#334155;line-height:1.7;">Wealth strategy and financial education for high-net-worth individuals and family offices across the United States.</p>
+      </div>
+
+      <!-- Explore -->
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Explore</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="/cities/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">City Guides</a></li>
+          <li><a href="/wealth-strategy/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Wealth Strategy</a></li>
+          <li><a href="/tax-optimization/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Tax Optimization</a></li>
+          <li><a href="/real-estate/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Luxury Real Estate</a></li>
+        </ul>
+      </div>
+
+      <!-- Austin -->
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Austin</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="#economic-analysis" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Economic Analysis</a></li>
+          <li><a href="#" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Tax Framework</a></li>
+          <li><a href="#" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Investment Landscape</a></li>
+          <li><a href="/contact/" style="color:#d97706;font-size:.875rem;font-weight:600;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#d97706'">Consult Luiggi →</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="/privacy/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
+          <li><a href="/terms/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
+          <li><a href="/disclaimer/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Disclaimer</a></li>
+          <li><a href="/contact/" style="color:#475569;font-size:.875rem;transition:color .15s;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Compliance block -->
+    <div style="border-top:1px solid rgba(71,85,105,.2);padding-top:2rem;">
+      <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.2);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
+        <p style="font-size:.72rem;color:#334155;line-height:1.75;">
+          <strong style="color:#475569;">Full Disclaimer:</strong> Luxe Finance is an independent educational publishing platform. We are not a registered investment advisor, securities broker-dealer, insurance company, bank, law firm, or accounting firm. All content—including city guides, market analyses, tax strategy overviews, and advisor profiles—is provided strictly for educational and informational purposes and does not constitute investment advice, financial planning advice, legal advice, or tax advice. No content on this site should be construed as a solicitation or offer to buy or sell any security or financial product. The statistical data and projections presented are derived from third-party sources believed to be reliable but are not independently verified and carry no guarantee of accuracy or completeness. Past performance and historical data are not indicative of future results. All financial decisions involve risk. Always consult qualified, licensed professionals—including a Registered Investment Advisor, CPA, and attorney—before making any financial, investment, legal, or tax decisions. References to specific strategies (domicile change, QSBS, Opportunity Zones, homestead protections, etc.) are educational overviews only; the applicability and legality of any strategy depends on individual circumstances and is subject to change in law.
+        </p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;">
+        <p style="font-size:.75rem;color:#1e293b;">&copy; <span id="yr"></span> Luxe Finance. All rights reserved.</p>
+        <p style="font-size:.75rem;color:#1e293b;">Educational content only &middot; United States</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile nav toggle
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  btn.addEventListener('click', function() {
+    var isOpen = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+    iconOpen.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+
+  // Intersection Observer for fade-up elements beyond hero
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.animation = 'fadeUp .55s ease forwards';
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.feature-card, .invest-card, .stat-card').forEach(function(el) {
+      el.style.opacity = '0';
+      obs.observe(el);
+    });
+  }
+</script>
+</body>
+</html>
