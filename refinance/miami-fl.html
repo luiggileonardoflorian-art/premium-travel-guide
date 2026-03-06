@@ -30,8 +30,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','Georgia','serif'],sans:['DM Sans','system-ui','sans-serif']}}}}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -130,7 +128,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <!-- Logo → ../index.html (exit /refinance/ folder) -->
       <a href="../index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
         <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
           </svg>
         </div>
@@ -147,14 +145,14 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <a href="san-francisco-ca.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
         <a href="../index.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
           Compare Markets
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
       </nav>
 
       <!-- Mobile hamburger -->
       <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="icon-open"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+        <svg id="icon-close" style="width:20px;height:20px;display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
@@ -194,7 +192,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <!-- Breadcrumb — Home exits folder with ../ -->
     <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
       <a href="../index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Home</a>
-      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <svg style="width:12px;height:12px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
       <span style="color:#f59e0b;">Miami, FL</span>
     </nav>
 
@@ -210,7 +208,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div class="fade-up d4" style="display:flex;flex-wrap:wrap;gap:.75rem;">
           <a href="../index.html" class="btn-gold">
             Compare All Markets
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </a>
           <a href="#market-analysis" class="btn-outline">Explore the Analysis</a>
         </div>
@@ -229,7 +227,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
               <p style="font-size:.8rem;color:#475569;margin-top:.35rem;">Star Island · Indian Creek Village · Coral Gables Estates</p>
             </div>
             <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
-              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+              <svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
             </div>
           </div>
         </div>
@@ -275,19 +273,19 @@ details[open] .faq-icon{transform:rotate(45deg)}
 
     <div class="grid lg:grid-cols-3 gap-6 mb-12">
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Brickell Financial Migration</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">The relocation of Citadel's global headquarters to Brickell crystallized what had been a decade-long undercurrent: Miami is now a genuine global financial district. For high-net-worth borrowers, this concentration of institutional capital means access to portfolio lenders, private banks, and specialty mortgage desks that understand complex income structures — equity compensation, carried interest, and international asset bases — that traditional lenders routinely decline.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12c0 .778.099 1.533.284 2.253"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12c0 .778.099 1.533.284 2.253"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The $80B+ LatAm Capital Corridor</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">Miami is the undisputed U.S. gateway for Latin American private wealth. High-net-worth individuals from Brazil, Colombia, Mexico, Argentina, and Venezuela have historically used Miami as their primary U.S. domicile and financing hub. This inbound capital corridor has created a specialized market for foreign national mortgages, ITIN-based lending, and cross-border trust financing structures that are simply not available at scale anywhere else in the United States.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Asset-Based &amp; Non-QM Lending Hub</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">Miami's borrower base — disproportionately self-employed founders, international investors, and private equity principals — has driven the growth of one of the most sophisticated non-QM lending markets in the country. Asset depletion lending, DSCR investor loans, bank statement mortgages, and pledged asset financing are not edge-case products here. They are mainstream offerings from Miami's specialty mortgage desks, often with faster timelines and more competitive pricing than equivalent products in other markets.</p>
       </div>
@@ -302,10 +300,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Florida Tax Advantage for Borrowers</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">Florida imposes no individual income tax, no capital gains tax, and no state estate tax. For a borrower relocating from New York or California, the effective tax savings on a $5M income stream can exceed $500,000 annually — permanently altering the debt-service math on any jumbo mortgage and materially improving qualifying ratios even before underwriting adjustments.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>0% state income tax — permanently improves DTI ratios for qualifying</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>No state capital gains tax — affects cash-out refinance and second home strategies</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Unlimited homestead protection — primary residence cannot be forced-sold by general creditors</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Save Our Homes cap limits property tax assessment growth to 3% per year for homestead properties</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>0% state income tax — permanently improves DTI ratios for qualifying</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>No state capital gains tax — affects cash-out refinance and second home strategies</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Unlimited homestead protection — primary residence cannot be forced-sold by general creditors</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Save Our Homes cap limits property tax assessment growth to 3% per year for homestead properties</span></li>
         </ul>
       </div>
 
@@ -313,10 +311,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Luxury Neighborhoods &amp; Their Financing Profiles</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">Each of Miami's premier submarkets presents distinct financing dynamics that affect lender selection, LTV availability, and loan structure.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Star Island:</strong> Trophy estates $10M–$50M+; most transactions involve portfolio lenders with custom LTV arrangements and non-standard appraisal processes</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Coral Gables:</strong> $2M–$8M range; more conventional jumbo availability; strong HOA and historic district documentation requirements</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Brickell Condos:</strong> High-rise financing subject to condo project approval; foreign national buyers common; may require larger down payments at certain projects</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Coconut Grove:</strong> $3M–$12M waterfront and estate segment; mix of conventional jumbo and portfolio lending; strong appreciation history</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Star Island:</strong> Trophy estates $10M–$50M+; most transactions involve portfolio lenders with custom LTV arrangements and non-standard appraisal processes</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Coral Gables:</strong> $2M–$8M range; more conventional jumbo availability; strong HOA and historic district documentation requirements</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Brickell Condos:</strong> High-rise financing subject to condo project approval; foreign national buyers common; may require larger down payments at certain projects</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Coconut Grove:</strong> $3M–$12M waterfront and estate segment; mix of conventional jumbo and portfolio lending; strong appreciation history</span></li>
         </ul>
       </div>
     </div>
@@ -346,10 +344,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Key Underwriting Factors</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Total net worth vs. loan amount (often target 10:1 or higher)</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Liquidity post-close: 12–24 months PITI in liquid reserves</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Source of funds documentation (especially for international buyers)</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Existing deposits at lending institution improve terms significantly</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Total net worth vs. loan amount (often target 10:1 or higher)</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Liquidity post-close: 12–24 months PITI in liquid reserves</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Source of funds documentation (especially for international buyers)</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Existing deposits at lending institution improve terms significantly</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">$5M – $30M+</span><span class="pill">Portfolio Lenders</span><span class="pill">Relationship-Based</span></div>
@@ -363,10 +361,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Typical Program Parameters</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Down payment: 25–40% typically required (vs. 20% for U.S. residents)</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>No U.S. credit history required — foreign credit reports or reference letters accepted</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Income documented via foreign bank statements, CPA letters, or asset depletion</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>FIRPTA withholding and ITIN requirements must be navigated at closing</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Down payment: 25–40% typically required (vs. 20% for U.S. residents)</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>No U.S. credit history required — foreign credit reports or reference letters accepted</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Income documented via foreign bank statements, CPA letters, or asset depletion</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>FIRPTA withholding and ITIN requirements must be navigated at closing</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">LatAm / EU / ME</span><span class="pill">No U.S. Credit Req.</span><span class="pill">ITIN Accepted</span></div>
@@ -380,10 +378,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Asset Depletion Mechanics</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Eligible assets divided by loan term (months) to generate a qualifying "income"</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Brokerage, retirement, and bank accounts typically eligible (with haircuts on equities)</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Pledged asset mortgages: pledge securities as collateral; avoid selling appreciated positions</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Offered by Schwab Bank, Goldman Sachs, and private banking arms of major institutions</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Eligible assets divided by loan term (months) to generate a qualifying "income"</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Brokerage, retirement, and bank accounts typically eligible (with haircuts on equities)</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Pledged asset mortgages: pledge securities as collateral; avoid selling appreciated positions</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Offered by Schwab Bank, Goldman Sachs, and private banking arms of major institutions</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">High Net Worth</span><span class="pill">Self-Employed</span><span class="pill">Non-QM</span></div>
@@ -490,7 +488,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
 
       <div class="feature-card xl:col-span-2 reveal">
         <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;">
-          <div class="feature-icon" style="margin-bottom:0;"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg></div>
+          <div class="feature-icon" style="margin-bottom:0;"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5"/></svg></div>
           <h3 style="font-size:1.3rem;font-weight:600;color:#fff;">Day Counting &amp; Tie-Severing: The NY/NJ Audit Defense</h3>
         </div>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1.25rem;">New York's Department of Taxation is the most aggressive state revenue authority in the country for domicile audits. New York's "statutory residency" rule taxes all income if you maintain a "permanent place of abode" in New York AND spend more than 183 days in-state — regardless of where you claim domicile. For Miami purchasers who retain a Manhattan or Greenwich property, careful day management is essential from closing day forward.</p>
@@ -498,34 +496,34 @@ details[open] .faq-icon{transform:rotate(45deg)}
           <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
             <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Day Count Protocol</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Maintain contemporaneous daily log (calendar, receipts, phone records)</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Stay ≤182 days in New York if retaining any NY permanent place of abode</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Midnight rule: any part of a day in NY counts as a full NY day</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Document Florida presence: gym, restaurants, local medical appointments</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Maintain contemporaneous daily log (calendar, receipts, phone records)</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Stay ≤182 days in New York if retaining any NY permanent place of abode</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Midnight rule: any part of a day in NY counts as a full NY day</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Document Florida presence: gym, restaurants, local medical appointments</span></li>
             </ul>
           </div>
           <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
             <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Tie-Severing Checklist</p>
             <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Florida driver's license and vehicle registration on Day 1</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>File Florida Declaration of Domicile with the county clerk</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Re-execute will, trusts, and POAs under Florida law</span></li>
-              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Notify prior state via final part-year return; register to vote in Florida</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Florida driver's license and vehicle registration on Day 1</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>File Florida Declaration of Domicile with the county clerk</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Re-execute will, trusts, and POAs under Florida law</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Notify prior state via final part-year return; register to vote in Florida</span></li>
             </ul>
           </div>
         </div>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Florida Unlimited Homestead Protection</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:.85rem;">Article X, Section 4 of the Florida Constitution provides unlimited value protection for a homeowner's primary residence from forced sale by general creditors. A $20M Star Island estate receives the same constitutional protection as a modest Hialeah home — a powerful and unique asset shield for high-net-worth borrowers with business liability exposure.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.55rem;">
-          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Unlimited value protection — no dollar cap</span></li>
-          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Constitutional protection — cannot be amended by statute</span></li>
-          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Survives bankruptcy proceedings for qualifying Florida residents</span></li>
-          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Save Our Homes cap: assessed value growth limited to 3%/yr for homestead</span></li>
-          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>SOH benefit is portable to a new Florida primary residence upon move</span></li>
+          <li class="check-item"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Unlimited value protection — no dollar cap</span></li>
+          <li class="check-item"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Constitutional protection — cannot be amended by statute</span></li>
+          <li class="check-item"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Survives bankruptcy proceedings for qualifying Florida residents</span></li>
+          <li class="check-item"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Save Our Homes cap: assessed value growth limited to 3%/yr for homestead</span></li>
+          <li class="check-item"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>SOH benefit is portable to a new Florida primary residence upon move</span></li>
         </ul>
       </div>
 
@@ -560,7 +558,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">What makes Miami jumbo mortgages different from jumbo loans in other U.S. markets?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">Miami's jumbo market is fundamentally driven by portfolio lenders — banks and private credit institutions that hold loans on their own balance sheets rather than selling them into the secondary market. This structural difference means underwriting is more subjective, relationship-dependent, and focused on total wealth rather than income ratios alone.</p>
@@ -573,7 +571,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">Can a foreign national with no U.S. credit history finance a Miami property?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">Yes — Miami is one of the few U.S. markets where foreign national mortgage financing is a mainstream, well-developed product rather than a specialty exception. Several lenders have established dedicated foreign national programs with experienced teams who manage the documentation, ITIN, and FIRPTA requirements involved.</p>
@@ -586,7 +584,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do I qualify for a Miami jumbo mortgage if I'm self-employed with low W-2 income?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">This is one of the most common situations in Miami's HNW borrower market. Founders, private equity principals, and business owners who take minimal salary but have significant net worth encounter this challenge regularly. Miami's non-QM and portfolio lending market has developed multiple alternative qualification pathways.</p>
@@ -646,7 +644,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
               <!-- Bio CTAs: Home exits folder with ../ -->
               <a href="../index.html" class="btn-gold" style="font-size:.8rem;padding:.65rem 1.25rem;">
                 View All City Reports
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
               </a>
               <!-- Cross-city: same folder, no ../ -->
               <a href="new-york-ny.html" class="btn-outline" style="font-size:.8rem;padding:.65rem 1.25rem;">Read New York Report</a>
@@ -671,7 +669,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">Explore More<br/><span style="color:#f59e0b;">Market Reports</span></h2>
     <p class="reveal" style="color:#64748b;font-size:.95rem;line-height:1.8;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Compare Miami's loan market against New York, Austin, and San Francisco — then bring that intelligence into every lender conversation prepared and in control.</p>
     <div class="reveal" style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
-      <a href="../index.html" class="btn-gold">Browse All City Reports <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      <a href="../index.html" class="btn-gold">Browse All City Reports <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
       <a href="austin-tx.html" class="btn-outline">Austin Market Report</a>
     </div>
   </div>
@@ -703,7 +701,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <div class="sm:col-span-2 lg:col-span-1">
         <!-- Logo → exits /refinance/ with ../ -->
         <a href="../index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
-          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg style="width:14px;height:14px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
         </a>
         <p style="font-size:.8rem;color:#334155;line-height:1.75;">Independent mortgage and loan market intelligence for U.S. homeowners and high-net-worth borrowers.</p>
