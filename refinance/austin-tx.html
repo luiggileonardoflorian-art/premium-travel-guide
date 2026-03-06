@@ -28,6 +28,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','Georgia','serif'],sans:['DM Sans','system-ui','sans-serif']}}}}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -130,7 +132,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <!-- Logo → must exit /refinance/ with ../ -->
       <a href="../index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
         <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
           </svg>
         </div>
@@ -147,14 +149,14 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <a href="san-francisco-ca.html"class="nav-link text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
         <a href="../index.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
           Compare Markets
-          <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
       </nav>
 
       <!-- Mobile hamburger -->
       <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="icon-open"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-        <svg id="icon-close" style="width:20px;height:20px;display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
@@ -198,7 +200,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <!-- Breadcrumb -->
     <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
       <a href="../index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Home</a>
-      <svg style="width:12px;height:12px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
       <span style="color:#f59e0b;">Austin, TX</span>
     </nav>
 
@@ -214,7 +216,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div class="fade-up d4" style="display:flex;flex-wrap:wrap;gap:.75rem;">
           <a href="../index.html" class="btn-gold">
             Compare All Markets
-            <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </a>
           <a href="#market-analysis" class="btn-outline">Explore the Analysis</a>
         </div>
@@ -233,7 +235,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
               <p style="font-size:.8rem;color:#475569;margin-top:.35rem;">Lake Austin Waterfront · Westlake Hills · Barton Creek Estates</p>
             </div>
             <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
-              <svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
+              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg>
             </div>
           </div>
         </div>
@@ -281,19 +283,19 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <div class="grid lg:grid-cols-3 gap-6 mb-12">
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg></div>
+        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Tech Wealth Migration Effect</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">The relocation of Tesla, Oracle, and dozens of tech company headquarters to Austin, combined with the exponential growth of the local startup ecosystem, has created the largest single-cohort wealth migration in modern U.S. history. Between 2019 and 2024, Austin absorbed more high-income households per capita than any other major metro. The result is a luxury real estate market that was fundamentally repriced upward — and a lending environment now calibrated to handle the complex income structures of equity-compensated borrowers that the market did not contain five years ago.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg></div>
+        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18.75a60.07 60.07 0 0 1 15.797 2.101c.727.198 1.453-.342 1.453-1.096V18.75M3.75 4.5v.75A.75.75 0 0 1 3 6h-.75m0 0v-.375c0-.621.504-1.125 1.125-1.125H20.25M2.25 6v9m18-10.5v.75c0 .414.336.75.75.75h.75m-1.5-1.5h.375c.621 0 1.125.504 1.125 1.125v9.75c0 .621-.504 1.125-1.125 1.125h-.375m1.5-1.5H21a.75.75 0 0 0-.75.75v.75m0 0H3.75m0 0h-.375a1.125 1.125 0 0 1-1.125-1.125V15m1.5 1.5v-.75A.75.75 0 0 0 3 15h-.75M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm3 0h.008v.008H18V10.5Zm-12 0h.008v.008H6V10.5Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Equity Compensation Underwriting Problem</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">The dominant income type in Austin's tech economy is RSU vesting income — restricted stock unit grants that vest on schedules tied to continued employment. For conventional mortgage underwriting, RSU income is treated as irregular and is often excluded or heavily discounted. Yet for a senior Apple or Tesla engineer earning $400K in RSU vests annually, this exclusion can make an otherwise straightforward borrower appear unable to service a jumbo loan. The lender selection process in Austin requires specifically identifying institutions that have developed RSU income treatment policies and have audited track records of successfully underwriting equity-compensated borrowers.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/></svg></div>
+        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5m.75-9 3-3 2.148 2.148A12.061 12.061 0 0 1 16.5 7.605"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Pre-Exit Mortgage Window</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">Austin's startup density has created a unique financing dynamic: the pre-IPO or pre-acquisition mortgage window. Founders and early employees with significant paper wealth in illiquid equity often have the worst conventional qualifying profile imaginable — minimal salary, no liquidity, and income that consists of phantom equity rather than cash. Yet within 12–24 months, a successful exit will produce generational wealth. Lenders who understand this window offer bridge products, asset depletion frameworks, and employment-letter-based qualifying specifically designed to capture this borrower cohort before — not after — liquidity events change their profile entirely.</p>
       </div>
@@ -308,11 +310,11 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Austin's Premier Luxury Submarkets</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">Each Austin luxury neighborhood presents distinct financing dynamics, appreciation drivers, and lender requirements that affect optimal loan structuring.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem;">
-          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Lake Austin Waterfront:</strong> $4M–$20M+ estate properties; super-jumbo portfolio lenders required; waterfront MAI appraisals essential; seasonal pricing dynamics affect timing</span></li>
-          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Westlake Hills / Rollingwood:</strong> $2M–$7M range; highest concentration of tech executive buyers; conventional jumbo available with RSU income treatment</span></li>
-          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Barton Creek / Lost Creek:</strong> $1.5M–$5M hill country estates; golf course and gated communities; strong appreciation track record</span></li>
-          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Tarrytown / Pemberton Heights:</strong> $2M–$6M; older Austin wealth and new arrivals; mix of renovation financing and move-up purchase jumbo</span></li>
-          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">South Congress / Bouldin Creek:</strong> $1M–$3M; high velocity, investor-heavy segment; DSCR and investment property lending relevant</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Lake Austin Waterfront:</strong> $4M–$20M+ estate properties; super-jumbo portfolio lenders required; waterfront MAI appraisals essential; seasonal pricing dynamics affect timing</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Westlake Hills / Rollingwood:</strong> $2M–$7M range; highest concentration of tech executive buyers; conventional jumbo available with RSU income treatment</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Barton Creek / Lost Creek:</strong> $1.5M–$5M hill country estates; golf course and gated communities; strong appreciation track record</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Tarrytown / Pemberton Heights:</strong> $2M–$6M; older Austin wealth and new arrivals; mix of renovation financing and move-up purchase jumbo</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">South Congress / Bouldin Creek:</strong> $1M–$3M; high velocity, investor-heavy segment; DSCR and investment property lending relevant</span></li>
         </ul>
       </div>
 
@@ -410,11 +412,11 @@ details[open] .faq-icon{transform:rotate(45deg)}
     </div>
     <div class="space-y-3">
       <details class="reveal">
-        <summary><span class="text-lg font-serif text-slate-200">How do Texas homestead protections affect my mortgage?</span><svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <summary><span class="text-lg font-serif text-slate-200">How do Texas homestead protections affect my mortgage?</span><svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
         <div class="faq-body">Texas offers unlimited creditor protection for homesteads (no dollar cap). However, this does not limit lender rights — your mortgage remains a valid lien. Filing for homestead exemption after closing reduces your property tax burden by ~$100k of assessed value.</div>
       </details>
       <details class="reveal">
-        <summary><span class="text-lg font-serif text-slate-200">Can I use my startup equity to qualify for a mortgage?</span><svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <summary><span class="text-lg font-serif text-slate-200">Can I use my startup equity to qualify for a mortgage?</span><svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
         <div class="faq-body">Yes, through asset depletion or pledged asset programs. Private banks will consider illiquid equity as a compensating factor, but you'll typically need at least 12 months of liquid reserves and a strong personal guarantee.</div>
       </details>
     </div>
@@ -433,40 +435,49 @@ details[open] .faq-icon{transform:rotate(45deg)}
 <!-- FOOTER -->
 <footer style="background:#020617;border-top:1px solid rgba(71,85,105,.22);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
-      <div>
-        <a href="../index.html" class="inline-flex items-center gap-2 mb-3"><span class="font-serif text-white text-lg">Loan <span class="text-amber-500">Compare</span> Hub</span></a>
-        <p class="text-xs text-slate-700">Independent mortgage intelligence for U.S. homeowners and high‑net‑worth borrowers.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2.5rem;margin-bottom:3rem;">
+      <div style="grid-column:span 1;">
+        <a href="../index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg style="width:14px;height:14px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
+        </a>
+        <p style="font-size:.8rem;color:#334155;line-height:1.75;">Independent mortgage and loan market intelligence for U.S. homeowners and high-net-worth borrowers.</p>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Markets</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="../index.html" class="text-slate-500 hover:text-amber-500">Home</a></li>
-          <li><a href="new-york-ny.html" class="text-slate-500 hover:text-amber-500">New York</a></li>
-          <li><a href="miami-fl.html" class="text-slate-500 hover:text-amber-500">Miami</a></li>
-          <li><a href="austin-tx.html" class="text-amber-500">Austin</a></li>
-          <li><a href="san-francisco-ca.html" class="text-slate-500 hover:text-amber-500">San Francisco</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Markets</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="../index.html"        style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Home</a></li>
+          <li><a href="new-york-ny.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">New York</a></li>
+          <li><a href="miami-fl.html"        style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Miami</a></li>
+          <li><a href="austin-tx.html"       style="color:#f59e0b;font-size:.875rem;font-weight:600;text-decoration:none;">Austin ←</a></li>
+          <li><a href="san-francisco-ca.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">San Francisco</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Resources</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#market-analysis" class="text-slate-500 hover:text-amber-500">Market Analysis</a></li>
-          <li><a href="#" class="text-slate-500 hover:text-amber-500">Data Table</a></li>
-          <li><a href="#faq" class="text-slate-500 hover:text-amber-500">FAQ</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Austin Guide</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="#market-analysis" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Market Analysis</a></li>
+          <li><a href="#data-table"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Market Data</a></li>
+          <li><a href="#faq"             style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">FAQ</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Legal</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="../privacy.html" class="text-slate-500 hover:text-amber-500">Privacy</a></li>
-          <li><a href="../terms.html" class="text-slate-500 hover:text-amber-500">Terms</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="../privacy.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
+          <li><a href="../terms.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
+          <li><a href="../index.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">All Markets</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-6 text-xs text-slate-700 flex justify-between">
-      <span>© <span id="yr"></span> Loan Compare Hub — Educational content only</span>
-      <span>loancomparehub.net/refinance/austin-tx.html</span>
+    <div style="border-top:1px solid rgba(71,85,105,.18);padding-top:2rem;">
+      <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.18);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
+        <p style="font-size:.72rem;color:#334155;line-height:1.8;"><strong style="color:#475569;">Full Disclaimer:</strong> Loan Compare Hub is an independent educational publishing platform. We are not a registered investment advisor, mortgage lender, mortgage broker, law firm, or accounting firm. All content is provided for educational and informational purposes only and does not constitute investment advice, financial planning advice, legal advice, tax advice, or a commitment to lend. Always consult qualified, licensed professionals before making any financial, borrowing, legal, or tax decisions.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;">
+        <p style="font-size:.75rem;color:#1e293b;">&copy; <span id="yr"></span> Loan Compare Hub. All rights reserved. — <a href="https://loancomparehub.net/refinance/austin-tx.html" style="color:#1e293b;text-decoration:none;" onmouseover="this.style.color='#475569'" onmouseout="this.style.color='#1e293b'">loancomparehub.net/refinance/austin-tx.html</a></p>
+        <p style="font-size:.75rem;color:#1e293b;">Educational content only · United States</p>
+      </div>
     </div>
   </div>
 </footer>
