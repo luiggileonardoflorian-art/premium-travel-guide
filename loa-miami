@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Miami, FL | The New Capital of Capital | Luxe Finance</title>
+<meta name="description" content="Wealth strategy for Miami's financial elite. Wall Street South, zero state income tax, Florida homestead protection, LatAm capital corridors, and ultra-luxury waterfront real estate advisory."/>
+<link rel="canonical" href="https://luxefinance.com/cities/miami-fl/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Miami, FL | The New Capital of Capital | Luxe Finance"/>
+<meta property="og:description" content="Wealth strategy for Miami's financial elite. Wall Street South, zero income tax, Florida domicile planning, and ultra-luxury real estate for Brickell, Star Island & Indian Creek."/>
+<meta property="og:url" content="https://luxefinance.com/cities/miami-fl/"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Miami, FL | The New Capital of Capital | Luxe Finance"/>
+<meta name="twitter:description" content="Wealth strategy for Miami's financial elite. Zero income tax, Florida domicile planning, and ultra-luxury waterfront real estate advisory."/>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FinancialService",
+  "name": "Luxe Finance – Miami",
+  "url": "https://luxefinance.com/cities/miami-fl/",
+  "description": "Wealth management and financial advisory services for high-net-worth individuals, family offices, and international capital in Miami, Florida.",
+  "areaServed": { "@type": "City", "name": "Miami", "containedInPlace": { "@type": "State", "name": "Florida" } },
+  "disclaimer": "Content is for educational and informational purposes only. Not financial, legal, or tax advice. Consult licensed professionals before acting on any information presented."
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      fontFamily: {
+        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+        sans: ['DM Sans', 'system-ui', 'sans-serif'],
+      }
+    }
+  }
+}
+</script>
+<style>
+  :root {
+    --amber: #d97706;
+    --amber-light: #f59e0b;
+    --slate-950: #020617;
+    --slate-900: #0f172a;
+    --slate-800: #1e293b;
+    --slate-700: #334155;
+    --slate-600: #475569;
+    --slate-400: #94a3b8;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { font-family: 'DM Sans', system-ui, sans-serif; background: #0f172a; color: #cbd5e1; -webkit-font-smoothing: antialiased; }
+  h1,h2,h3,h4 { font-family: 'Cormorant Garamond', Georgia, serif; }
+
+  /* ── Hero ── */
+  .hero-wrap {
+    position: relative; overflow: hidden;
+    background: #020617;
+    background-image:
+      radial-gradient(ellipse 55% 65% at 75% -10%, rgba(217,119,6,.24) 0%, transparent 58%),
+      radial-gradient(ellipse 50% 40% at 20% 100%, rgba(14,165,233,.10) 0%, transparent 55%),
+      radial-gradient(ellipse 80% 60% at 50% 50%, rgba(2,6,23,.9) 0%, transparent 100%);
+  }
+
+  /* Animated wave mesh */
+  .wave-mesh {
+    position: absolute; inset: 0; pointer-events: none; overflow: hidden;
+  }
+  .wave-mesh::before, .wave-mesh::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(60px);
+    animation: waveDrift 18s ease-in-out infinite alternate;
+  }
+  .wave-mesh::before {
+    width: 700px; height: 700px;
+    top: -200px; right: -150px;
+    background: radial-gradient(circle, rgba(217,119,6,.18) 0%, transparent 65%);
+  }
+  .wave-mesh::after {
+    width: 400px; height: 400px;
+    bottom: -100px; left: 0;
+    background: radial-gradient(circle, rgba(14,165,233,.10) 0%, transparent 65%);
+    animation-delay: -9s;
+  }
+  @keyframes waveDrift {
+    from { transform: translate(0,0) scale(1); }
+    to   { transform: translate(30px,-40px) scale(1.1); }
+  }
+
+  /* Grid overlay */
+  .grid-overlay {
+    position: absolute; inset: 0; pointer-events: none;
+    background-image:
+      linear-gradient(rgba(217,119,6,.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(217,119,6,.05) 1px, transparent 1px);
+    background-size: 72px 72px;
+    animation: gridScroll 40s linear infinite;
+  }
+  @keyframes gridScroll {
+    0%   { transform: translate(0,0); }
+    100% { transform: translate(72px,72px); }
+  }
+
+  /* Eyebrow */
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(217,119,6,.35);
+    background: rgba(217,119,6,.08);
+    border-radius: 100px; padding: 6px 16px;
+    font-size: .7rem; font-weight: 600; letter-spacing: .12em; text-transform: uppercase;
+    color: #f59e0b; margin-bottom: 1.5rem;
+  }
+  .eyebrow-dot { width: 6px; height: 6px; background: #f59e0b; border-radius: 50%; animation: blink 2s ease-in-out infinite; }
+  @keyframes blink { 0%,100%{opacity:1;} 50%{opacity:.3;} }
+
+  /* Amber rule */
+  .amber-rule { display: block; width: 52px; height: 2px; background: linear-gradient(90deg,#d97706,#f59e0b); border-radius: 2px; margin-bottom: 1rem; }
+
+  /* Stat cards */
+  .stat-card {
+    position: relative; overflow: hidden;
+    background: rgba(30,41,59,.55);
+    border: 1px solid rgba(217,119,6,.18);
+    border-radius: 16px; padding: 1.5rem;
+    backdrop-filter: blur(14px);
+    transition: border-color .25s, transform .25s;
+  }
+  .stat-card::after {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(217,119,6,.5), transparent);
+    opacity: 0; transition: opacity .25s;
+  }
+  .stat-card:hover { border-color: rgba(217,119,6,.5); transform: translateY(-3px); }
+  .stat-card:hover::after { opacity: 1; }
+
+  /* Section backgrounds */
+  .bg-deep   { background: #020617; }
+  .bg-dark   { background: #0f172a; }
+  .bg-medium { background: #1e293b; }
+
+  /* Gold divider */
+  .gold-divider { width:100%; height:1px; background: linear-gradient(90deg,transparent,rgba(217,119,6,.28),transparent); }
+
+  /* Feature card */
+  .feature-card {
+    background: rgba(15,23,42,.7);
+    border: 1px solid rgba(71,85,105,.38);
+    border-radius: 14px; padding: 1.75rem;
+    transition: border-color .22s, transform .22s, box-shadow .22s;
+  }
+  .feature-card:hover {
+    border-color: rgba(217,119,6,.48);
+    transform: translateY(-4px);
+    box-shadow: 0 22px 55px -12px rgba(0,0,0,.55);
+  }
+  .feature-icon {
+    width: 44px; height: 44px;
+    background: rgba(217,119,6,.1);
+    border: 1px solid rgba(217,119,6,.28);
+    border-radius: 10px;
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem; flex-shrink: 0;
+  }
+
+  /* Investment card */
+  .invest-card {
+    position: relative; overflow: hidden;
+    background: rgba(15,23,42,.8);
+    border: 1px solid rgba(71,85,105,.35);
+    border-radius: 14px; padding: 1.75rem;
+    transition: border-color .22s, transform .22s;
+  }
+  .invest-card:hover { border-color: rgba(217,119,6,.4); transform: translateY(-3px); }
+  .invest-card-num {
+    position: absolute; top: 1rem; right: 1.25rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 4rem; font-weight: 700;
+    color: rgba(217,119,6,.07); line-height: 1; pointer-events: none;
+  }
+
+  /* Data table */
+  .data-table th {
+    background: rgba(217,119,6,.11); color: #f59e0b;
+    font-family: 'DM Sans', sans-serif; font-size: .7rem; font-weight: 600;
+    letter-spacing: .1em; text-transform: uppercase;
+    padding: .75rem 1rem; text-align: left;
+  }
+  .data-table td {
+    padding: .85rem 1rem; font-size: .875rem;
+    border-bottom: 1px solid rgba(71,85,105,.28); color: #cbd5e1;
+    transition: background .15s;
+  }
+  .data-table tr:hover td { background: rgba(217,119,6,.04); }
+  .data-table tr:last-child td { border-bottom: none; }
+  .highlight-col { color: #f59e0b !important; font-weight: 600; }
+
+  /* FAQ */
+  details { border: 1px solid rgba(71,85,105,.38); border-radius: 12px; overflow: hidden; transition: border-color .2s; }
+  details[open] { border-color: rgba(217,119,6,.45); }
+  details > summary { list-style: none; cursor: pointer; padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; background: rgba(30,41,59,.5); }
+  details > summary::-webkit-details-marker { display: none; }
+  .faq-icon { flex-shrink: 0; transition: transform .2s; color: #d97706; }
+  details[open] .faq-icon { transform: rotate(45deg); }
+  .faq-body { padding: 1.25rem 1.5rem; background: rgba(15,23,42,.65); font-size: .875rem; line-height: 1.8; color: #94a3b8; }
+
+  /* Nav */
+  .nav-link { position: relative; padding-bottom: 2px; text-decoration: none; }
+  .nav-link::after { content: ''; position: absolute; left: 0; bottom: 0; width: 0; height: 1.5px; background: #d97706; transition: width .2s; }
+  .nav-link:hover::after { width: 100%; }
+
+  #mobile-menu { display: none; }
+  #mobile-menu.open { display: block; }
+
+  /* Buttons */
+  .btn-gold {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: linear-gradient(135deg, #d97706, #f59e0b);
+    color: #fff; font-weight: 600; font-size: .875rem;
+    padding: .85rem 1.75rem; border-radius: 8px;
+    transition: opacity .2s, transform .2s; text-decoration: none;
+  }
+  .btn-gold:hover { opacity: .88; transform: translateY(-1px); }
+  .btn-outline {
+    display: inline-flex; align-items: center; gap: 8px;
+    border: 1px solid rgba(217,119,6,.45); color: #f59e0b;
+    font-weight: 600; font-size: .875rem; padding: .85rem 1.75rem;
+    border-radius: 8px; transition: background .2s, border-color .2s; text-decoration: none;
+  }
+  .btn-outline:hover { background: rgba(217,119,6,.1); border-color: #d97706; }
+
+  /* Pills */
+  .pill { display: inline-flex; align-items: center; gap: 4px; background: rgba(217,119,6,.09); border: 1px solid rgba(217,119,6,.24); border-radius: 100px; padding: 3px 12px; font-size: .7rem; font-weight: 600; letter-spacing: .05em; color: #f59e0b; }
+
+  /* Bio card */
+  .bio-card { background: rgba(30,41,59,.6); border: 1px solid rgba(217,119,6,.2); border-radius: 18px; backdrop-filter: blur(10px); overflow: hidden; }
+  .bio-avatar { width: 80px; height: 80px; border-radius: 50%; background: linear-gradient(135deg,#d97706,#f59e0b); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond',serif; font-size: 2rem; font-weight: 700; color: #fff; border: 3px solid rgba(217,119,6,.4); flex-shrink: 0; }
+
+  /* Pull quote */
+  .pull-quote { border-left: 3px solid #d97706; padding: .75rem 1.25rem; background: rgba(217,119,6,.06); border-radius: 0 8px 8px 0; font-family: 'Cormorant Garamond',serif; font-size: 1.15rem; font-style: italic; color: #fcd08a; line-height: 1.65; }
+
+  /* Scroll table */
+  .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+  /* Fade-up */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(22px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fadeUp .6s ease forwards; opacity: 0; }
+  .d1{animation-delay:.1s;} .d2{animation-delay:.2s;} .d3{animation-delay:.3s;}
+  .d4{animation-delay:.4s;} .d5{animation-delay:.5s;} .d6{animation-delay:.6s;}
+
+  /* Reveal class */
+  .reveal { opacity: 0; transform: translateY(18px); transition: opacity .55s ease, transform .55s ease; }
+  .revealed { opacity: 1; transform: translateY(0); }
+
+  /* Scrollbar */
+  ::-webkit-scrollbar { width: 6px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: #d97706; }
+
+  /* Metric highlight box */
+  .metric-box { background: rgba(217,119,6,.06); border: 1px solid rgba(217,119,6,.15); border-radius: 10px; padding: 1rem; text-align: center; }
+
+  /* Checklist item */
+  .check-item { display: flex; gap: .6rem; font-size: .85rem; color: #94a3b8; align-items: flex-start; }
+  .check-icon { color: #d97706; flex-shrink: 0; margin-top: 2px; }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════ -->
+<header style="background:rgba(2,6,23,.96);border-bottom:1px solid rgba(71,85,105,.28);backdrop-filter:blur(14px);" class="sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <a href="/" class="flex items-center gap-2.5" aria-label="Luxe Finance home">
+        <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707m12.02 12.02.708.708M1 12h1m20 0h1M4.927 19.073l.707-.707M18.366 4.634l.707-.707M12 6a6 6 0 1 0 0 12A6 6 0 0 0 12 6Z"/>
+          </svg>
+        </div>
+        <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#fff;">
+          Luxe<span style="color:#f59e0b;">Finance</span>
+        </span>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-7" aria-label="Primary navigation">
+        <a href="/cities/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Cities</a>
+        <a href="/wealth-strategy/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Wealth Strategy</a>
+        <a href="/tax-optimization/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Tax Optimization</a>
+        <a href="/real-estate/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Real Estate</a>
+        <a href="/contact/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Contact</a>
+        <a href="/contact/" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
+          Book a Consultation
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+      </nav>
+
+      <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg id="icon-open" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
+        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+
+    <nav id="mobile-menu" style="border-top:1px solid rgba(71,85,105,.28);" class="lg:hidden py-3 pb-4" aria-label="Mobile navigation">
+      <div class="flex flex-col gap-1">
+        <a href="/cities/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Cities</a>
+        <a href="/wealth-strategy/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Wealth Strategy</a>
+        <a href="/tax-optimization/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Tax Optimization</a>
+        <a href="/real-estate/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Real Estate</a>
+        <a href="/contact/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Contact</a>
+        <a href="/contact/" class="mt-2 btn-gold justify-center" style="font-size:.85rem;">Book a Consultation</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ══════════════════════════════════════════
+     HERO
+══════════════════════════════════════════ -->
+<section class="hero-wrap">
+  <div class="wave-mesh"></div>
+  <div class="grid-overlay"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-20 lg:pt-32 lg:pb-28">
+
+    <!-- Breadcrumb -->
+    <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
+      <a href="/" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Home</a>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <a href="/cities/" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Cities</a>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <span style="color:#f59e0b;">Miami, FL</span>
+    </nav>
+
+    <div class="grid lg:grid-cols-2 gap-14 items-center">
+      <div>
+        <div class="eyebrow fade-up d1">
+          <div class="eyebrow-dot"></div>
+          Wall Street South · Miami, Florida · MIA
+        </div>
+
+        <h1 class="fade-up d2" style="font-size:clamp(2.5rem,5.5vw,4.25rem);font-weight:700;color:#fff;line-height:1.1;margin-bottom:1.25rem;">
+          The New<br/>
+          <span style="color:#f59e0b;">Capital of Capital</span>
+        </h1>
+
+        <p class="fade-up d3" style="font-size:1.1rem;line-height:1.8;color:#94a3b8;margin-bottom:2rem;max-width:520px;">
+          Miami has completed its transformation from resort city to global financial command center. The Brickell corridor now houses some of the world's most sophisticated private equity firms, family offices, and digital asset funds—drawn by zero state income tax, unlimited homestead protection, and direct access to an $80B+ Latin American capital corridor.
+        </p>
+
+        <div class="fade-up d4 flex flex-col sm:flex-row gap-3">
+          <a href="/contact/" class="btn-gold">
+            Schedule a Strategy Call
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+          <a href="#economic-analysis" class="btn-outline">Explore the Analysis</a>
+        </div>
+
+        <p class="fade-up d5" style="margin-top:1.5rem;font-size:.75rem;color:#334155;line-height:1.7;">
+          <strong style="color:#475569;">Disclaimer:</strong> This content is for educational purposes only and does not constitute financial, legal, or tax advice. Data reflects projections and published estimates. Consult licensed professionals for advice tailored to your circumstances.
+        </p>
+      </div>
+
+      <!-- Stat cards -->
+      <div class="fade-up d3 grid grid-cols-1 sm:grid-cols-2 gap-4">
+
+        <div class="stat-card sm:col-span-2">
+          <div class="flex items-start justify-between gap-4">
+            <div>
+              <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">Ultra-Luxury Real Estate Index</p>
+              <p style="font-family:'Cormorant Garamond',serif;font-size:2.6rem;font-weight:700;color:#fff;line-height:1;">$4.2M<span style="color:#f59e0b;">+</span></p>
+              <p style="font-size:.8rem;color:#475569;margin-top:.4rem;">Star Island · Indian Creek Village · Gables Estates</p>
+            </div>
+            <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
+              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="stat-card">
+          <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">Median HH Income (2026 Proj.)</p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:700;color:#fff;line-height:1;">$89,000</p>
+          <p style="font-size:.75rem;color:#475569;margin-top:.3rem;">Brickell & Coconut Grove premium zones</p>
+        </div>
+
+        <div class="stat-card">
+          <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.5rem;">State Income Tax</p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:2.1rem;font-weight:700;color:#fff;line-height:1;">0<span style="color:#f59e0b;">%</span></p>
+          <p style="font-size:.75rem;color:#475569;margin-top:.3rem;">The Florida Residency Advantage</p>
+        </div>
+
+        <div class="stat-card sm:col-span-2">
+          <p style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#d97706;margin-bottom:.65rem;">Financial Ecosystem Anchors</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="pill">Citadel HQ</span>
+            <span class="pill">Blackstone SE Ops</span>
+            <span class="pill">Apollo Global</span>
+            <span class="pill">Goldman Sachs</span>
+            <span class="pill">$80B+ LatAm Capital</span>
+            <span class="pill">Crypto / Web3 Hub</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     ECONOMIC ANALYSIS
+══════════════════════════════════════════ -->
+<section id="economic-analysis" class="bg-deep py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-3xl mb-14 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(2rem,4vw,3rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">
+        Wall Street South &amp; the Structural Realignment of Capital
+      </h2>
+      <p style="color:#64748b;line-height:1.85;font-size:.95rem;">
+        Miami's ascent is not cyclical. It reflects a structural, multi-decade realignment of capital, talent, and institutional infrastructure away from high-cost, high-tax Northeastern corridors toward a city that has quietly built the operational depth to support global financial operations.
+      </p>
+    </div>
+
+    <div class="grid lg:grid-cols-3 gap-6 mb-12">
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Northeast Exodus to Brickell</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;">
+          The relocation of Ken Griffin's Citadel from Chicago to Miami's Brickell district signaled the legitimization of what had been a growing undercurrent. Major private equity firms, hedge funds, and financial institutions have established or expanded Southeast operations in Miami since 2020—drawn by the combination of zero state income tax, the regulatory environment, executive quality of life, and direct flight access to New York, London, and São Paulo.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12c0 .778.099 1.533.284 2.253"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The $80B+ LatAm Capital Corridor</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;">
+          Miami is the undisputed gateway for Latin American private wealth entering U.S. markets. High-net-worth individuals and family offices from Brazil, Colombia, Mexico, Argentina, and Venezuela have historically used Miami as their primary U.S. domicile and financial hub. This inbound LatAm capital corridor—estimated at over $80 billion in managed assets—has created a unique ecosystem of bilingual family offices, international private banks, and cross-border tax specialists that few cities can match.
+        </p>
+      </div>
+
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Crypto, Web3 &amp; Digital Asset Dominance</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;">
+          Miami's Mayor Francis Suarez actively courted the global crypto and Web3 community, and the city has become the de facto U.S. capital for digital asset funds, blockchain venture capital, and fintech infrastructure. The concentration of crypto-native wealth holders, NFT platforms, and decentralized finance protocols has created specific planning challenges and opportunities around digital asset valuation, custody, estate planning, and Florida's evolving fiduciary framework for digital property.
+        </p>
+      </div>
+
+    </div>
+
+    <div class="pull-quote max-w-3xl reveal">
+      Miami is no longer competing with Fort Lauderdale for regional relevance. It is competing with New York, London, and Singapore for the allocation of global capital—and it is winning on the structural advantages that matter most to high-net-worth individuals: tax efficiency, asset protection, and international connectivity.
+    </div>
+
+    <div class="mt-10 grid md:grid-cols-2 gap-6">
+      <div class="feature-card reveal">
+        <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Brickell Financial District: Institutional Depth</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Brickell has evolved from a secondary office market into a genuine institutional financial district. The presence of global private banks (UBS, Credit Suisse succession entities, Itaú Private Bank), major law firms with cross-border practices, and a growing roster of prime brokers and custodians means Miami now has the operational infrastructure to support multi-billion-dollar family offices without requiring Northeastern satellite offices for execution.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Global private banking presence: international custody and FX capabilities on-site</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Deep cross-border tax and estate planning expertise for U.S.-LatAm structures</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Class A office and residential development actively absorbing PE/hedge fund demand</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Miami-Dade's international trade courts with experience in cross-border disputes</span></li>
+        </ul>
+      </div>
+
+      <div class="feature-card reveal">
+        <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Family Office Formation in Miami</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Miami has become a preferred jurisdiction for Single Family Office (SFO) and Multi-Family Office (MFO) formation, particularly for internationally mobile ultra-high-net-worth families. Florida's lack of a state fiduciary income tax, its progressive trust statutes, and the practical advantages of Brickell's talent pool and infrastructure create a compelling case for establishing governance structures here.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Florida statutes permit dynasty trusts with long perpetuity periods for wealth transfer</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>No Florida state income or capital gains tax at the trust or beneficiary level</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Access to bilingual wealth management talent for LatAm-originated family offices</span></li>
+          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Florida DAPT statutes provide layered creditor protection for trust-held assets</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     DATA TABLE
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-12 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Miami 2026 Market Metrics vs. National Averages
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.75;">
+        Key economic and wealth indicators for the Greater Miami metro. All figures represent projections or published estimates. Verify with primary sources before financial decision-making.
+      </p>
+    </div>
+
+    <div class="table-wrap rounded-xl overflow-hidden reveal" style="border:1px solid rgba(71,85,105,.28);">
+      <table class="data-table w-full" style="border-collapse:collapse;min-width:640px;">
+        <thead>
+          <tr>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Metric</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Miami (2026 Est.)</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">National Average</th>
+            <th style="border-bottom:1px solid rgba(217,119,6,.2);">Delta / Insight</th>
+          </tr>
+        </thead>
+        <tbody style="background:rgba(15,23,42,.7);">
+          <tr>
+            <td><strong style="color:#e2e8f0;">Inbound Capital Migration (Annual)</strong></td>
+            <td class="highlight-col">$28B+</td>
+            <td>N/A</td>
+            <td style="color:#22c55e;font-weight:600;">#1 U.S. city for net HNW capital inflow</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Luxury RE Price ($/sq ft)</strong></td>
+            <td class="highlight-col">$1,890</td>
+            <td>$680</td>
+            <td style="color:#22c55e;font-weight:600;">+178% above national avg.</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">International Trade Volume (Port of Miami)</strong></td>
+            <td class="highlight-col">$52B/yr</td>
+            <td>N/A</td>
+            <td style="color:#f59e0b;font-weight:600;">Top 5 U.S. container port by value</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Family Office Formations (Since 2020)</strong></td>
+            <td class="highlight-col">400+</td>
+            <td>~35 / major city</td>
+            <td style="color:#22c55e;font-weight:600;">10× acceleration vs. prior decade</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Effective Tax Rate (HNW Earner)</strong></td>
+            <td class="highlight-col">~26–30%</td>
+            <td>~38–43%</td>
+            <td style="color:#22c55e;font-weight:600;">~12–13 pp advantage vs. NY/CA</td>
+          </tr>
+          <tr>
+            <td><strong style="color:#e2e8f0;">Digital Asset / Crypto VC Deal Flow</strong></td>
+            <td class="highlight-col">$3.4B</td>
+            <td>$0.4B (non-coastal avg.)</td>
+            <td style="color:#22c55e;font-weight:600;">8.5× inland metro average</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p style="margin-top:.75rem;font-size:.7rem;color:#334155;line-height:1.6;">
+      Sources: Knight Frank Wealth Report 2025, Miami Downtown Development Authority, Port of Miami statistics, Family Office Exchange, National Venture Capital Association. Figures are estimates and projections. Educational use only.
+    </p>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     TAX OPTIMIZATION
+══════════════════════════════════════════ -->
+<section class="bg-deep py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-14 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        The Florida Tax Optimization Framework
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.75;">
+        Florida's zero-income-tax headline is well known. The complete picture—and the strategies available to those who establish it properly—go significantly deeper and offer sophisticated planning opportunities unavailable in most other states.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
+
+      <!-- Florida Advantage -->
+      <div class="feature-card xl:col-span-2 reveal">
+        <div class="flex items-center gap-3 mb-5">
+          <div class="feature-icon" style="margin-bottom:0;">
+            <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185ZM9.75 9h.008v.008H9.75V9Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm4.125 4.5h.008v.008h-.008V13.5Zm.375 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"/></svg>
+          </div>
+          <h3 style="font-size:1.3rem;font-weight:600;color:#fff;">The Florida Advantage: A Full Tax Picture</h3>
+        </div>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1.25rem;">
+          Florida imposes no individual income tax, no capital gains tax, no estate or inheritance tax at the state level, and—critically for business owners and family offices—no corporate income tax on S-corporations and limited partnerships properly structured under Florida law. For a high-income earner generating $5M+ annually, the aggregate state tax savings versus New York or California can exceed $500,000 per year, compounding dramatically over time.
+        </p>
+        <div class="grid sm:grid-cols-3 gap-4">
+          <div class="metric-box">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#22c55e;">0%</p>
+            <p style="font-size:.73rem;color:#475569;margin-top:.25rem;">State Income Tax</p>
+          </div>
+          <div class="metric-box">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#22c55e;">0%</p>
+            <p style="font-size:.73rem;color:#475569;margin-top:.25rem;">State Capital Gains Tax</p>
+          </div>
+          <div class="metric-box">
+            <p style="font-family:'Cormorant Garamond',serif;font-size:1.9rem;font-weight:700;color:#22c55e;">0%</p>
+            <p style="font-size:.73rem;color:#475569;margin-top:.25rem;">State Estate / Inheritance Tax</p>
+          </div>
+        </div>
+        <p style="color:#64748b;font-size:.8rem;line-height:1.75;margin-top:1rem;">
+          Note: Florida does impose a corporate income tax on C-corporations (currently 5.5%). Pass-through entities (LLCs, S-corps, partnerships) whose income is taxed at the individual level benefit from the 0% personal income tax rate. Proper entity structuring is essential—consult a qualified Florida tax attorney.
+        </p>
+      </div>
+
+      <!-- Homestead Protection -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Unlimited Homestead Protection</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:.85rem;">
+          Article X, Section 4 of the Florida Constitution provides unlimited value protection for a homeowner's primary residence from forced sale by general creditors. A $30M Star Island estate is as protected as a $300,000 Hialeah home. This constitutional protection—stronger than Texas's statutory version in some respects—is a cornerstone of Florida's asset protection appeal.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.55rem;">
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Unlimited value protection (no cap)</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Constitutional (not merely statutory) protection</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Survives bankruptcy proceedings for qualifying residents</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Save Our Homes cap limits assessed value growth to 3%/yr</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Portability allows transfer of accumulated SOH benefit to new Florida residence</span></li>
+        </ul>
+      </div>
+
+      <!-- Day Counting & Domicile -->
+      <div class="feature-card md:col-span-2 reveal">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="feature-icon" style="margin-bottom:0;">
+            <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"/></svg>
+          </div>
+          <h3 style="font-size:1.3rem;font-weight:600;color:#fff;">Residency Planning: Precision Day Counting &amp; Tie-Severing</h3>
+        </div>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          New York and Connecticut—the two states most likely to challenge a Florida domicile claim—employ aggressive statutory residency rules and audit programs specifically designed to capture high-income earners who establish Florida addresses while maintaining material ties to the Northeast. New York's "statutory residency" rule is particularly aggressive: if you maintain a "permanent place of abode" in New York AND spend more than 183 days in-state, New York taxes all income regardless of domicile. Managing this dual exposure requires meticulous documentation.
+        </p>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
+            <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.08em;">Day Count Protocol</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Maintain a contemporaneous daily log (calendar, credit card receipts, phone tower records)</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Stay ≤182 days in New York per calendar year if maintaining any NY permanent place of abode</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Midnight rule: any part of a day in NY counts as a full day in NY</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Document Florida presence: gym check-ins, restaurant receipts, local medical appointments</span></li>
+            </ul>
+          </div>
+          <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;">
+            <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.6rem;text-transform:uppercase;letter-spacing:.08em;">Tie-Severing Checklist</p>
+            <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem;">
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Obtain Florida driver's license and register vehicle in Florida immediately</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>File a Declaration of Domicile with the Florida county clerk</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Re-execute will, trusts, and powers of attorney under Florida law</span></li>
+              <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Notify prior state tax authority of domicile change via a final part-year return</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- DAPT -->
+      <div class="feature-card reveal">
+        <div class="feature-icon">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Florida DAPTs &amp; Asset Protection</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:.85rem;">
+          Florida adopted Domestic Asset Protection Trust (DAPT) legislation that allows a settlor to be a discretionary beneficiary of an irrevocable trust while receiving creditor protection for assets transferred into it—subject to a waiting period and other statutory requirements. Combined with the unlimited homestead protection, Florida DAPTs create a layered shield for significant wealth.
+        </p>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.55rem;">
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Settlor may retain discretionary beneficial interest in trust assets</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>4-year look-back statute of limitations for qualifying transfers</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Effective protection from future business creditors when properly structured</span></li>
+          <li class="check-item"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>May be combined with LLC and FLP structures for maximum layering</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     INVESTMENT OPPORTUNITIES
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-14 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Miami Investment Landscape
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.75;">
+        Three high-conviction opportunity areas for HNW investors and family offices positioned in the Miami market. Educational context only—not a solicitation or investment recommendation.
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6">
+
+      <div class="invest-card reveal">
+        <div class="invest-card-num">01</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Ultra-Luxury Waterfront Development</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Miami's ultra-luxury waterfront residential segment—particularly branded residences along Brickell Bay Drive, Edgewater, and the barrier islands—has absorbed extraordinary capital from internationally mobile HNW buyers seeking a combination of lifestyle, asset protection (via homestead), and currency diversification. Developers including Related Group, Renzo Piano–designed One Thousand Museum successors, and foreign-branded hotel-residences have created a product category that trades on scarcity rather than cyclical demand. Waterfront land in Miami-Dade is a genuinely finite resource.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">Branded Residences</span>
+          <span class="pill">Barrier Islands</span>
+          <span class="pill">Brickell Bay</span>
+        </div>
+      </div>
+
+      <div class="invest-card reveal">
+        <div class="invest-card-num">02</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9.004 9.004 0 0 0 8.716-6.747M12 21a9.004 9.004 0 0 1-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 0 1 7.843 4.582M12 3a8.997 8.997 0 0 0-7.843 4.582m15.686 0A11.953 11.953 0 0 1 12 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0 1 21 12c0 .778-.099 1.533-.284 2.253M3 12c0 .778.099 1.533.284 2.253"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">LatAm Middle-Market Private Equity</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Miami-based fund managers with LatAm operational networks are deploying into consumer, healthcare, logistics, and technology businesses across Brazil, Colombia, Mexico, and Chile—markets that offer GDP-growth-driven return profiles with limited U.S. institutional competition at the middle-market tier. For HNW investors with Florida domicile, the tax treatment of international PE distributions can be highly efficient. Access to these strategies typically requires accredited or qualified purchaser status and meaningful minimum commitments.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">Brazil / Colombia</span>
+          <span class="pill">Middle Market</span>
+          <span class="pill">Consumer / Tech</span>
+        </div>
+      </div>
+
+      <div class="invest-card reveal">
+        <div class="invest-card-num">03</div>
+        <div class="feature-icon mb-4">
+          <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M7.5 16.5l-1 3m8.5-3 1 3M12 3.75v2.625c0 .621.504 1.125 1.125 1.125H18"/></svg>
+        </div>
+        <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Silicon Beach: Fintech &amp; Web3</h3>
+        <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">
+          Miami's Wynwood and Design District neighborhoods have become the nucleus of a tech ecosystem—dubbed "Silicon Beach"—with particular concentration in fintech, digital payments, blockchain infrastructure, and Web3 protocols serving the LatAm market. The convergence of U.S. regulatory frameworks, LatAm market access, and a crypto-native local culture has produced a distinctive deal pipeline in cross-border payment infrastructure, digital asset custody solutions, and tokenized real estate platforms that leverage Miami's existing strengths.
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <span class="pill">Fintech / Payments</span>
+          <span class="pill">Web3 Protocols</span>
+          <span class="pill">Tokenized RE</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-8 feature-card reveal" style="background:rgba(217,119,6,.04);border-color:rgba(217,119,6,.18);">
+      <p style="font-size:.78rem;color:#334155;line-height:1.75;">
+        <strong style="color:#475569;">Investment Disclaimer:</strong> The investment opportunities described above are presented for educational context only. They do not constitute investment advice, a solicitation to invest, or a recommendation of any specific security, fund, or real estate project. Private equity, venture, and real estate investments are illiquid, involve substantial risk of loss, and are generally available only to accredited or qualified purchasers. Past sector performance does not guarantee future results. Consult a licensed investment advisor, securities attorney, and tax counsel before making any investment decisions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     FAQ
+══════════════════════════════════════════ -->
+<section class="bg-deep py-20 md:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-2xl mb-12 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">
+        Frequently Asked Questions
+      </h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.75;">
+        Common planning questions for high-net-worth individuals establishing Miami as their financial and legal home. Educational overviews only—not legal or tax advice.
+      </p>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:.75rem;">
+
+      <!-- FAQ 1 -->
+      <details class="reveal">
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do I legally establish Florida domicile while maintaining business interests in the North?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.9rem;">Maintaining active business interests in New York, Connecticut, or Massachusetts while claiming Florida domicile is one of the most legally complex—and most commonly audited—scenarios in interstate tax planning. The key distinction is between "domicile" (your permanent home, a singular and intentional concept) and "residence" (where you physically spend time). A person can have only one domicile but multiple residences.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">The New York Audit Threat:</strong> New York's Department of Taxation and Finance is widely regarded as the most aggressive state revenue authority in the country for domicile audits. New York applies a six-factor "domicile test" examining: (1) the relative size and value of your homes; (2) time spent in each location; (3) location of "near and dear" items (family heirlooms, artwork, jewelry); (4) business connections; (5) location of family and social contacts; and (6) jurisdiction of professional services. Passing this audit requires genuine, documented life change—not merely cosmetic relocation.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Practical Steps for Business Owners:</strong> If you operate a business with a New York office, the income attributable to New York workdays may still be taxable to New York regardless of your domicile—this is "source income" taxation. Restructuring compensation, board meeting locations, and business activity documentation can reduce this exposure, but it cannot be eliminated entirely if you are genuinely performing work in New York. Engage a CPA and tax attorney experienced in New York non-resident allocations.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Affirmative Florida Documentation:</strong> File the Florida Declaration of Domicile. Obtain a Florida voter registration card, driver's license, and vehicle registration. Establish your primary banking relationship in Florida. Move your primary physician, attorney, and accountant relationships to Florida-based professionals. Ensure your Florida home is materially larger, more expensive, or more personally significant than any retained Northern property. Keep diary logs and receipts documenting Florida presence throughout the year.</p>
+          <p style="color:#64748b;">The most common audit-trigger: maintaining a New York apartment of comparable or greater value to your Florida home while spending significant time in the city. If you own a $4M Brickell condo and a $3.5M Manhattan co-op, New York will scrutinize every factor. The Florida home must be demonstrably your primary habitation. Consult a qualified domicile transition attorney before the tax year in which you intend the change to take effect.</p>
+        </div>
+      </details>
+
+      <!-- FAQ 2 -->
+      <details class="reveal">
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do Florida's fiduciary laws apply to digital and crypto assets in estates and trusts?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.9rem;">Florida enacted the Florida Fiduciary Access to Digital Assets Act (§740.001 et seq., Florida Statutes), based on the Revised Uniform Fiduciary Access to Digital Assets Act (RUFADAA). This legislation addresses the legal authority of fiduciaries—including trustees, executors, and agents under power of attorney—to access, manage, and transfer digital assets, including cryptocurrency holdings.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">What "Digital Assets" Are Covered:</strong> The Florida statute covers electronic records in which an individual has a right or interest, including cryptocurrency wallets, NFTs, digital exchange accounts, online financial accounts, and even social media accounts with monetary value. The statute creates a priority hierarchy: (1) an online tool (like a legacy contact designation on a platform) supersedes; (2) a specific provision in a will, trust, or power of attorney controls; (3) in the absence of both, platform terms of service govern.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Critical Planning Gaps for Crypto Holders:</strong> Most custodial crypto exchange accounts (Coinbase, Kraken, Gemini) have terms of service that restrict account transfer—meaning they may not honor a trustee's or executor's claim without specific legal documentation and platform cooperation. Self-custied assets (hardware wallets, cold storage with private keys) present a different and arguably greater risk: if the private key is lost or inaccessible upon death or incapacity, the assets may be permanently unrecoverable regardless of Florida law.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Best Practices for Florida Residents with Significant Digital Assets:</strong> Prepare a separate, secured "Digital Asset Memorandum" (not part of the public will) that catalogs wallet addresses, exchange accounts, custody solutions, and access protocols. Reference this document in your trust or power of attorney. Consider a professional digital asset custodian or a qualified digital asset trust structure. Ensure your trustee or executor has the technical literacy—or access to technical counsel—to manage these assets.</p>
+          <p style="color:#64748b;">The valuation of crypto assets at death for estate tax purposes follows IRS Revenue Ruling 2023-14 (treating crypto as property), using fair market value on the date of death. For large crypto estates, qualified appraisers experienced in digital asset valuation should be engaged. This area of law is evolving rapidly—Florida-specific digital asset counsel is essential for any portfolio with meaningful crypto exposure.</p>
+        </div>
+      </details>
+
+      <!-- FAQ 3 -->
+      <details class="reveal">
+        <summary>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do Florida Domestic Asset Protection Trusts (DAPTs) work in practice?</span>
+          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+        </summary>
+        <div class="faq-body">
+          <p style="margin-bottom:.9rem;">Florida's Domestic Asset Protection Trust statute (§736.0505, Florida Statutes) allows a settlor—the person who creates and funds the trust—to be a permissible discretionary beneficiary of an irrevocable trust while the assets held within it receive protection from future creditors. This is a departure from the traditional common law rule that a settlor could not protect assets transferred to a trust in which the settlor retained a beneficial interest.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Structural Requirements for a Florida DAPT:</strong> The trust must be: (1) an irrevocable trust; (2) established under Florida law with a Florida trustee (individual or institutional); (3) funded with a genuine transfer—not merely a fraudulent conveyance; and (4) the settlor's interest must be discretionary, not mandatory. The trustee must have the independent authority to make distribution decisions. If a court finds the settlor retains too much control, the protection may be pierced.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">The Four-Year Look-Back:</strong> Florida's statute imposes a four-year statute of limitations (or one year from when the creditor discovered or should have discovered the transfer, if later) for a creditor to challenge a DAPT transfer as fraudulent. This means a DAPT funded today does not provide full protection until four years have elapsed without a creditor claim. Transferring assets to a DAPT when litigation is already imminent or anticipated is likely a fraudulent transfer and provides no protection.</p>
+          <p style="margin-bottom:.9rem;"><strong style="color:#cbd5e1;">Practical Use Cases:</strong> Florida DAPTs are commonly used by physicians, attorneys, real estate developers, and business owners who face professional liability exposure and wish to protect wealth accumulated prior to future claims. When layered with the Florida homestead exemption, the combination creates a two-tier shield: the primary residence protected by constitutional homestead, and investment and liquid assets protected within the DAPT structure.</p>
+          <p style="color:#64748b;"><strong style="color:#cbd5e1;">Interstate Comity Concern:</strong> One complexity: if a creditor obtains a judgment in a non-Florida court (say, New York), the Full Faith and Credit Clause of the U.S. Constitution may require that judgment to be honored in Florida—potentially undermining the DAPT protection. The enforceability of DAPT protections against out-of-state judgments remains an active area of litigation and legal scholarship. A Florida estate planning attorney specializing in asset protection is essential for any DAPT implementation.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     ADVISOR BIO
+══════════════════════════════════════════ -->
+<section class="bg-dark py-20 md:py-24">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-xl mb-10 reveal">
+      <span class="amber-rule"></span>
+      <h2 style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;">
+        Your Miami Wealth Strategist
+      </h2>
+    </div>
+
+    <div class="bio-card reveal">
+      <div class="p-8 md:p-10">
+        <div class="flex flex-col md:flex-row gap-7 items-start">
+
+          <div class="flex-shrink-0">
+            <div class="bio-avatar">LF</div>
+          </div>
+
+          <div class="flex-1">
+            <div class="flex flex-wrap items-start justify-between gap-4 mb-4">
+              <div>
+                <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.75rem;font-weight:700;color:#fff;line-height:1.1;">Luiggi Leonardo Florian</h3>
+                <p style="color:#d97706;font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.35rem;">Senior Wealth Strategist · Luxe Finance</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="pill">CFP®</span>
+                <span class="pill">CFA Candidate</span>
+                <span class="pill">Florida Bar Affiliate</span>
+                <span class="pill">Bilingual ES/EN</span>
+              </div>
+            </div>
+
+            <p style="color:#94a3b8;font-size:.9rem;line-height:1.85;margin-bottom:1rem;">
+              Luiggi Leonardo Florian leads Luxe Finance's Miami practice, advising high-net-worth individuals, international family offices, and technology founders on wealth architecture across the intersection of U.S. tax planning, Florida domicile strategy, and cross-border capital deployment. Fluent in both English and Spanish, Luiggi brings a rare perspective to clients navigating the U.S.–Latin America wealth corridor that defines Miami's financial ecosystem.
+            </p>
+
+            <p style="color:#94a3b8;font-size:.9rem;line-height:1.85;margin-bottom:1.25rem;">
+              His Miami practice encompasses Florida domicile transitions from high-tax Northeastern states, DAPT and estate planning structures for ultra-high-net-worth individuals, digital asset planning under Florida's evolving fiduciary statutes, and family office formation for LatAm-originated wealth entering U.S. markets. Luiggi coordinates multi-disciplinary advisory teams—combining tax attorneys, estate planners, international CPAs, and institutional investment advisors—to deliver integrated solutions for clients whose complexity demands a unified strategic approach.
+            </p>
+
+            <div class="flex flex-wrap gap-3">
+              <a href="/contact/" class="btn-gold" style="font-size:.8rem;padding:.65rem 1.25rem;">
+                Schedule a Consultation
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+              </a>
+              <a href="/team/luiggi-florian/" class="btn-outline" style="font-size:.8rem;padding:.65rem 1.25rem;">View Full Profile</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top:1px solid rgba(71,85,105,.3);padding:1.25rem 2rem;background:rgba(2,6,23,.4);">
+        <p style="font-size:.72rem;color:#334155;line-height:1.65;">
+          Luxe Finance and its advisors do not provide legal, tax, or accounting advice. Content is for educational purposes only. Luxe Finance is not a registered investment advisor, law firm, or CPA firm. Always engage licensed and qualified professionals before making financial, investment, legal, or tax decisions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="gold-divider"></div>
+
+
+<!-- ══════════════════════════════════════════
+     CTA
+══════════════════════════════════════════ -->
+<section class="bg-deep py-16 md:py-20" style="background-image:radial-gradient(ellipse 70% 80% at 50% 50%, rgba(217,119,6,.07) 0%, transparent 70%);">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="eyebrow reveal" style="display:inline-flex;margin-bottom:1.5rem;">
+      <div class="eyebrow-dot"></div>
+      Miami · Wall Street South · Wealth Strategy
+    </div>
+    <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">
+      Build Your Miami<br/><span style="color:#f59e0b;">Wealth Architecture</span>
+    </h2>
+    <p class="reveal" style="color:#64748b;font-size:.95rem;line-height:1.8;margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto;">
+      Whether you're establishing Florida domicile, forming a family office, navigating digital asset planning, or accessing Miami's LatAm capital networks—our team is built for the complexity you carry.
+    </p>
+    <div class="reveal flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="/contact/" class="btn-gold">
+        Book a Strategy Consultation
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+      </a>
+      <a href="/cities/" class="btn-outline">Explore Other Cities</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer style="background:#020617;border-top:1px solid rgba(71,85,105,.22);">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+
+      <div class="sm:col-span-2 lg:col-span-1">
+        <a href="/" class="flex items-center gap-2 mb-5" aria-label="Luxe Finance home" style="text-decoration:none;">
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+            <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1M4.22 4.22l.707.707m12.02 12.02.708.708M1 12h1m20 0h1M4.927 19.073l.707-.707M18.366 4.634l.707-.707M12 6a6 6 0 1 0 0 12A6 6 0 0 0 12 6Z"/></svg>
+          </div>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#fff;">Luxe<span style="color:#f59e0b;">Finance</span></span>
+        </a>
+        <p style="font-size:.8rem;color:#334155;line-height:1.75;">Wealth strategy and financial education for high-net-worth individuals and family offices across the United States.</p>
+      </div>
+
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Explore</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="/cities/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">City Guides</a></li>
+          <li><a href="/wealth-strategy/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Wealth Strategy</a></li>
+          <li><a href="/tax-optimization/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Tax Optimization</a></li>
+          <li><a href="/real-estate/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Luxury Real Estate</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Miami</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="#economic-analysis" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Economic Analysis</a></li>
+          <li><a href="#" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Tax Framework</a></li>
+          <li><a href="#" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Investment Landscape</a></li>
+          <li><a href="/contact/" style="color:#d97706;font-size:.875rem;font-weight:600;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#d97706'">Consult Luiggi →</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="/privacy/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
+          <li><a href="/terms/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
+          <li><a href="/disclaimer/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Disclaimer</a></li>
+          <li><a href="/contact/" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="border-top:1px solid rgba(71,85,105,.18);padding-top:2rem;">
+      <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.18);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
+        <p style="font-size:.72rem;color:#334155;line-height:1.8;">
+          <strong style="color:#475569;">Full Disclaimer:</strong> Luxe Finance is an independent educational publishing platform. We are not a registered investment advisor, securities broker-dealer, insurance company, bank, law firm, or accounting firm. All content—including city guides, market analyses, tax strategy overviews, and advisor profiles—is provided strictly for educational and informational purposes and does not constitute investment advice, financial planning advice, legal advice, or tax advice. No content on this site should be construed as a solicitation or offer to buy or sell any security or financial product. Statistical data and projections are derived from third-party sources believed reliable but are not independently verified. Past performance and historical data are not indicative of future results. All financial decisions involve risk. Always consult qualified, licensed professionals—including a Registered Investment Advisor, CPA, and attorney—before making any financial, investment, legal, or tax decisions. References to specific strategies (Florida domicile, DAPTs, homestead protection, digital asset planning, etc.) are educational overviews only; applicability and legality depends on individual circumstances and is subject to change in applicable law.
+        </p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;">
+        <p style="font-size:.75rem;color:#1e293b;">&copy; <span id="yr"></span> Luxe Finance. All rights reserved.</p>
+        <p style="font-size:.75rem;color:#1e293b;">Educational content only &middot; United States</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // Mobile nav
+  var btn = document.getElementById('menu-btn');
+  var nav = document.getElementById('mobile-menu');
+  var iconOpen = document.getElementById('icon-open');
+  var iconClose = document.getElementById('icon-close');
+  btn.addEventListener('click', function() {
+    var isOpen = nav.classList.toggle('open');
+    btn.setAttribute('aria-expanded', String(isOpen));
+    iconOpen.classList.toggle('hidden', isOpen);
+    iconClose.classList.toggle('hidden', !isOpen);
+  });
+
+  // Scroll reveal
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('revealed'); });
+  }
+</script>
+</body>
+</html>
