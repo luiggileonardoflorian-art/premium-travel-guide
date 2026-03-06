@@ -28,8 +28,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','Georgia','serif'],sans:['DM Sans','system-ui','sans-serif']}}}}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
@@ -128,7 +126,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <!-- Logo → ../index.html -->
       <a href="../index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
         <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
           </svg>
         </div>
@@ -144,14 +142,14 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <a href="san-francisco-ca.html"class="nav-link text-sm font-medium" style="color:#f59e0b;">San Francisco</a>
         <a href="../index.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
           Compare Markets
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
       </nav>
 
       <!-- Mobile hamburger -->
       <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="icon-open"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+        <svg id="icon-close" style="width:20px;height:20px;display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
@@ -192,7 +190,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <!-- Breadcrumb -->
     <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
       <a href="../index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Home</a>
-      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <svg style="width:12px;height:12px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
       <span style="color:#f59e0b;">San Francisco, CA</span>
     </nav>
 
@@ -208,7 +206,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div class="fade-up d4" style="display:flex;flex-wrap:wrap;gap:.75rem;">
           <a href="../index.html" class="btn-gold">
             Compare All Markets
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </a>
           <a href="#sf-analysis" class="btn-outline">Explore the Analysis</a>
         </div>
@@ -227,7 +225,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
               <p style="font-size:.8rem;color:#475569;margin-top:.35rem;">Pacific Heights · Presidio Heights · Noe Valley · Marin</p>
             </div>
             <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
-              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+              <svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
             </div>
           </div>
         </div>
@@ -275,19 +273,19 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <div class="grid lg:grid-cols-3 gap-6 mb-12">
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">RSU as Collateral — Not Just Income</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">In SF, RSUs are often the primary wealth vehicle. Conventional underwriting treats vested RSUs as income, but private banks and specialty lenders go further: pledged‑asset mortgages (PAMs) allow borrowers to collateralize concentrated stock positions, creating liquidity for a down payment without triggering capital gains. For Meta or Nvidia executives with millions in unvested RSUs, certain lenders now offer “RSU forward” structures that consider future vests in qualifying.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m3.75 9v6m3-3H9m1.5-12H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Proposition 13 & Intergenerational Transfer</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">Prop 13 caps property tax increases to 2% annually, based on a 1976 assessment base. A home purchased decades ago may have a tax bill 80% below market rate. When financing such properties, lenders must understand the retained low basis — refinancing or cash‑out can trigger reassessment under Prop 13 exclusions. For heirs, the parent‑child transfer exclusion preserves the low base. This creates unique lending scenarios where keeping old financing may be superior to a new loan.</p>
       </div>
 
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Foreign National & Venture Capital Liquidity</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">San Francisco attracts substantial foreign capital — Chinese, Canadian, and European buyers often purchase luxury condos with cash or through foreign national loan programs. Meanwhile, venture capital partners with carried interest face unique income‑documentation challenges; asset‑based lending and “bank statement” programs are common. The city’s lender ecosystem includes specialists who underwrite GP commitments and distribution waterfall projections.</p>
       </div>
@@ -301,10 +299,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <div class="feature-card reveal">
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">SF Luxury Enclaves & Financing Nuances</h3>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.7rem;">
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Pacific Heights / Presidio Heights:</strong> $5M–$30M Victorian/Edwardian; super‑jumbo ARMs, portfolio lenders only; many properties are historic — additional underwriting for renovation escrows.</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Noe Valley / Eureka Valley:</strong> $2.5M–$5M family homes; strong demand from tech execs with children; jumbo conforming up to $2M, above that requires RSU‑friendly underwriting.</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Russian Hill / North Beach:</strong> $2M–$8M; steep slopes require additional geotech reports; condo financing stricter — warrantable vs. non‑warrantable buildings.</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Marin County (Belvedere, Tiburon):</strong> $3M–$15M water view estates; often second homes — vacation home jumbo rates and DSCR considerations for rented guest houses.</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Pacific Heights / Presidio Heights:</strong> $5M–$30M Victorian/Edwardian; super‑jumbo ARMs, portfolio lenders only; many properties are historic — additional underwriting for renovation escrows.</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Noe Valley / Eureka Valley:</strong> $2.5M–$5M family homes; strong demand from tech execs with children; jumbo conforming up to $2M, above that requires RSU‑friendly underwriting.</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Russian Hill / North Beach:</strong> $2M–$8M; steep slopes require additional geotech reports; condo financing stricter — warrantable vs. non‑warrantable buildings.</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Marin County (Belvedere, Tiburon):</strong> $3M–$15M water view estates; often second homes — vacation home jumbo rates and DSCR considerations for rented guest houses.</span></li>
         </ul>
       </div>
 
@@ -430,15 +428,15 @@ details[open] .faq-icon{transform:rotate(45deg)}
     </div>
     <div class="space-y-3">
       <details class="reveal">
-        <summary><span class="text-lg font-serif text-slate-200">How do I qualify using RSUs if I work at a public tech company?</span><svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <summary><span class="text-lg font-serif text-slate-200">How do I qualify using RSUs if I work at a public tech company?</span><svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
         <div class="faq-body">Lenders will average 24 months of RSU vesting (Schedule D, W‑2). You need a two‑year history and a letter from employer confirming future grants. Stock price volatility can be mitigated by using a lower 12‑month average if the trend is upward. Private banks may also consider unvested RSUs with a discount.</div>
       </details>
       <details class="reveal">
-        <summary><span class="text-lg font-serif text-slate-200">Can I get a mortgage if my income is mainly carried interest / capital gains?</span><svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <summary><span class="text-lg font-serif text-slate-200">Can I get a mortgage if my income is mainly carried interest / capital gains?</span><svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
         <div class="faq-body">Yes — via asset depletion or bank statement programs. Some lenders accept K‑1 income, but carried interest is often unpredictable. A pledged asset mortgage using your investment account is the most straightforward path.</div>
       </details>
       <details class="reveal">
-        <summary><span class="text-lg font-serif text-slate-200">Does Prop 13 affect my refinance or cash‑out?</span><svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
+        <summary><span class="text-lg font-serif text-slate-200">Does Prop 13 affect my refinance or cash‑out?</span><svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 4.5v15m7.5-7.5h-15"/></svg></summary>
         <div class="faq-body">No, refinancing does not trigger reassessment. However, a cash‑out refi may be limited by the 80% LTV rule (for homestead). Also, if you add a new owner (e.g., spouse after marriage), that can trigger reassessment. Always consult a property tax attorney.</div>
       </details>
     </div>
@@ -481,40 +479,49 @@ details[open] .faq-icon{transform:rotate(45deg)}
 <!-- ═══ FOOTER (refinance folder paths) ═══ -->
 <footer style="background:#020617;border-top:1px solid rgba(71,85,105,.22);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2.5rem;margin-bottom:3rem;">
       <div>
-        <a href="../index.html" class="inline-flex items-center gap-2 mb-3"><span class="font-serif text-white text-lg">Loan <span class="text-amber-500">Compare</span> Hub</span></a>
-        <p class="text-xs text-slate-700">Independent mortgage intelligence for U.S. homeowners and high‑net‑worth borrowers.</p>
+        <a href="../index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg style="width:14px;height:14px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
+          <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
+        </a>
+        <p style="font-size:.8rem;color:#334155;line-height:1.75;">Independent mortgage and loan market intelligence for U.S. homeowners and high-net-worth borrowers.</p>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Markets</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="../index.html" class="text-slate-500 hover:text-amber-500">Home</a></li>
-          <li><a href="new-york-ny.html" class="text-slate-500 hover:text-amber-500">New York</a></li>
-          <li><a href="miami-fl.html" class="text-slate-500 hover:text-amber-500">Miami</a></li>
-          <li><a href="austin-tx.html" class="text-slate-500 hover:text-amber-500">Austin</a></li>
-          <li><a href="san-francisco-ca.html" class="text-amber-500">San Francisco</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Markets</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="../index.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Home</a></li>
+          <li><a href="new-york-ny.html"  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">New York</a></li>
+          <li><a href="miami-fl.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Miami</a></li>
+          <li><a href="austin-tx.html"        style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Austin</a></li>
+          <li><a href="san-francisco-ca.html" style="color:#f59e0b;font-size:.875rem;font-weight:600;text-decoration:none;">San Francisco ←</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Resources</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="#sf-analysis" class="text-slate-500 hover:text-amber-500">Market Analysis</a></li>
-          <li><a href="#sf-data" class="text-slate-500 hover:text-amber-500">Data Table</a></li>
-          <li><a href="#faq" class="text-slate-500 hover:text-amber-500">FAQ</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">SF Guide</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="#sf-analysis" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Market Analysis</a></li>
+          <li><a href="#sf-data"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Data Table</a></li>
+          <li><a href="#faq"         style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">FAQ</a></li>
         </ul>
       </div>
       <div>
-        <h4 class="text-xs text-slate-500 uppercase tracking-wider mb-3">Legal</h4>
-        <ul class="space-y-2 text-sm">
-          <li><a href="../privacy.html" class="text-slate-500 hover:text-amber-500">Privacy</a></li>
-          <li><a href="../terms.html" class="text-slate-500 hover:text-amber-500">Terms</a></li>
+        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
+          <li><a href="../privacy.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
+          <li><a href="../terms.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
+          <li><a href="../index.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">All Markets</a></li>
         </ul>
       </div>
     </div>
-    <div class="border-t border-slate-800 pt-6 text-xs text-slate-700 flex justify-between">
-      <span>© <span id="yr"></span> Loan Compare Hub — Educational content only</span>
-      <span>loancomparehub.net/refinance/san-francisco-ca.html</span>
+    <div style="border-top:1px solid rgba(71,85,105,.18);padding-top:2rem;">
+      <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.18);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
+        <p style="font-size:.72rem;color:#334155;line-height:1.8;"><strong style="color:#475569;">Full Disclaimer:</strong> Loan Compare Hub is an independent educational publishing platform. We are not a registered investment advisor, mortgage lender, mortgage broker, law firm, or accounting firm. All content is provided for educational and informational purposes only and does not constitute investment advice, financial planning advice, legal advice, tax advice, or a commitment to lend. Always consult qualified, licensed professionals before making any financial, borrowing, legal, or tax decisions.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;">
+        <p style="font-size:.75rem;color:#1e293b;">&copy; <span id="yr"></span> Loan Compare Hub. All rights reserved. — <a href="https://loancomparehub.net/refinance/san-francisco-ca.html" style="color:#1e293b;text-decoration:none;" onmouseover="this.style.color='#475569'" onmouseout="this.style.color='#1e293b'">loancomparehub.net/refinance/san-francisco-ca.html</a></p>
+        <p style="font-size:.75rem;color:#1e293b;">Educational content only · United States</p>
+      </div>
     </div>
   </div>
 </footer>
