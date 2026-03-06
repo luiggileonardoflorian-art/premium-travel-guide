@@ -28,7 +28,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com"></script>
 <script>tailwind.config={theme:{extend:{fontFamily:{serif:['Cormorant Garamond','Georgia','serif'],sans:['DM Sans','system-ui','sans-serif']}}}}</script>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -138,7 +137,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <!-- Logo → ../index.html (must exit /refinance/ folder) -->
       <a href="../index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
         <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/>
           </svg>
         </div>
@@ -157,14 +156,14 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <a href="san-francisco-ca.html"class="nav-link text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
         <a href="../index.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
           Compare Markets
-          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
         </a>
       </nav>
 
       <!-- Mobile hamburger -->
       <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg id="icon-open"  class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-        <svg id="icon-close" class="w-5 h-5 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
+        <svg id="icon-close" style="width:20px;height:20px;display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
       </button>
     </div>
 
@@ -206,7 +205,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <!-- Breadcrumb -->
     <nav class="mb-8 flex items-center gap-2 text-xs" style="color:#475569;" aria-label="Breadcrumb">
       <a href="../index.html" style="color:#94a3b8;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#94a3b8'">Home</a>
-      <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
+      <svg style="width:12px;height:12px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"/></svg>
       <span style="color:#f59e0b;">New York, NY</span>
     </nav>
 
@@ -222,7 +221,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div class="fade-up d4" style="display:flex;flex-wrap:wrap;gap:.75rem;">
           <a href="../index.html" class="btn-gold">
             Compare All Markets
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+            <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
           </a>
           <a href="#market-analysis" class="btn-outline">Explore the Analysis</a>
         </div>
@@ -241,7 +240,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
               <p style="font-size:.8rem;color:#475569;margin-top:.35rem;">Central Park South · Billionaires' Row · Tribeca · West Village</p>
             </div>
             <div style="background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.25);border-radius:10px;padding:.6rem;flex-shrink:0;">
-              <svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
+              <svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg>
             </div>
           </div>
         </div>
@@ -283,17 +282,17 @@ details[open] .faq-icon{transform:rotate(45deg)}
 
     <div class="grid lg:grid-cols-3 gap-6 mb-12">
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 21h16.5M4.5 3h15M5.25 3v18m13.5-18v18M9 6.75h1.5m-1.5 3h1.5m-1.5 3h1.5m3-6H15m-1.5 3H15m-1.5 3H15M9 21v-3.375c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Co-op Financing Labyrinth</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">Approximately 75% of Manhattan's residential housing stock is structured as co-operative apartments — a form of ownership unique in its complexity. Buyers don't purchase real property; they purchase shares in a corporation that owns the building. This fundamental structural difference means conventional mortgage products don't apply. Lenders must issue "share loans" — a specialized product requiring co-op-specific underwriting. The building's board then conducts its own financial review and can reject any purchaser for any non-discriminatory reason, regardless of lender approval. Financing and board approval are separate, sequential hurdles.</p>
       </div>
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v12m-3-2.818.879.659c1.171.879 3.07.879 4.242 0 1.172-.879 1.172-2.303 0-3.182C13.536 12.219 12.768 12 12 12c-.725 0-1.45-.22-2.003-.659-1.106-.879-1.106-2.303 0-3.182s2.9-.879 4.006 0l.415.33M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The Mansion Tax: Progressive &amp; Punishing</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">New York's Mansion Tax is among the most consequential closing costs in the U.S. luxury market. It applies to all residential purchases of $1M or more — and in a city where $1M buys a modest one-bedroom, it touches virtually every market-rate transaction in Manhattan. The tax is progressive with eight tiers, climbing from 1% at $1M to 3.9% for purchases of $25M or more. Critically, it is applied to the full purchase price once a tier threshold is crossed — meaning a $3M purchase triggers the 1.25% rate on the entire $3M, not just the amount above $2.5M. Tier-proximity pricing analysis is essential for any luxury buyer.</p>
       </div>
       <div class="feature-card reveal">
-        <div class="feature-icon"><svg class="w-5 h-5" style="color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z"/></svg></div>
+        <div class="feature-icon"><svg style="width:20px;height:20px;flex-shrink:0;color:#d97706;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 14.25l6-6m4.5-3.493V21.75l-3.75-1.5-3.75 1.5-3.75-1.5-3.75 1.5V4.757c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0c1.1.128 1.907 1.077 1.907 2.185Z"/></svg></div>
         <h3 style="font-size:1.3rem;font-weight:600;color:#fff;margin-bottom:.75rem;">The SALT Deduction Challenge</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;">The 2017 Tax Cuts and Jobs Act capped the federal deduction for State and Local Taxes (SALT) at $10,000. For high-income New Yorkers paying NYC's combined top effective rate of approximately 14.8% (state + city), this cap eliminates what was historically one of the most valuable federal deductions available. The practical effect is a meaningful after-tax cost increase on NYC income that alters the mathematics of mortgage affordability, qualifying ratios, and the comparative economics of owning versus renting at the high end. SALT reform advocacy continues in Congress, but planning must be done under current law.</p>
       </div>
@@ -308,21 +307,21 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Manhattan Submarket Financing Profiles</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">Each Manhattan submarket presents distinct lender requirements, board cultures, and price-per-square-foot dynamics.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Billionaires' Row / Central Park South:</strong> $10M–$100M+ condos; super-jumbo portfolio lenders; custom LTV structures; foreign national buyers common</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Upper West / East Side Co-ops:</strong> Classic 6-12 room prewar buildings; boards require 25–30% down; post-close liquid assets of 2 years PITI; rigorous financial statement review</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Tribeca / West Village:</strong> $3M–$15M loft condos; more flexible financing; fewer board restrictions; strong rental market underpins lender confidence</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Brooklyn Heights / DUMBO:</strong> $2M–$6M brownstones and condos; conventional jumbo available; more accessible board processes where applicable</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Billionaires' Row / Central Park South:</strong> $10M–$100M+ condos; super-jumbo portfolio lenders; custom LTV structures; foreign national buyers common</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Upper West / East Side Co-ops:</strong> Classic 6-12 room prewar buildings; boards require 25–30% down; post-close liquid assets of 2 years PITI; rigorous financial statement review</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Tribeca / West Village:</strong> $3M–$15M loft condos; more flexible financing; fewer board restrictions; strong rental market underpins lender confidence</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span><strong style="color:#cbd5e1;">Brooklyn Heights / DUMBO:</strong> $2M–$6M brownstones and condos; conventional jumbo available; more accessible board processes where applicable</span></li>
         </ul>
       </div>
       <div class="feature-card reveal">
         <h3 style="font-size:1.25rem;font-weight:600;color:#fff;margin-bottom:.75rem;">Co-op Board Package: What Lenders &amp; Boards Require</h3>
         <p style="color:#64748b;font-size:.875rem;line-height:1.8;margin-bottom:1rem;">A failed board package is the most common deal-killer in Manhattan co-op transactions. Board scrutiny often exceeds lender underwriting in depth.</p>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>2 years personal and business tax returns — boards read them for lifestyle consistency, not just income</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Personal financial statement with full asset and liability schedule — net worth typically must be 4–5x purchase price</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Reference letters (personal and professional) — quality and tone matter as much as content; former board members as references are highly valued</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Post-close liquidity proof: most top co-op buildings require 2 years of total monthly expenses in liquid assets after closing</span></li>
-          <li class="check-item"><svg class="w-4 h-4 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Employment and income verification — W-2 income is strongly preferred by most traditional UWS/UES co-op boards over self-employment income</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>2 years personal and business tax returns — boards read them for lifestyle consistency, not just income</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Personal financial statement with full asset and liability schedule — net worth typically must be 4–5x purchase price</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Reference letters (personal and professional) — quality and tone matter as much as content; former board members as references are highly valued</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Post-close liquidity proof: most top co-op buildings require 2 years of total monthly expenses in liquid assets after closing</span></li>
+          <li class="check-item"><svg style="width:16px;height:16px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Employment and income verification — W-2 income is strongly preferred by most traditional UWS/UES co-op boards over self-employment income</span></li>
         </ul>
       </div>
     </div>
@@ -351,10 +350,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Key Structural Facts</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Secured by shares + proprietary lease, not real property deed</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Lender must receive building financials and board approval before funding</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Many co-ops have financing caps: maximum 75–80% of purchase price as a building rule</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Some buildings prohibit financing entirely — cash-only purchase requirement</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Secured by shares + proprietary lease, not real property deed</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Lender must receive building financials and board approval before funding</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Many co-ops have financing caps: maximum 75–80% of purchase price as a building rule</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Some buildings prohibit financing entirely — cash-only purchase requirement</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">Shares + Lease</span><span class="pill">Board Approval Req.</span><span class="pill">Building-Specific LTV</span></div>
@@ -368,10 +367,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Relationship Pricing Factors</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>AUM at institution: $20M+ in managed assets often unlocks preferred rate programs</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Deposit consolidation: moving operating and personal accounts lowers rate spread</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Cross-collateralization of securities portfolio against mortgage balance</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Loyalty history: prior mortgages, construction loans, or business banking with the institution</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>AUM at institution: $20M+ in managed assets often unlocks preferred rate programs</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Deposit consolidation: moving operating and personal accounts lowers rate spread</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Cross-collateralization of securities portfolio against mortgage balance</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Loyalty history: prior mortgages, construction loans, or business banking with the institution</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">$5M – $50M+</span><span class="pill">Portfolio Lenders</span><span class="pill">AUM-Driven Pricing</span></div>
@@ -385,10 +384,10 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <div style="background:rgba(217,119,6,.05);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;margin-bottom:.85rem;">
           <p style="font-size:.75rem;font-weight:600;color:#d97706;margin-bottom:.5rem;text-transform:uppercase;letter-spacing:.08em;">Key Tax Coordinates</p>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:.45rem;">
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Mortgage interest deductible on first $750K principal (acquisition indebtedness)</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>SALT cap: $10K federal deduction limit on state + local + property taxes combined</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>NYC residents pay federal + NY state (10.9%) + NYC (3.876%) = ~14.8% combined top rate</span></li>
-            <li class="check-item" style="font-size:.8rem;"><svg class="w-3.5 h-3.5 check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Co-op maintenance includes proportionate share of building mortgage interest and RE taxes — partially deductible</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Mortgage interest deductible on first $750K principal (acquisition indebtedness)</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>SALT cap: $10K federal deduction limit on state + local + property taxes combined</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>NYC residents pay federal + NY state (10.9%) + NYC (3.876%) = ~14.8% combined top rate</span></li>
+            <li class="check-item" style="font-size:.8rem;"><svg style="width:14px;height:14px;flex-shrink:0;" class="check-icon" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg><span>Co-op maintenance includes proportionate share of building mortgage interest and RE taxes — partially deductible</span></li>
           </ul>
         </div>
         <div style="display:flex;flex-wrap:wrap;gap:.4rem;"><span class="pill">$10K SALT Cap</span><span class="pill">$750K MID Limit</span><span class="pill">14.8% Combined Rate</span></div>
@@ -567,7 +566,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How is financing a Manhattan co-op different from financing a condo?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">The difference is fundamental. When you buy a condo, you purchase real property — a deed, a title, and a direct ownership interest in a specific unit. Standard mortgages (conventional, jumbo, FHA) apply. When you buy a co-op, you purchase shares in a corporation that owns the entire building, along with a proprietary lease giving you the right to occupy your unit. There is no deed. There is no title insurance on the unit itself.</p>
@@ -581,7 +580,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">How do I minimize Mansion Tax exposure on a NYC luxury purchase?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">There is no mechanism to eliminate the Mansion Tax once a covered purchase closes above $1M in New York. However, several legitimate planning strategies can reduce or optimize exposure. This overview is educational — consult a NYC real estate attorney before implementing any strategy.</p>
@@ -595,7 +594,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <details class="reveal">
         <summary>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-weight:600;color:#e2e8f0;line-height:1.3;">Does the high NYC tax burden make it financially rational to own vs. rent?</span>
-          <svg class="faq-icon w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
+          <svg class="faq-icon" style="width:20px;height:20px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg>
         </summary>
         <div class="faq-body">
           <p style="margin-bottom:.9rem;">The own-vs.-rent analysis in New York City is more complex and context-dependent than in virtually any other U.S. market. The SALT cap, Mansion Tax, NYC transfer taxes, co-op maintenance costs, and relatively low cap rates on luxury residential real estate all pressure the ownership economics in ways that don't apply elsewhere. However, blanket conclusions in either direction are often wrong.</p>
@@ -650,7 +649,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
             <div style="display:flex;flex-wrap:wrap;gap:.75rem;">
               <a href="../index.html" class="btn-gold" style="font-size:.8rem;padding:.65rem 1.25rem;">
                 View All City Reports
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+                <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
               </a>
               <a href="miami-fl.html" class="btn-outline" style="font-size:.8rem;padding:.65rem 1.25rem;">Read Miami Report</a>
             </div>
@@ -674,7 +673,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <h2 class="reveal" style="font-family:'Cormorant Garamond',serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:700;color:#fff;line-height:1.15;margin-bottom:1rem;">Explore More<br/><span style="color:#f59e0b;">Market Reports</span></h2>
     <p class="reveal" style="color:#64748b;font-size:.95rem;line-height:1.8;margin-bottom:2rem;max-width:480px;margin-left:auto;margin-right:auto;">Compare New York's market against Miami, Austin, and San Francisco — then bring that intelligence into every lender conversation prepared and in control.</p>
     <div class="reveal" style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center;">
-      <a href="../index.html" class="btn-gold">Browse All City Reports <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
+      <a href="../index.html" class="btn-gold">Browse All City Reports <svg style="width:16px;height:16px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
       <a href="miami-fl.html" class="btn-outline">Miami Market Report</a>
     </div>
   </div>
@@ -706,7 +705,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <div class="sm:col-span-2 lg:col-span-1">
         <!-- Logo → ../index.html -->
         <a href="../index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
-          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
+          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg style="width:14px;height:14px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
         </a>
         <p style="font-size:.8rem;color:#334155;line-height:1.75;">Independent mortgage and loan market intelligence for U.S. homeowners and high-net-worth borrowers.</p>
