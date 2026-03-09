@@ -1,83 +1,52 @@
 [
-  {
-    "region": "Northeast",
-    "cities": [
-      {"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
-      {"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
-      {"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":true},
-      {"city":"Pittsburgh","state":"PA","file":"pittsburgh-pa.html","active":true},
-      {"city":"Providence","state":"RI","file":"providence-ri.html","active":true},
-      {"city":"Hartford","state":"CT","file":"hartford-ct.html","active":true},
-      {"city":"Albany","state":"NY","file":"albany-ny.html","active":true},
-      {"city":"Buffalo","state":"NY","file":"buffalo-ny.html","active":true},
-      {"city":"Newark","state":"NJ","file":"newark-nj.html","active":true},
-      {"city":"Jersey City","state":"NJ","file":"jersey-city-nj.html","active":true},
-      {"city":"Stamford","state":"CT","file":"stamford-ct.html","active":true},
-      {"city":"Portland","state":"ME","file":"portland-me.html","active":true},
-      {"city":"Burlington","state":"VT","file":"burlington-vt.html","active":true},
-      {"city":"Manchester","state":"NH","file":"manchester-nh.html","active":true}
-    ]
-  },
-  {
-    "region": "Southeast",
-    "cities": [
-      {"city":"Miami","state":"FL","file":"miami-fl.html","active":true},
-      {"city":"Atlanta","state":"GA","file":"atlanta-ga.html","active":true},
-      {"city":"Charlotte","state":"NC","file":"charlotte-nc.html","active":true},
-      {"city":"Orlando","state":"FL","file":"orlando-fl.html","active":true},
-      {"city":"Tampa","state":"FL","file":"tampa-fl.html","active":true},
-      {"city":"Nashville","state":"TN","file":"nashville-tn.html","active":true},
-      {"city":"Jacksonville","state":"FL","file":"jacksonville-fl.html","active":true},
-      {"city":"Raleigh","state":"NC","file":"raleigh-nc.html","active":true},
-      {"city":"Richmond","state":"VA","file":"richmond-va.html","active":true},
-      {"city":"Virginia Beach","state":"VA","file":"virginia-beach-va.html","active":true},
-      {"city":"New Orleans","state":"LA","file":"new-orleans-la.html","active":true},
-      {"city":"Louisville","state":"KY","file":"louisville-ky.html","active":true},
-      {"city":"Memphis","state":"TN","file":"memphis-tn.html","active":true},
-      {"city":"Baltimore","state":"MD","file":"baltimore-md.html","active":true},
-      {"city":"Washington","state":"DC","file":"washington-dc.html","active":true},
-      {"city":"Savannah","state":"GA","file":"savannah-ga.html","active":true}
-    ]
-  },
-  {
-    "region": "Midwest",
-    "cities": [
-      {"city":"Chicago","state":"IL","file":"chicago-il.html","active":true},
-      {"city":"Detroit","state":"MI","file":"detroit-mi.html","active":true},
-      {"city":"Cleveland","state":"OH","file":"cleveland-oh.html","active":true},
-      {"city":"Columbus","state":"OH","file":"columbus-oh.html","active":true},
-      {"city":"Indianapolis","state":"IN","file":"indianapolis-in.html","active":true},
-      {"city":"Milwaukee","state":"WI","file":"milwaukee-wi.html","active":true},
-      {"city":"Minneapolis","state":"MN","file":"minneapolis-mn.html","active":true},
-      {"city":"St Louis","state":"MO","file":"st-louis-mo.html","active":true},
-      {"city":"Cincinnati","state":"OH","file":"cincinnati-oh.html","active":true},
-      {"city":"Kansas City","state":"MO","file":"kansas-city-mo.html","active":true},
-      {"city":"Omaha","state":"NE","file":"omaha-ne.html","active":true},
-      {"city":"Des Moines","state":"IA","file":"des-moines-ia.html","active":true},
-      {"city":"Madison","state":"WI","file":"madison-wi.html","active":true}
-    ]
-  },
-  {
-    "region": "Southwest & Texas",
-    "cities": [
-      {"city":"Austin","state":"TX","file":"austin-tx.html","active":true},
-      {"city":"Dallas","state":"TX","file":"dallas-tx.html","active":true},
-      {"city":"Houston","state":"TX","file":"houston-tx.html","active":true},
-      {"city":"Phoenix","state":"AZ","file":"phoenix-az.html","active":true},
-      {"city":"San Antonio","state":"TX","file":"san-antonio-tx.html","active":true},
-      {"city":"El Paso","state":"TX","file":"el-paso-tx.html","active":true},
-      {"city":"Albuquerque","state":"NM","file":"albuquerque-nm.html","active":true}
-    ]
-  },
-  {
-    "region": "West Coast & Pacific",
-    "cities": [
-      {"city":"San Francisco","state":"CA","file":"san-francisco-ca.html","active":true},
-      {"city":"Los Angeles","state":"CA","file":"los-angeles-ca.html","active":true},
-      {"city":"San Diego","state":"CA","file":"san-diego-ca.html","active":true},
-      {"city":"Seattle","state":"WA","file":"seattle-wa.html","active":true},
-      {"city":"Portland","state":"OR","file":"portland-or.html","active":true},
-      {"city":"Sacramento","state":"CA","file":"sacramento-ca.html","active":true}
-    ]
-  }
+{
+"region":"Northeast",
+"cities":[
+{"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
+{"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
+{"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":false},
+{"city":"Pittsburgh","state":"PA","file":"pittsburgh-pa.html","active":false}
+]
+},
+{
+"region":"Southeast",
+"cities":[
+{"city":"Miami","state":"FL","file":"miami-fl.html","active":true},
+{"city":"Atlanta","state":"GA","file":"atlanta-ga.html","active":false},
+{"city":"Charlotte","state":"NC","file":"charlotte-nc.html","active":false},
+{"city":"Orlando","state":"FL","file":"orlando-fl.html","active":false}
+]
+},
+{
+"region":"Midwest",
+"cities":[
+{"city":"Chicago","state":"IL","file":"chicago-il.html","active":false},
+{"city":"Detroit","state":"MI","file":"detroit-mi.html","active":false},
+{"city":"Cleveland","state":"OH","file":"cleveland-oh.html","active":false}
+]
+},
+{
+"region":"Southwest & Texas",
+"cities":[
+{"city":"Austin","state":"TX","file":"austin-tx.html","active":true},
+{"city":"Dallas","state":"TX","file":"dallas-tx.html","active":false},
+{"city":"Houston","state":"TX","file":"houston-tx.html","active":false}
+]
+},
+{
+"region":"West Coast & Pacific",
+"cities":[
+{"city":"San Francisco","state":"CA","file":"san-francisco-ca.html","active":true},
+{"city":"Los Angeles","state":"CA","file":"los-angeles-ca.html","active":false},
+{"city":"Seattle","state":"WA","file":"seattle-wa.html","active":false}
+]
+},
+{
+"region":"Mountain & Great Plains",
+"cities":[
+{"city":"Denver","state":"CO","file":"denver-co.html","active":false},
+{"city":"Salt Lake City","state":"UT","file":"salt-lake-city-ut.html","active":false},
+{"city":"Boise","state":"ID","file":"boise-id.html","active":false}
+]
+}
 ]
