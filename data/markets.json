@@ -1,0 +1,50 @@
+[
+  {
+    "region": "Northeast",
+    "cities": [
+      {"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
+      {"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
+      {"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":false}
+    ]
+  },
+
+  {
+    "region": "Southeast",
+    "cities": [
+      {"city":"Miami","state":"FL","file":"miami-fl.html","active":true},
+      {"city":"Atlanta","state":"GA","file":"atlanta-ga.html","active":true},
+      {"city":"Charlotte","state":"NC","file":"charlotte-nc.html","active":true},
+      {"city":"Orlando","state":"FL","file":"orlando-fl.html","active":true},
+      {"city":"Tampa","state":"FL","file":"tampa-fl.html","active":false}
+    ]
+  },
+
+  {
+    "region": "Midwest",
+    "cities": [
+      {"city":"Chicago","state":"IL","file":"chicago-il.html","active":false},
+      {"city":"Detroit","state":"MI","file":"detroit-mi.html","active":false},
+      {"city":"Columbus","state":"OH","file":"columbus-oh.html","active":false}
+    ]
+  },
+
+  {
+    "region": "Southwest & Texas",
+    "cities": [
+      {"city":"Austin","state":"TX","file":"austin-tx.html","active":true},
+      {"city":"Dallas","state":"TX","file":"dallas-tx.html","active":false},
+      {"city":"Houston","state":"TX","file":"houston-tx.html","active":false},
+      {"city":"Phoenix","state":"AZ","file":"phoenix-az.html","active":false}
+    ]
+  },
+
+  {
+    "region": "West Coast",
+    "cities": [
+      {"city":"San Francisco","state":"CA","file":"san-francisco-ca.html","active":true},
+      {"city":"Los Angeles","state":"CA","file":"los-angeles-ca.html","active":false},
+      {"city":"San Diego","state":"CA","file":"san-diego-ca.html","active":false},
+      {"city":"Seattle","state":"WA","file":"seattle-wa.html","active":false}
+    ]
+  }
+]
