@@ -85,12 +85,17 @@ details[open] .faq-icon{transform:rotate(45deg)}
 .loan-badge{display:inline-flex;align-items:center;background:linear-gradient(135deg,rgba(217,119,6,.18),rgba(245,158,11,.12));border:1px solid rgba(217,119,6,.3);border-radius:6px;padding:3px 10px;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#f59e0b;margin-bottom:.85rem}
 .timeline-dot{width:10px;height:10px;border-radius:50%;background:#d97706;flex-shrink:0;margin-top:5px}
 .timeline-line{width:1px;background:rgba(217,119,6,.25);flex-shrink:0;align-self:stretch;margin-left:4px}
-.reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
-.revealed{opacity:1;transform:translateY(0)}
+.reveal{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+.js-anim .reveal{opacity:0;transform:translateY(18px)}
+.revealed{opacity:1!important;transform:translateY(0)!important}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-.fade-up{animation:fadeUp .6s ease forwards;opacity:0}
+.js-anim .fade-up{animation:fadeUp .6s ease forwards;opacity:0}
 .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0f172a}::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:#d97706}
+/* AdSense: collapse wrapper when ad fails or is unfilled */
+.ad-slot-wrap{overflow:hidden;transition:max-height .3s ease,padding .3s ease}
+ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;height:0!important;min-height:0!important}
+.ad-slot-wrap:has(ins[data-ad-status="unfilled"]){padding:0!important;max-height:0!important}
 </style>
 </head>
 <body>
@@ -144,7 +149,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
 </header>
 
 <!-- ========== TOP AD (right after header) ========== -->
-<div style="background:#020617;padding:.6rem 1rem;">
+<div class="ad-slot-wrap" style="background:#020617;padding:.6rem 1rem;">
   <div class="max-w-7xl mx-auto">
     <!-- ADSENSE_TOP -->
     <ins class="adsbygoogle"
@@ -315,7 +320,7 @@ in Nashville</span>
 <div class="gold-divider"></div>
 
 <!-- ========== MIDDLE AD ========== -->
-<div style="background:#020617;padding:1.25rem 1rem;">
+<div class="ad-slot-wrap" style="background:#020617;padding:1.25rem 1rem;">
   <div class="max-w-7xl mx-auto">
     <!-- ADSENSE_MID -->
     <ins class="adsbygoogle"
@@ -429,7 +434,7 @@ in Nashville</span>
 </section>
 
 <!-- ========== BOTTOM AD (before </main>) ========== -->
-<div style="background:#020617;padding:1.25rem 1rem;">
+<div class="ad-slot-wrap" style="background:#020617;padding:1.25rem 1rem;">
   <div class="max-w-7xl mx-auto">
     <!-- ADSENSE_FOOTER -->
     <ins class="adsbygoogle"
@@ -507,7 +512,33 @@ in Nashville</span>
 document.getElementById('yr').textContent = new Date().getFullYear();
 var btn=document.getElementById('menu-btn'),nav=document.getElementById('mobile-menu'),io=document.getElementById('icon-open'),ic=document.getElementById('icon-close');
 btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',String(o));io.classList.toggle('hidden',o);ic.classList.toggle('hidden',!o)});
-if('IntersectionObserver' in window){var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');obs.unobserve(x.target)}})},({threshold:.08});document.querySelectorAll('.reveal').forEach(function(el){obs.observe(el)})}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('revealed')})}
+// Reveal animation — safe: start visible, hide only when JS is ready
+var allReveal=document.querySelectorAll('.reveal');
+document.body.classList.add('js-anim');
+function revealAll(){allReveal.forEach(function(el){el.classList.add('revealed')})}
+if('IntersectionObserver' in window){
+  var obs=new IntersectionObserver(function(e){e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('revealed');obs.unobserve(x.target)}})},{threshold:.05,rootMargin:'0px 0px -40px 0px'});
+  allReveal.forEach(function(el){obs.observe(el)});
+  // Safety net: reveal everything after 1.2s in case observer misses
+  setTimeout(revealAll,1200);
+}else{revealAll();}
+// Collapse ad wrappers when AdSense slot is unfilled or errors
+(function(){
+  function collapseEmptyAds(){
+    document.querySelectorAll('.ad-slot-wrap').forEach(function(wrap){
+      var ins=wrap.querySelector('ins.adsbygoogle');
+      if(!ins) return;
+      var st=ins.getAttribute('data-ad-status');
+      if(st==='unfilled'||st==='error'||ins.offsetHeight===0){
+        wrap.style.cssText='padding:0!important;max-height:0!important;overflow:hidden!important;';
+      }
+    });
+  }
+  // Check at intervals since AdSense loads async
+  setTimeout(collapseEmptyAds,2000);
+  setTimeout(collapseEmptyAds,4000);
+  setTimeout(collapseEmptyAds,7000);
+})();
 </script>
 </body>
 </html>
