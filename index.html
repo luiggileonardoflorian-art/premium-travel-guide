@@ -1479,18 +1479,41 @@ document.querySelector("#markets-container").appendChild(regionSection);
 <script>
 async function loadMarkets() {
 
-  const response = await fetch('/data/markets.json');
+  const response = await fetch('./data/markets.json');
   const data = await response.json();
 
-  const regions = {};
+  data.forEach(region => {
 
-  data.forEach(city => {
+  const regionId = "region-" + region.region.toLowerCase().replace(/ /g,"-");
+  const regionContainer = document.querySelector(`#${regionId} .city-link-grid`);
 
-    if(!regions[city.region]){
-      regions[city.region] = [];
+  if(!regionContainer) return;
+
+  region.cities.forEach(city => {
+
+    const link = document.createElement("a");
+
+    if(city.active){
+
+      link.href = `/refinance/${city.file}`;
+      link.className = "city-link";
+      link.innerHTML = `<span class="city-link-dot"></span>${city.city}, ${city.state}`;
+
+    } else {
+
+      link.href = "#";
+      link.className = "city-link";
+      link.style.opacity = ".55";
+      link.style.pointerEvents = "none";
+      link.innerText = `${city.city}, ${city.state}`;
+
     }
 
-    regions[city.region].push(city);
+    regionContainer.appendChild(link);
+
+  });
+
+});
 
   });
 
