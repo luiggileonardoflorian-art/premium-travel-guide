@@ -1484,7 +1484,7 @@ async function loadMarkets() {
 
   data.forEach(region => {
 
-  const regionId = "region-" + region.region.toLowerCase().replace(/ /g,"-");
+  const regionId = "region-" + region.region.toLowerCase().replace(/[^a-z0-9]/g,"-");
   const regionContainer = document.querySelector(`#${regionId} .city-link-grid`);
 
   if(!regionContainer) return;
