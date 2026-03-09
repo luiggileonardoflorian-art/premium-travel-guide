@@ -1,64 +1,62 @@
 [
   {
-    "id": "new-york",
-    "name": "New York",
-    "country": "USA",
-    "description": "The city that never sleeps, offering world-class dining, iconic landmarks, and vibrant culture.",
-    "keywords": ["luxury hotels NYC", "things to do in Manhattan", "5-star hotels New York"],
-    "attractions": [
-      "Statue of Liberty",
-      "Empire State Building",
-      "Central Park",
-      "Metropolitan Museum of Art",
-      "Times Square"
-    ],
-    "neighborhoods": [
-      "Manhattan",
-      "Brooklyn",
-      "Queens",
-      "The Bronx",
-      "Staten Island"
-    ],
-    "luxuryHotels": [
-      "The Plaza",
-      "Four Seasons New York",
-      "The Ritz-Carlton Central Park",
-      "The St. Regis New York",
-      "Baccarat Hotel"
-    ],
-    "bestTime": "April to June, September to November",
-    "currency": "USD",
-    "language": "English"
+    "region": "northeast",
+    "cities": [
+      {"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
+      {"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
+      {"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":false},
+      {"city":"Pittsburgh","state":"PA","file":"pittsburgh-pa.html","active":false},
+      {"city":"Providence","state":"RI","file":"providence-ri.html","active":false},
+      {"city":"Hartford","state":"CT","file":"hartford-ct.html","active":false},
+      {"city":"Albany","state":"NY","file":"albany-ny.html","active":false},
+      {"city":"Buffalo","state":"NY","file":"buffalo-ny.html","active":false},
+      {"city":"Newark","state":"NJ","file":"newark-nj.html","active":false},
+      {"city":"Jersey City","state":"NJ","file":"jersey-city-nj.html","active":false},
+      {"city":"Stamford","state":"CT","file":"stamford-ct.html","active":false},
+      {"city":"Portland","state":"ME","file":"portland-me.html","active":false},
+      {"city":"Burlington","state":"VT","file":"burlington-vt.html","active":false},
+      {"city":"Manchester","state":"NH","file":"manchester-nh.html","active":false}
+    ]
   },
+
   {
-    "id": "paris",
-    "name": "Paris",
-    "country": "France",
-    "description": "The City of Light, renowned for its art, fashion, gastronomy, and romantic ambiance.",
-    "keywords": ["luxury hotels Paris", "Eiffel Tower", "French cuisine", "Champs-Élysées"],
-    "attractions": [
-      "Eiffel Tower",
-      "Louvre Museum",
-      "Notre-Dame Cathedral",
-      "Montmartre",
-      "Palace of Versailles"
-    ],
-    "neighborhoods": [
-      "Le Marais",
-      "Saint-Germain-des-Prés",
-      "Montmartre",
-      "Latin Quarter",
-      "Champs-Élysées"
-    ],
-    "luxuryHotels": [
-      "The Ritz Paris",
-      "Four Seasons George V",
-      "Le Meurice",
-      "Shangri-La Hotel Paris",
-      "Plaza Athénée"
-    ],
-    "bestTime": "April to June, September to October",
-    "currency": "EUR",
-    "language": "French"
+    "region": "southeast",
+    "cities": [
+      {"city":"Miami","state":"FL","file":"miami-fl.html","active":true},
+      {"city":"Atlanta","state":"GA","file":"atlanta-ga.html","active":true},
+      {"city":"Charlotte","state":"NC","file":"charlotte-nc.html","active":true},
+      {"city":"Orlando","state":"FL","file":"orlando-fl.html","active":true},
+      {"city":"Tampa","state":"FL","file":"tampa-fl.html","active":false},
+      {"city":"Nashville","state":"TN","file":"nashville-tn.html","active":false},
+      {"city":"Jacksonville","state":"FL","file":"jacksonville-fl.html","active":false},
+      {"city":"Raleigh","state":"NC","file":"raleigh-nc.html","active":false},
+      {"city":"Richmond","state":"VA","file":"richmond-va.html","active":false},
+      {"city":"Virginia Beach","state":"VA","file":"virginia-beach-va.html","active":false},
+      {"city":"New Orleans","state":"LA","file":"new-orleans-la.html","active":false},
+      {"city":"Louisville","state":"KY","file":"louisville-ky.html","active":false},
+      {"city":"Memphis","state":"TN","file":"memphis-tn.html","active":false},
+      {"city":"Baltimore","state":"MD","file":"baltimore-md.html","active":false},
+      {"city":"Washington","state":"DC","file":"washington-dc.html","active":false},
+      {"city":"Savannah","state":"GA","file":"savannah-ga.html","active":false}
+    ]
+  },
+
+  {
+    "region": "midwest",
+    "cities": [
+      {"city":"Chicago","state":"IL","file":"chicago-il.html","active":false},
+      {"city":"Detroit","state":"MI","file":"detroit-mi.html","active":false},
+      {"city":"Cleveland","state":"OH","file":"cleveland-oh.html","active":false},
+      {"city":"Columbus","state":"OH","file":"columbus-oh.html","active":false},
+      {"city":"Indianapolis","state":"IN","file":"indianapolis-in.html","active":false},
+      {"city":"Milwaukee","state":"WI","file":"milwaukee-wi.html","active":false},
+      {"city":"Minneapolis","state":"MN","file":"minneapolis-mn.html","active":false},
+      {"city":"St Louis","state":"MO","file":"st-louis-mo.html","active":false},
+      {"city":"Cincinnati","state":"OH","file":"cincinnati-oh.html","active":false},
+      {"city":"Kansas City","state":"MO","file":"kansas-city-mo.html","active":false},
+      {"city":"Omaha","state":"NE","file":"omaha-ne.html","active":false},
+      {"city":"Des Moines","state":"IA","file":"des-moines-ia.html","active":false},
+      {"city":"Madison","state":"WI","file":"madison-wi.html","active":false}
+    ]
   }
 ]
