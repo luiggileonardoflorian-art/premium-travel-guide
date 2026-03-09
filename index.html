@@ -64,6 +64,14 @@
           "@type": "Answer",
           "text": "Refinancing replaces your existing mortgage with a new one, typically to secure a lower interest rate, reduce monthly payments, or access home equity. Use our refinance savings calculator to estimate your break-even point."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a jumbo loan?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A jumbo loan is a mortgage that exceeds the conforming loan limits set by Fannie Mae and Freddie Mac. They are common in high-cost markets like NYC, San Francisco, and Miami, and often require stronger credit and larger down payments."
+        }
       }
     ]
   }
@@ -171,7 +179,7 @@
 
     /* City accordion styles */
     .city-region{border:1px solid rgba(71,85,105,.28);border-radius:12px;margin-bottom:.6rem;overflow:hidden}
-    .city-region-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer;background:rgba(15,23,42,.6);transition:background .2s}
+    .city-region-header{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.25rem;cursor:pointer;background:rgba(15,23,42,.6);transition:background .2s;width:100%;border:none;text-align:left;font-family:inherit;font-size:inherit;color:inherit;}
     .city-region-header:hover{background:rgba(30,41,59,.7)}
     .city-region-title{font-weight:600;font-size:.9rem;color:#e2e8f0;display:flex;align-items:center;gap:.6rem}
     .city-region-count{font-size:.7rem;color:#64748b;font-weight:400}
@@ -200,22 +208,119 @@
     .mkt-nav-pill{display:inline-flex;align-items:center;gap:.45rem;background:rgba(30,41,59,.6);border:1px solid rgba(71,85,105,.3);border-radius:10px;padding:.65rem 1.1rem;font-size:.82rem;font-weight:600;color:#94a3b8;text-decoration:none;transition:all .2s}
     .mkt-nav-pill:hover{background:rgba(217,119,6,.1);border-color:rgba(217,119,6,.4);color:#f59e0b;transform:translateY(-2px)}
     .mkt-nav-pill svg{flex-shrink:0}
+
+    /* ===== NEW STYLES FOR MISSING COMPONENTS ===== */
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: rgba(15,23,42,.6);
+      border: 1px solid rgba(71,85,105,.3);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .data-table th, .data-table td {
+      padding: 0.75rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(71,85,105,.2);
+    }
+    .data-table th {
+      background: rgba(217,119,6,.1);
+      color: #f59e0b;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .loan-badge {
+      display: inline-block;
+      background: rgba(217,119,6,.1);
+      border: 1px solid rgba(217,119,6,.2);
+      border-radius: 20px;
+      padding: 4px 12px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: #f59e0b;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    .bio-card {
+      background: rgba(15,23,42,.7);
+      border: 1px solid rgba(71,85,105,.28);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      backdrop-filter: blur(10px);
+    }
+    .bio-card img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: #334155;
+      object-fit: cover;
+      border: 2px solid rgba(217,119,6,.3);
+    }
+    .bio-card h4 {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-bottom: 0.2rem;
+    }
+    .bio-card p {
+      color: #94a3b8;
+      font-size: 0.85rem;
+      line-height: 1.6;
+    }
+    .timeline-dots {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .timeline-dot {
+      width: 10px;
+      height: 10px;
+      background: #334155;
+      border-radius: 50%;
+      transition: background 0.2s;
+    }
+    .timeline-dot.active {
+      background: #f59e0b;
+      box-shadow: 0 0 0 3px rgba(217,119,6,.2);
+    }
+    .pull-quote {
+      background: rgba(217,119,6,.05);
+      border-left: 4px solid #f59e0b;
+      padding: 1.5rem 2rem;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-style: italic;
+      color: #e2e8f0;
+      margin: 2rem 0;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #94a3b8;
+      font-style: normal;
+    }
   </style>
 </head>
 <body>
 
-<!-- ═══ NAV — usando rutas absolutas ═══ -->
+<!-- ═══ NAV — usando rutas relativas ═══ -->
 <header style="background:rgba(2,6,23,.96);border-bottom:1px solid rgba(71,85,105,.28);backdrop-filter:blur(14px);" class="sticky top-0 z-50">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
-      <a href="/index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
+      <a href="../index.html" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
         <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
           <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg>
         </div>
         <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
       </a>
       <nav class="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
-        <a href="/index.html"                       class="nav-link text-sm font-medium" style="color:#f59e0b;">Home</a>
+        <a href="../index.html"                       class="nav-link text-sm font-medium" style="color:#f59e0b;">Home</a>
         <a href="/refinance/new-york-ny.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">New York</a>
         <a href="/refinance/miami-fl.html"          class="nav-link text-sm font-medium" style="color:#94a3b8;">Miami</a>
         <a href="/refinance/austin-tx.html"         class="nav-link text-sm font-medium" style="color:#94a3b8;">Austin</a>
@@ -232,7 +337,7 @@
     <!-- Menú móvil: inicialmente oculto por CSS, se muestra con clase 'open' -->
     <nav id="mobile-menu" style="border-top:1px solid rgba(71,85,105,.28);" class="py-3 pb-4">
       <div class="flex flex-col gap-1">
-        <a href="/index.html"                      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#f59e0b;background:rgba(217,119,6,.08);">Home</a>
+        <a href="../index.html"                      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#f59e0b;background:rgba(217,119,6,.08);">Home</a>
         <a href="/refinance/new-york-ny.html"      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">New York</a>
         <a href="/refinance/miami-fl.html"         class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Miami</a>
         <a href="/refinance/austin-tx.html"        class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Austin</a>
@@ -417,6 +522,107 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== NUEVAS SECCIONES DEL BLUEPRINT ===== -->
+
+<!-- Pull-quote -->
+<section class="reveal" style="background:#020617; padding: 2rem 0;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="pull-quote">
+      “The most expensive mortgage is the one you sign without understanding the local market nuances. Our city-level intelligence ensures you never overpay.”
+      <cite>— Luiggi V., Senior Mortgage Analyst</cite>
+    </div>
+  </div>
+</section>
+
+<!-- Bio card (Luiggi) -->
+<section class="reveal" style="background:#0f172a; padding: 2rem 0;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bio-card">
+      <img src="https://via.placeholder.com/70x70/334155/d97706?text=LV" alt="Luiggi">
+      <div>
+        <h4>Luiggi V.</h4>
+        <p style="color:#f59e0b; font-size:0.8rem; margin-bottom:0.5rem;">Senior Mortgage Analyst</p>
+        <p>With over 15 years of experience in capital markets and residential lending, Luiggi leads our research team in dissecting complex loan structures across all 50 states. His analyses have helped high‑net‑worth borrowers save an average of $124,000 per transaction.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Loan badges & Timeline dots -->
+<section class="reveal" style="background:#020617; padding: 3rem 0;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-2 gap-8">
+      <div>
+        <h3 style="color:#fff; margin-bottom:1rem;">Loan Types at a Glance</h3>
+        <div>
+          <span class="loan-badge">Fixed-Rate 30yr</span>
+          <span class="loan-badge">Fixed-Rate 15yr</span>
+          <span class="loan-badge">5/1 ARM</span>
+          <span class="loan-badge">7/1 ARM</span>
+          <span class="loan-badge">10/1 ARM</span>
+          <span class="loan-badge">Jumbo 30yr</span>
+          <span class="loan-badge">Jumbo ARM</span>
+          <span class="loan-badge">FHA 203(k)</span>
+          <span class="loan-badge">VA Loan</span>
+          <span class="loan-badge">USDA Loan</span>
+        </div>
+      </div>
+      <div>
+        <h3 style="color:#fff; margin-bottom:1rem;">Your Loan Timeline</h3>
+        <div class="timeline-dots">
+          <span class="timeline-dot active"></span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-dot"></span>
+          <span class="timeline-dot"></span>
+        </div>
+        <p style="color:#94a3b8; margin-top:0.5rem;">Step 1: Pre‑approval • Step 2: House Hunting • Step 3: Offer • Step 4: Underwriting • Step 5: Closing</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section (#faq) con 4 preguntas y microdatos Schema -->
+<section id="faq" aria-labelledby="faq-heading" style="background:#0f172a; padding: 5rem 0;">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="max-w-2xl mb-12 reveal">
+      <span class="amber-rule"></span>
+      <h2 id="faq-heading" style="font-size:clamp(1.9rem,3.8vw,2.9rem);font-weight:700;color:#fff;margin-bottom:.75rem;">Frequently Asked Questions</h2>
+      <p style="color:#64748b;font-size:.9rem;line-height:1.8;">Clear answers to the most common questions about mortgages, refinancing, and loan strategy.</p>
+    </div>
+    <div class="grid gap-4 md:grid-cols-2 reveal" itemscope itemtype="https://schema.org/FAQPage">
+      <!-- Pregunta 1 -->
+      <details class="faq-block" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="background:rgba(15,23,42,.8); border:1px solid rgba(71,85,105,.3); border-radius:12px; padding:1.5rem;">
+        <summary itemprop="name" style="color:#f59e0b; font-size:1.1rem; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">What is a mortgage payment calculator? <span style="color:#f59e0b;font-size:1.2rem;">＋</span></summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p itemprop="text" style="color:#94a3b8; margin-top:0.75rem;">A mortgage payment calculator estimates your monthly principal and interest payment based on loan amount, interest rate, and term. Use our free calculator above to model different scenarios.</p>
+        </div>
+      </details>
+      <!-- Pregunta 2 -->
+      <details class="faq-block" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="background:rgba(15,23,42,.8); border:1px solid rgba(71,85,105,.3); border-radius:12px; padding:1.5rem;">
+        <summary itemprop="name" style="color:#f59e0b; font-size:1.1rem; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">How do I compare mortgage rates across cities? <span style="color:#f59e0b;font-size:1.2rem;">＋</span></summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p itemprop="text" style="color:#94a3b8; margin-top:0.75rem;">Local market conditions, property tax rates, and state income taxes all affect the true cost of a mortgage. Loan Compare Hub provides city-specific mortgage and loan intelligence for 100+ U.S. markets.</p>
+        </div>
+      </details>
+      <!-- Pregunta 3 -->
+      <details class="faq-block" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="background:rgba(15,23,42,.8); border:1px solid rgba(71,85,105,.3); border-radius:12px; padding:1.5rem;">
+        <summary itemprop="name" style="color:#f59e0b; font-size:1.1rem; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">What is refinancing a mortgage? <span style="color:#f59e0b;font-size:1.2rem;">＋</span></summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p itemprop="text" style="color:#94a3b8; margin-top:0.75rem;">Refinancing replaces your existing mortgage with a new one, typically to secure a lower interest rate, reduce monthly payments, or access home equity. Use our refinance savings calculator to estimate your break-even point.</p>
+        </div>
+      </details>
+      <!-- Pregunta 4 -->
+      <details class="faq-block" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question" style="background:rgba(15,23,42,.8); border:1px solid rgba(71,85,105,.3); border-radius:12px; padding:1.5rem;">
+        <summary itemprop="name" style="color:#f59e0b; font-size:1.1rem; font-weight:600; cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;">What is a jumbo loan? <span style="color:#f59e0b;font-size:1.2rem;">＋</span></summary>
+        <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+          <p itemprop="text" style="color:#94a3b8; margin-top:0.75rem;">A jumbo loan is a mortgage that exceeds the conforming loan limits set by Fannie Mae and Freddie Mac. They are common in high-cost markets like NYC, San Francisco, and Miami, and often require stronger credit and larger down payments.</p>
+        </div>
+      </details>
     </div>
   </div>
 </section>
@@ -810,14 +1016,14 @@
 
     <!-- Northeast Accordion -->
     <div class="city-region reveal" id="region-northeast">
-      <div class="city-region-header" onclick="toggleRegion('region-northeast')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-northeast')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           Northeast
           <span class="city-region-count">14 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
          
@@ -828,14 +1034,14 @@
 
     <!-- Southeast Accordion -->
     <div class="city-region reveal" id="region-southeast">
-      <div class="city-region-header" onclick="toggleRegion('region-southeast')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-southeast')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           Southeast
           <span class="city-region-count">16 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
  
@@ -846,14 +1052,14 @@
 
     <!-- Midwest Accordion -->
     <div class="city-region reveal" id="region-midwest">
-      <div class="city-region-header" onclick="toggleRegion('region-midwest')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-midwest')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           Midwest
           <span class="city-region-count">13 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
   
@@ -864,14 +1070,14 @@
 
     <!-- Southwest Accordion -->
     <div class="city-region reveal" id="region-southwest">
-      <div class="city-region-header" onclick="toggleRegion('region-southwest')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-southwest')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           Southwest &amp; Texas
           <span class="city-region-count">12 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
 
@@ -882,14 +1088,14 @@
 
     <!-- West Coast Accordion -->
     <div class="city-region reveal" id="region-west">
-      <div class="city-region-header" onclick="toggleRegion('region-west')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-west')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           West Coast &amp; Pacific
           <span class="city-region-count">18 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
 
@@ -900,14 +1106,14 @@
 
     <!-- Mountain &amp; Great Plains Accordion -->
     <div class="city-region reveal" id="region-mountain">
-      <div class="city-region-header" onclick="toggleRegion('region-mountain')" role="button" aria-expanded="false">
+      <button class="city-region-header" onclick="toggleRegion('region-mountain')" aria-expanded="false" type="button">
         <span class="city-region-title">
           <svg style="width:16px;height:16px;color:#d97706;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"/></svg>
           Mountain &amp; Great Plains
           <span class="city-region-count">10 markets</span>
         </span>
         <svg class="city-region-chevron" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5"/></svg>
-      </div>
+      </button>
       <div class="city-region-body">
         <div class="city-link-grid">
 
@@ -1078,7 +1284,7 @@
 
 </main>
 
-<!-- ═══ ADSENSE_BOTTOM (comentado) ═══ -->
+<!-- ═══ ADSENSE_FOOTER (comentado) ═══ -->
 <!-- <div style="background:#020617;padding:1.25rem 1rem;">
   <div class="max-w-7xl mx-auto">
     <ins class="adsbygoogle"
@@ -1091,12 +1297,12 @@
   </div>
 </div> -->
 
-<!-- FOOTER (rutas absolutas y disclaimer exacto) -->
+<!-- FOOTER (rutas relativas y disclaimer exacto) -->
 <footer style="background:#020617;border-top:1px solid rgba(71,85,105,.22);">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
     <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
       <div class="sm:col-span-2 lg:col-span-2">
-        <a href="/index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
+        <a href="../index.html" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
           <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg style="width:14px;height:14px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
           <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
         </a>
@@ -1115,7 +1321,7 @@
       <div>
         <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Resources</h4>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/index.html"                      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Home</a></li>
+          <li><span style="color:#f59e0b; margin-right:0.3rem;">←</span><a href="../index.html" style="color:#f59e0b; font-size:.875rem; text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#f59e0b'">Home</a></li>
           <li><a href="#calculators"                    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Calculators</a></li>
           <li><a href="#guides"                         style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Financial Guides</a></li>
           <li><a href="#featured-market"                style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Featured Market</a></li>
@@ -1125,8 +1331,8 @@
       <div>
         <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/privacy-policy.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
-          <li><a href="/terms.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
+          <li><a href="../privacy.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
+          <li><a href="../terms.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
         </ul>
       </div>
     </div>
@@ -1413,147 +1619,151 @@ function toggleRegion(id) {
 </section>
   
 <footer style="margin-top:40px;font-size:14px;color:#aaa;text-align:center">
-<a href="/privacy-policy.html">Privacy Policy</a> |
-<a href="/terms.html">Terms</a> |
+<a href="../privacy.html">Privacy Policy</a> |
+<a href="../terms.html">Terms</a> |
 <a href="/contact.html">Contact</a>
 </footer>
   <script>
+    // ─── Region name → HTML element ID mapping ───────────────────────────────
+    const REGION_ID_MAP = {
+      "Northeast":               "region-northeast",
+      "Southeast":               "region-southeast",
+      "Midwest":                 "region-midwest",
+      "Southwest & Texas":       "region-southwest",
+      "West Coast & Pacific":    "region-west",
+      "Mountain & Great Plains": "region-mountain"
+    };
 
-fetch('/data/markets.json')
-.then(res => res.json())
-.then(regions => {
+    // ─── Inline fallback data (used when /data/markets.json cannot be fetched) ─
+    // To update active flags: change them here AND in /data/markets.json
+    const MARKETS_FALLBACK = [
+      { "region": "Northeast", "cities": [
+        {"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
+        {"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
+        {"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":true},
+        {"city":"Pittsburgh","state":"PA","file":"pittsburgh-pa.html","active":true},
+        {"city":"Providence","state":"RI","file":"providence-ri.html","active":true},
+        {"city":"Hartford","state":"CT","file":"hartford-ct.html","active":true},
+        {"city":"Albany","state":"NY","file":"albany-ny.html","active":true},
+        {"city":"Buffalo","state":"NY","file":"buffalo-ny.html","active":true},
+        {"city":"Newark","state":"NJ","file":"newark-nj.html","active":true},
+        {"city":"Jersey City","state":"NJ","file":"jersey-city-nj.html","active":true},
+        {"city":"Stamford","state":"CT","file":"stamford-ct.html","active":true},
+        {"city":"Portland","state":"ME","file":"portland-me.html","active":true},
+        {"city":"Burlington","state":"VT","file":"burlington-vt.html","active":true},
+        {"city":"Manchester","state":"NH","file":"manchester-nh.html","active":true}
+      ]},
+      { "region": "Southeast", "cities": [
+        {"city":"Miami","state":"FL","file":"miami-fl.html","active":true},
+        {"city":"Atlanta","state":"GA","file":"atlanta-ga.html","active":true},
+        {"city":"Charlotte","state":"NC","file":"charlotte-nc.html","active":true},
+        {"city":"Orlando","state":"FL","file":"orlando-fl.html","active":true},
+        {"city":"Tampa","state":"FL","file":"tampa-fl.html","active":true},
+        {"city":"Nashville","state":"TN","file":"nashville-tn.html","active":true},
+        {"city":"Jacksonville","state":"FL","file":"jacksonville-fl.html","active":true},
+        {"city":"Raleigh","state":"NC","file":"raleigh-nc.html","active":true},
+        {"city":"Richmond","state":"VA","file":"richmond-va.html","active":true},
+        {"city":"Virginia Beach","state":"VA","file":"virginia-beach-va.html","active":true},
+        {"city":"New Orleans","state":"LA","file":"new-orleans-la.html","active":true},
+        {"city":"Louisville","state":"KY","file":"louisville-ky.html","active":true},
+        {"city":"Memphis","state":"TN","file":"memphis-tn.html","active":true},
+        {"city":"Baltimore","state":"MD","file":"baltimore-md.html","active":true},
+        {"city":"Washington","state":"DC","file":"washington-dc.html","active":true},
+        {"city":"Savannah","state":"GA","file":"savannah-ga.html","active":true}
+      ]},
+      { "region": "Midwest", "cities": [
+        {"city":"Chicago","state":"IL","file":"chicago-il.html","active":true},
+        {"city":"Detroit","state":"MI","file":"detroit-mi.html","active":true},
+        {"city":"Cleveland","state":"OH","file":"cleveland-oh.html","active":true},
+        {"city":"Columbus","state":"OH","file":"columbus-oh.html","active":true},
+        {"city":"Indianapolis","state":"IN","file":"indianapolis-in.html","active":true},
+        {"city":"Milwaukee","state":"WI","file":"milwaukee-wi.html","active":true},
+        {"city":"Minneapolis","state":"MN","file":"minneapolis-mn.html","active":true},
+        {"city":"St Louis","state":"MO","file":"st-louis-mo.html","active":true},
+        {"city":"Cincinnati","state":"OH","file":"cincinnati-oh.html","active":true},
+        {"city":"Kansas City","state":"MO","file":"kansas-city-mo.html","active":true},
+        {"city":"Omaha","state":"NE","file":"omaha-ne.html","active":true},
+        {"city":"Des Moines","state":"IA","file":"des-moines-ia.html","active":true},
+        {"city":"Madison","state":"WI","file":"madison-wi.html","active":true}
+      ]},
+      { "region": "Southwest & Texas", "cities": [
+        {"city":"Austin","state":"TX","file":"austin-tx.html","active":true},
+        {"city":"Dallas","state":"TX","file":"dallas-tx.html","active":true},
+        {"city":"Houston","state":"TX","file":"houston-tx.html","active":true},
+        {"city":"Phoenix","state":"AZ","file":"phoenix-az.html","active":true},
+        {"city":"San Antonio","state":"TX","file":"san-antonio-tx.html","active":true},
+        {"city":"El Paso","state":"TX","file":"el-paso-tx.html","active":true},
+        {"city":"Albuquerque","state":"NM","file":"albuquerque-nm.html","active":true}
+      ]},
+      { "region": "West Coast & Pacific", "cities": [
+        {"city":"San Francisco","state":"CA","file":"san-francisco-ca.html","active":true},
+        {"city":"Los Angeles","state":"CA","file":"los-angeles-ca.html","active":true},
+        {"city":"San Diego","state":"CA","file":"san-diego-ca.html","active":true},
+        {"city":"Seattle","state":"WA","file":"seattle-wa.html","active":true},
+        {"city":"Portland","state":"OR","file":"portland-or.html","active":true},
+        {"city":"Sacramento","state":"CA","file":"sacramento-ca.html","active":true}
+      ]},
+      { "region": "Mountain & Great Plains", "cities": [
+        {"city":"Denver","state":"CO","file":"denver-co.html","active":false},
+        {"city":"Las Vegas","state":"NV","file":"las-vegas-nv.html","active":false},
+        {"city":"Salt Lake City","state":"UT","file":"salt-lake-city-ut.html","active":false},
+        {"city":"Boise","state":"ID","file":"boise-id.html","active":false},
+        {"city":"Colorado Springs","state":"CO","file":"colorado-springs-co.html","active":false},
+        {"city":"Tucson","state":"AZ","file":"tucson-az.html","active":false},
+        {"city":"Reno","state":"NV","file":"reno-nv.html","active":false},
+        {"city":"Billings","state":"MT","file":"billings-mt.html","active":false},
+        {"city":"Cheyenne","state":"WY","file":"cheyenne-wy.html","active":false},
+        {"city":"Omaha","state":"NE","file":"omaha-ne.html","active":false}
+      ]}
+    ];
 
-regions.forEach(region => {
+    // ─── Render cities into each region's .city-link-grid ────────────────────
+    function renderMarkets(data) {
+      data.forEach(function(region) {
+        var elementId = REGION_ID_MAP[region.region];
+        if (!elementId) return;
 
-const regionSection = document.createElement("div");
+        var grid = document.querySelector('#' + elementId + ' .city-link-grid');
+        if (!grid) return;
 
-const title = document.createElement("h3");
-title.textContent = region.region;
+        grid.innerHTML = '';
 
-const grid = document.createElement("div");
-grid.className = "city-link-grid";
-
-region.cities.forEach(city => {
-
-const link = document.createElement("a");
-link.className = "city-link";
-
-const url = "/refinance/" + city.file;
-
-fetch(url,{method:'HEAD'})
-.then(response => {
-
-if(response.ok){
-
-link.href = url;
-
-link.innerHTML =
-'<span class="city-link-dot"></span>' +
-city.city + ", " + city.state;
-
-}else{
-
-link.href = "#";
-link.style.opacity=".55";
-link.style.pointerEvents="none";
-link.textContent = city.city + ", " + city.state;
-
-}
-
-grid.appendChild(link);
-
-});
-
-});
-
-regionSection.appendChild(title);
-regionSection.appendChild(grid);
-
-document.querySelector("#markets-container").appendChild(regionSection);
-
-});
-
-});
-
-</script>
-<script>
-async function loadMarkets() {
-
-  const response = await fetch('./data/markets.json');
-  const data = await response.json();
-
-  data.forEach(region => {
-
-  const regionId = "region-" + region.region.toLowerCase().replace(/[^a-z0-9]/g,"-");
-  const regionContainer = document.querySelector(`#${regionId} .city-link-grid`);
-
-  if(!regionContainer) return;
-
-  region.cities.forEach(city => {
-
-    const link = document.createElement("a");
-
-    if(city.active){
-
-      link.href = `/refinance/${city.file}`;
-      link.className = "city-link";
-      link.innerHTML = `<span class="city-link-dot"></span>${city.city}, ${city.state}`;
-
-    } else {
-
-      link.href = "#";
-      link.className = "city-link";
-      link.style.opacity = ".55";
-      link.style.pointerEvents = "none";
-      link.innerText = `${city.city}, ${city.state}`;
-
+        region.cities.forEach(function(city) {
+          var link = document.createElement('a');
+          link.className = 'city-link';
+          if (city.active) {
+            link.href = '/refinance/' + city.file;
+            link.innerHTML = '<span class="city-link-dot"></span>' + city.city + ', ' + city.state;
+          } else {
+            link.href = '#';
+            link.style.opacity = '.55';
+            link.style.pointerEvents = 'none';
+            link.setAttribute('aria-disabled', 'true');
+            link.textContent = city.city + ', ' + city.state;
+          }
+          grid.appendChild(link);
+        });
+      });
     }
 
-    regionContainer.appendChild(link);
+    // ─── Main loader: fetch /data/markets.json, fall back to JS const ─────────
+    function loadMarkets() {
+      fetch('/data/markets.json')
+        .then(function(res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.json();
+        })
+        .then(function(data) {
+          renderMarkets(data);
+        })
+        .catch(function() {
+          // fetch failed (404, file://, CORS, etc.) — use the inline JS fallback
+          renderMarkets(MARKETS_FALLBACK);
+        });
+    }
 
-  });
+    loadMarkets();
+  </script>
 
-});
-
-  });
-
-  Object.keys(regions).forEach(region => {
-
-    const regionId = "region-" + region.toLowerCase().replace(/ /g,"-");
-    const regionContainer = document.querySelector(`#${regionId} .city-link-grid`);
-
-    if(!regionContainer) return;
-
-    regions[region].forEach(city => {
-
-      const link = document.createElement("a");
-
-      if(city.active){
-
-        link.href = `/refinance/${city.file}`;
-        link.className = "city-link";
-        link.innerHTML = `<span class="city-link-dot"></span>${city.city}, ${city.state}`;
-
-      } else {
-
-        link.href = "#";
-        link.className = "city-link";
-        link.style.opacity = ".55";
-        link.style.pointerEvents = "none";
-        link.innerText = `${city.city}, ${city.state}`;
-
-      }
-
-      regionContainer.appendChild(link);
-
-    });
-
-  });
-
-}
-
-loadMarkets();
-</script>
-  
 </body>
 </html>
