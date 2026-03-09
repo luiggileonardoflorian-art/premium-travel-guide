@@ -1,0 +1,64 @@
+[
+  {
+    "id": "new-york",
+    "name": "New York",
+    "country": "USA",
+    "description": "The city that never sleeps, offering world-class dining, iconic landmarks, and vibrant culture.",
+    "keywords": ["luxury hotels NYC", "things to do in Manhattan", "5-star hotels New York"],
+    "attractions": [
+      "Statue of Liberty",
+      "Empire State Building",
+      "Central Park",
+      "Metropolitan Museum of Art",
+      "Times Square"
+    ],
+    "neighborhoods": [
+      "Manhattan",
+      "Brooklyn",
+      "Queens",
+      "The Bronx",
+      "Staten Island"
+    ],
+    "luxuryHotels": [
+      "The Plaza",
+      "Four Seasons New York",
+      "The Ritz-Carlton Central Park",
+      "The St. Regis New York",
+      "Baccarat Hotel"
+    ],
+    "bestTime": "April to June, September to November",
+    "currency": "USD",
+    "language": "English"
+  },
+  {
+    "id": "paris",
+    "name": "Paris",
+    "country": "France",
+    "description": "The City of Light, renowned for its art, fashion, gastronomy, and romantic ambiance.",
+    "keywords": ["luxury hotels Paris", "Eiffel Tower", "French cuisine", "Champs-Élysées"],
+    "attractions": [
+      "Eiffel Tower",
+      "Louvre Museum",
+      "Notre-Dame Cathedral",
+      "Montmartre",
+      "Palace of Versailles"
+    ],
+    "neighborhoods": [
+      "Le Marais",
+      "Saint-Germain-des-Prés",
+      "Montmartre",
+      "Latin Quarter",
+      "Champs-Élysées"
+    ],
+    "luxuryHotels": [
+      "The Ritz Paris",
+      "Four Seasons George V",
+      "Le Meurice",
+      "Shangri-La Hotel Paris",
+      "Plaza Athénée"
+    ],
+    "bestTime": "April to June, September to October",
+    "currency": "EUR",
+    "language": "French"
+  }
+]
