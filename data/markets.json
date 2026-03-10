@@ -4,7 +4,7 @@
 "cities":[
 {"city":"New York","state":"NY","file":"new-york-ny.html","active":true},
 {"city":"Boston","state":"MA","file":"boston-ma.html","active":true},
-{"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":false},
+{"city":"Philadelphia","state":"PA","file":"philadelphia-pa.html","active":true},
 {"city":"Pittsburgh","state":"PA","file":"pittsburgh-pa.html","active":false}
 ]
 },
