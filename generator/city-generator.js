@@ -96,7 +96,7 @@ function generateCityPage(city) {
                 <div class="ad-container">
                     <!-- AdSense code will go here -->
                     <div class="ad-label">Advertisement</div>
-                    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxx" data-ad-slot="xxxxxxxxx" data-ad-format="auto"></ins> -->
+                    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxx" data-ad-slot="xxxxxxxxx" Replace All></ins> -->
                 </div>
 
                 <!-- Introduction -->
