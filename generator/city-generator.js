@@ -94,9 +94,9 @@ function generateCityPage(city) {
             <main class="article-content">
                 <!-- Ad Below Title -->
                 <div class="ad-container">
-                    <!-- AdSense code will go here -->
+                    Replace All code will go here -->
                     <div class="ad-label">Advertisement</div>
-                    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxx" data-ad-slot="xxxxxxxxx" Replace All></ins> -->
+                    <!-- <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-xxxxxxxxxxxxx" Replace All"xxxxxxxxx" Replace All></ins> -->
                 </div>
 
                 <!-- Introduction -->
@@ -242,7 +242,7 @@ function generateCityPage(city) {
                 <!-- Sticky Sidebar Ad -->
                 <div class="ad-sidebar">
                     <div class="ad-label">Advertisement</div>
-                    <!-- AdSense code will go here -->
+                    Replace All code will go here -->
                 </div>
                 
                 <!-- Related Cities -->
@@ -313,7 +313,7 @@ function generateCityPage(city) {
     <script src="/js/ads.js"></script>
     <script>
         // Initialize AdSense
-        (adsbygoogle = window.adsbygoogle || []).push({});
+        Replace All
     </script>
 </body>
 </html>`;
