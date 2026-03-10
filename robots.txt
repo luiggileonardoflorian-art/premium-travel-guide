@@ -4,11 +4,20 @@ Allow: /
 Disallow: /generator/
 Disallow: /data/
 
-Sitemap: https://loancomparehub.net/sitemap.xml
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
 
-# Crawl delay for non-essential bots
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: AdsBot-Google
+Allow: /
+
 User-agent: ia_archiver
 Crawl-delay: 10
 
 User-agent: bingbot
 Crawl-delay: 2
+
+Sitemap: https://loancomparehub.net/sitemap.xml
