@@ -34,8 +34,6 @@
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',system-ui,sans-serif;background:#0f172a;color:#cbd5e1;-webkit-font-smoothing:antialiased}
 h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
-
-/* Hero */
 .hero-wrap{position:relative;overflow:hidden;background:#020617;background-image:radial-gradient(ellipse 62% 55% at 72% -8%,rgba(217,119,6,.22) 0%,transparent 60%),radial-gradient(ellipse 40% 35% at 8% 92%,rgba(217,119,6,.10) 0%,transparent 55%)}
 .grid-overlay{position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(217,119,6,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(217,119,6,.05) 1px,transparent 1px);background-size:72px 72px;animation:gridMove 40s linear infinite}
 @keyframes gridMove{from{transform:translate(0,0)}to{transform:translate(72px,72px)}}
@@ -43,8 +41,6 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
 .orb-1{width:580px;height:580px;top:-190px;right:-130px;background:radial-gradient(circle,rgba(217,119,6,.20) 0%,transparent 68%)}
 .orb-2{width:310px;height:310px;bottom:-70px;left:2%;background:radial-gradient(circle,rgba(217,119,6,.10) 0%,transparent 68%);animation-delay:-5s}
 @keyframes orbPulse{from{transform:scale(1);opacity:.75}to{transform:scale(1.12);opacity:1}}
-
-/* Core UI */
 .eyebrow{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(217,119,6,.35);background:rgba(217,119,6,.08);border-radius:100px;padding:6px 16px;font-size:.7rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#f59e0b;margin-bottom:1.4rem}
 .eyebrow-dot{width:6px;height:6px;background:#f59e0b;border-radius:50%;animation:blink 2.2s ease-in-out infinite}
 @keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
@@ -55,15 +51,11 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
 .btn-outline{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(217,119,6,.45);color:#f59e0b;font-weight:600;font-size:.875rem;padding:.85rem 1.75rem;border-radius:8px;transition:background .2s,border-color .2s;text-decoration:none}
 .btn-outline:hover{background:rgba(217,119,6,.1);border-color:#d97706}
 .pill{display:inline-flex;align-items:center;background:rgba(217,119,6,.09);border:1px solid rgba(217,119,6,.24);border-radius:100px;padding:3px 12px;font-size:.7rem;font-weight:600;letter-spacing:.05em;color:#f59e0b}
-
-/* Nav */
 .nav-link{position:relative;padding-bottom:2px;text-decoration:none}
 .nav-link::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;background:#d97706;transition:width .2s}
 .nav-link:hover::after{width:100%}
 #mobile-menu{display:none}
 #mobile-menu.open{display:block}
-
-/* Cards */
 .stat-card{position:relative;overflow:hidden;background:rgba(30,41,59,.55);border:1px solid rgba(217,119,6,.18);border-radius:16px;padding:1.5rem;backdrop-filter:blur(14px);transition:border-color .25s,transform .25s}
 .stat-card::after{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(217,119,6,.5),transparent);opacity:0;transition:opacity .25s}
 .stat-card:hover{border-color:rgba(217,119,6,.5);transform:translateY(-3px)}
@@ -71,16 +63,12 @@ h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
 .feature-card{background:rgba(15,23,42,.7);border:1px solid rgba(71,85,105,.35);border-radius:14px;padding:1.75rem;transition:border-color .22s,transform .22s,box-shadow .22s}
 .feature-card:hover{border-color:rgba(217,119,6,.45);transform:translateY(-4px);box-shadow:0 20px 50px -10px rgba(0,0,0,.5)}
 .feature-icon{width:44px;height:44px;background:rgba(217,119,6,.1);border:1px solid rgba(217,119,6,.28);border-radius:10px;display:flex;align-items:center;justify-content:center;margin-bottom:1rem;flex-shrink:0}
-
-/* Table */
 .data-table th{background:rgba(217,119,6,.11);color:#f59e0b;font-family:'DM Sans',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;padding:.75rem 1rem;text-align:left}
 .data-table td{padding:.85rem 1rem;font-size:.875rem;border-bottom:1px solid rgba(71,85,105,.28);color:#cbd5e1;transition:background .15s}
 .data-table tr:hover td{background:rgba(217,119,6,.04)}
 .data-table tr:last-child td{border-bottom:none}
 .highlight-col{color:#f59e0b!important;font-weight:600}
 .table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
-
-/* FAQ */
 details{border:1px solid rgba(71,85,105,.38);border-radius:12px;overflow:hidden;transition:border-color .2s}
 details[open]{border-color:rgba(217,119,6,.45)}
 details>summary{list-style:none;cursor:pointer;padding:1.25rem 1.5rem;display:flex;justify-content:space-between;align-items:center;gap:1rem;background:rgba(30,41,59,.5)}
@@ -88,31 +76,22 @@ details>summary::-webkit-details-marker{display:none}
 .faq-icon{flex-shrink:0;transition:transform .2s;color:#d97706}
 details[open] .faq-icon{transform:rotate(45deg)}
 .faq-body{padding:1.25rem 1.5rem;background:rgba(15,23,42,.65);font-size:.875rem;line-height:1.8;color:#94a3b8}
-
-/* Bio */
 .bio-card{background:rgba(30,41,59,.6);border:1px solid rgba(217,119,6,.2);border-radius:18px;backdrop-filter:blur(10px);overflow:hidden}
 .bio-avatar{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,#d97706,#f59e0b);display:flex;align-items:center;justify-content:center;font-family:'Cormorant Garamond',serif;font-size:2rem;font-weight:700;color:#fff;border:3px solid rgba(217,119,6,.4);flex-shrink:0}
-
-/* Misc */
 .pull-quote{border-left:3px solid #d97706;padding:.75rem 1.25rem;background:rgba(217,119,6,.06);border-radius:0 8px 8px 0;font-family:'Cormorant Garamond',serif;font-size:1.15rem;font-style:italic;color:#fcd08a;line-height:1.65}
 .adsense-slot{width:100%;min-height:90px;background:rgba(30,41,59,.35);border:1px dashed rgba(217,119,6,.22);border-radius:8px;display:flex;align-items:center;justify-content:center;color:rgba(217,119,6,.32);font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 .check-item{display:flex;gap:.6rem;font-size:.85rem;color:#94a3b8;align-items:flex-start}
 .check-icon{color:#d97706;flex-shrink:0;margin-top:2px}
-.metric-box{background:rgba(217,119,6,.06);border:1px solid rgba(217,119,6,.15);border-radius:10px;padding:1rem;text-align:center}
 .loan-badge{display:inline-flex;align-items:center;background:linear-gradient(135deg,rgba(217,119,6,.18),rgba(245,158,11,.12));border:1px solid rgba(217,119,6,.3);border-radius:6px;padding:3px 10px;font-size:.68rem;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:#f59e0b;margin-bottom:.85rem}
 .timeline-dot{width:10px;height:10px;border-radius:50%;background:#d97706;flex-shrink:0;margin-top:5px}
-.timeline-line{width:1px;background:rgba(217,119,6,.25);flex-shrink:0;align-self:stretch;margin-left:4px}
-
-/* Animations */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
 .revealed{opacity:1;transform:translateY(0)}
 @keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
 .fade-up{animation:fadeUp .6s ease forwards;opacity:0}
 .d1{animation-delay:.1s}.d2{animation-delay:.2s}.d3{animation-delay:.3s}.d4{animation-delay:.4s}.d5{animation-delay:.5s}
-
 ::-webkit-scrollbar{width:6px}::-webkit-scrollbar-track{background:#0f172a}::-webkit-scrollbar-thumb{background:#334155;border-radius:3px}::-webkit-scrollbar-thumb:hover{background:#d97706}
 </style>
-<!-- Google AdSense -->
+<!-- Google AdSense code injected -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9762323649839331" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -136,34 +115,12 @@ details[open] .faq-icon{transform:rotate(45deg)}
 
       <!-- Desktop nav -->
       <nav class="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
-        <a href="/index.html"        class="nav-link text-sm font-medium" style="color:#94a3b8;">Home</a>
-        <a href="/refinance/new-york-ny.html"     class="nav-link text-sm font-medium" style="color:#94a3b8;">New York</a>
-        <a href="/refinance/miami-fl.html"        class="nav-link text-sm font-medium" style="color:#94a3b8;">Miami</a>
-        <a href="/refinance/austin-tx.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">Austin</a>
-        <a href="/refinance/san-francisco-ca.html"class="nav-link text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
-        <a href="/refinance/washington-dc.html"   class="nav-link text-sm font-medium" style="color:#94a3b8;">Washington DC</a>
-        <a href="/refinance/philadelphia-pa.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">Philadelphia</a>
-        <a href="/refinance/calgary-ab.html"      class="nav-link text-sm font-medium" style="color:#94a3b8;">Calgary</a>
-        <a href="/refinance/ottawa-on.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">Ottawa</a>
-        <a href="/refinance/edmonton-ab.html"     class="nav-link text-sm font-medium" style="color:#94a3b8;">Edmonton</a>
-        <a href="/refinance/quebec-city-qc.html"  class="nav-link text-sm font-medium" style="color:#94a3b8;">Quebec City</a>
-        <a href="/refinance/london-on.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">London (ON)</a>
-        <a href="/refinance/manchester-uk.html"   class="nav-link text-sm font-medium" style="color:#94a3b8;">Manchester</a>
-        <a href="/refinance/birmingham-uk.html"   class="nav-link text-sm font-medium" style="color:#94a3b8;">Birmingham</a>
-        <a href="/refinance/leeds-uk.html"        class="nav-link text-sm font-medium" style="color:#94a3b8;">Leeds</a>
-        <a href="/refinance/liverpool-uk.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">Liverpool</a>
-        <a href="/refinance/glasgow-uk.html"      class="nav-link text-sm font-medium" style="color:#94a3b8;">Glasgow</a>
-        <a href="/refinance/edinburgh-uk.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">Edinburgh</a>
-        <a href="/refinance/sydney-nsw.html"      class="nav-link text-sm font-medium" style="color:#94a3b8;">Sydney</a>
-        <a href="/refinance/melbourne-vic.html"   class="nav-link text-sm font-medium" style="color:#94a3b8;">Melbourne</a>
-        <a href="/refinance/brisbane-qld.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">Brisbane</a>
-        <a href="/refinance/perth-wa.html"        class="nav-link text-sm font-medium" style="color:#94a3b8;">Perth</a>
-        <a href="/refinance/adelaide-sa.html"     class="nav-link text-sm font-medium" style="color:#94a3b8;">Adelaide</a>
-        <a href="/refinance/berlin-de.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">Berlin</a>
-        <a href="/refinance/munich-de.html"       class="nav-link text-sm font-medium" style="color:#94a3b8;">München</a>
-        <a href="/refinance/frankfurt-de.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">Frankfurt</a>
-        <a href="/refinance/hamburg-de.html"      class="nav-link text-sm font-medium" style="color:#94a3b8;">Hamburg</a>
-        <a href="/refinance/stuttgart-de.html"    class="nav-link text-sm font-medium" style="color:#f59e0b;">Stuttgart</a>
+        <a href="/index.html"                  class="nav-link text-sm font-medium" style="color:#94a3b8;">Home</a>
+        <a href="/refinance/berlin-de.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">Berlin</a>
+        <a href="/refinance/munich-de.html"    class="nav-link text-sm font-medium" style="color:#94a3b8;">München</a>
+        <a href="/refinance/frankfurt-de.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">Frankfurt</a>
+        <a href="/refinance/hamburg-de.html"   class="nav-link text-sm font-medium" style="color:#94a3b8;">Hamburg</a>
+        <a href="/refinance/stuttgart-de.html" class="nav-link text-sm font-medium" style="color:#f59e0b;">Stuttgart</a>
         <a href="/index.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">
           Compare Markets
           <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -180,39 +137,20 @@ details[open] .faq-icon{transform:rotate(45deg)}
     <!-- Mobile menu -->
     <nav id="mobile-menu" style="border-top:1px solid rgba(71,85,105,.28);" class="lg:hidden py-3 pb-4">
       <div class="flex flex-col gap-1">
-        <a href="/index.html"        class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Home</a>
-        <a href="/refinance/new-york-ny.html"     class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">New York</a>
-        <a href="/refinance/miami-fl.html"        class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Miami</a>
-        <a href="/refinance/austin-tx.html"       class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Austin</a>
-        <a href="/refinance/san-francisco-ca.html"class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
-        <a href="/refinance/washington-dc.html"   class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Washington DC</a>
-        <a href="/refinance/philadelphia-pa.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Philadelphia</a>
-        <a href="/refinance/calgary-ab.html"      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Calgary</a>
-        <a href="/refinance/ottawa-on.html"       class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Ottawa</a>
-        <a href="/refinance/edmonton-ab.html"     class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Edmonton</a>
-        <a href="/refinance/quebec-city-qc.html"  class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Quebec City</a>
-        <a href="/refinance/london-on.html"       class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">London (ON)</a>
-        <a href="/refinance/manchester-uk.html"   class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Manchester</a>
-        <a href="/refinance/birmingham-uk.html"   class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Birmingham</a>
-        <a href="/refinance/leeds-uk.html"        class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Leeds</a>
-        <a href="/refinance/liverpool-uk.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Liverpool</a>
-        <a href="/refinance/glasgow-uk.html"      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Glasgow</a>
-        <a href="/refinance/edinburgh-uk.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Edinburgh</a>
-        <a href="/refinance/sydney-nsw.html"      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Sydney</a>
-        <a href="/refinance/melbourne-vic.html"   class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Melbourne</a>
-        <a href="/refinance/brisbane-qld.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Brisbane</a>
-        <a href="/refinance/perth-wa.html"        class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Perth</a>
-        <a href="/refinance/adelaide-sa.html"     class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Adelaide</a>
-        <a href="/refinance/berlin-de.html"       class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Berlin</a>
-        <a href="/refinance/munich-de.html"       class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">München</a>
-        <a href="/refinance/frankfurt-de.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Frankfurt</a>
-        <a href="/refinance/hamburg-de.html"      class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Hamburg</a>
-        <a href="/refinance/stuttgart-de.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#f59e0b;background:rgba(217,119,6,.08);">Stuttgart</a>
+        <a href="/index.html"                  class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Home</a>
+        <a href="/refinance/berlin-de.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Berlin</a>
+        <a href="/refinance/munich-de.html"    class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">München</a>
+        <a href="/refinance/frankfurt-de.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Frankfurt</a>
+        <a href="/refinance/hamburg-de.html"   class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Hamburg</a>
+        <a href="/refinance/stuttgart-de.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#f59e0b;background:rgba(217,119,6,.08);">Stuttgart</a>
         <a href="/index.html" class="mt-2 btn-gold justify-center" style="font-size:.85rem;">Compare Markets</a>
       </div>
     </nav>
   </div>
 </header>
+
+<!-- Ad slot added right after header -->
+</div>
 
 <main>
 
@@ -329,7 +267,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
     </div>
 
     <div class="pull-quote max-w-3xl reveal">
-      „Stuttgart ist die heimliche Hauptstadt der deutschen Ingenieurskunst. Wer hier arbeitet, hat oft nicht nur ein sicheres Einkommen, sondern auch gute Chancen auf eine maßgeschneiderte Finanzierung.“
+      „Stuttgart ist die heimliche Hauptstadt der deutschen Ingenieurskunst. Wer hier arbeitet, hat oft nicht nur ein sicheres Einkommen, sondern auch gute Chancen auf eine maßgeschneiderte Finanzierung."
     </div>
 
     <div class="mt-10 grid md:grid-cols-2 gap-6">
@@ -372,7 +310,6 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <span class="amber-rule"></span>
       <h2 id="stuttgart-products" style="font-size:clamp(1.8rem,3.5vw,2.7rem);font-weight:700;color:#fff;margin-bottom:.75rem;">Spezialprodukte für die Neckar-Metropole</h2>
     </div>
-
     <div class="grid md:grid-cols-3 gap-6 mb-10">
 
       <div class="feature-card reveal">
@@ -517,34 +454,12 @@ details[open] .faq-icon{transform:rotate(45deg)}
       <div>
         <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Märkte</h4>
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/index.html"       style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Home</a></li>
-          <li><a href="/refinance/new-york-ny.html"    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">New York</a></li>
-          <li><a href="/refinance/miami-fl.html"       style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Miami</a></li>
-          <li><a href="/refinance/austin-tx.html"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Austin</a></li>
-          <li><a href="/refinance/san-francisco-ca.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">San Francisco</a></li>
-          <li><a href="/refinance/washington-dc.html"  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Washington DC</a></li>
-          <li><a href="/refinance/philadelphia-pa.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Philadelphia</a></li>
-          <li><a href="/refinance/calgary-ab.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Calgary</a></li>
-          <li><a href="/refinance/ottawa-on.html"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Ottawa</a></li>
-          <li><a href="/refinance/edmonton-ab.html"    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Edmonton</a></li>
-          <li><a href="/refinance/quebec-city-qc.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Quebec City</a></li>
-          <li><a href="/refinance/london-on.html"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">London (ON)</a></li>
-          <li><a href="/refinance/manchester-uk.html"  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Manchester</a></li>
-          <li><a href="/refinance/birmingham-uk.html"  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Birmingham</a></li>
-          <li><a href="/refinance/leeds-uk.html"       style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Leeds</a></li>
-          <li><a href="/refinance/liverpool-uk.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Liverpool</a></li>
-          <li><a href="/refinance/glasgow-uk.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Glasgow</a></li>
-          <li><a href="/refinance/edinburgh-uk.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Edinburgh</a></li>
-          <li><a href="/refinance/sydney-nsw.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Sydney</a></li>
-          <li><a href="/refinance/melbourne-vic.html"  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Melbourne</a></li>
-          <li><a href="/refinance/brisbane-qld.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Brisbane</a></li>
-          <li><a href="/refinance/perth-wa.html"       style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Perth</a></li>
-          <li><a href="/refinance/adelaide-sa.html"    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Adelaide</a></li>
-          <li><a href="/refinance/berlin-de.html"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Berlin</a></li>
-          <li><a href="/refinance/munich-de.html"      style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">München</a></li>
-          <li><a href="/refinance/frankfurt-de.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Frankfurt</a></li>
-          <li><a href="/refinance/hamburg-de.html"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Hamburg</a></li>
-          <li><a href="/refinance/stuttgart-de.html"   style="color:#f59e0b;font-size:.875rem;font-weight:600;text-decoration:none;">Stuttgart ←</a></li>
+          <li><a href="/index.html"                  style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Home</a></li>
+          <li><a href="/refinance/berlin-de.html"    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Berlin</a></li>
+          <li><a href="/refinance/munich-de.html"    style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">München</a></li>
+          <li><a href="/refinance/frankfurt-de.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Frankfurt</a></li>
+          <li><a href="/refinance/hamburg-de.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Hamburg</a></li>
+          <li><a href="/refinance/stuttgart-de.html" style="color:#f59e0b;font-size:.875rem;font-weight:600;text-decoration:none;">Stuttgart ←</a></li>
         </ul>
       </div>
       <div>
@@ -552,7 +467,7 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
           <li><a href="#stuttgart-analysis" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Marktanalyse</a></li>
           <li><a href="#stuttgart-data"     style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Datentabelle</a></li>
-          <li><a href="#faq"                 style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">FAQ</a></li>
+          <li><a href="#faq"                style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">FAQ</a></li>
         </ul>
       </div>
       <div>
@@ -560,12 +475,11 @@ details[open] .faq-icon{transform:rotate(45deg)}
         <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
           <li><a href="/refinance/../privacy.html" style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Privacy Policy</a></li>
           <li><a href="/refinance/../terms.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">Terms of Use</a></li>
-          <li><a href="/index.html"   style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">All Markets</a></li>
+          <li><a href="/index.html"                style="color:#475569;font-size:.875rem;text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='#475569'">All Markets</a></li>
         </ul>
       </div>
     </div>
     <div style="border-top:1px solid rgba(71,85,105,.18);padding-top:2rem;">
-      <!-- ⚠️ DISCLAIMER – EXACT FORMAT – DO NOT MODIFY STRUCTURE ⚠️ -->
       <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.18);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
         <p style="font-size:.72rem;color:#334155;line-height:1.8;"><strong style="color:#475569;">Full Disclaimer:</strong> Loan Compare Hub is an independent educational publishing platform. We are not a registered investment advisor, mortgage lender, mortgage broker, law firm, or accounting firm. All content is provided for educational and informational purposes only and does not constitute investment advice, financial planning advice, legal advice, tax advice, or a commitment to lend. Always consult qualified, licensed professionals before making any financial, borrowing, legal, or tax decisions.</p>
       </div>
