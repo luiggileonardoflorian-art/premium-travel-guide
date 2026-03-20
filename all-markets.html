@@ -2,330 +2,160 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>All Markets | Loan Compare Hub</title>
-  <meta name="description" content="Complete list of cities and regions covered by Loan Compare Hub. Find mortgage and refinance intelligence for your local market – from the US to Europe, Canada, and beyond.">
+  <meta name="description" content="Complete list of cities and regions covered by Loan Compare Hub – mortgage and refinance intelligence for markets worldwide.">
   <link rel="canonical" href="https://loancomparehub.net/all-markets.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="All Markets | Loan Compare Hub">
-  <meta property="og:description" content="Complete list of cities and regions covered by Loan Compare Hub. Find mortgage and refinance intelligence for your local market.">
-  <meta property="og:url" content="https://loancomparehub.net/all-markets.html">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <!-- Fonts & Styles (matching the main site) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-
   <style>
-    /* ==== RESET & GLOBAL ==== */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:'DM Sans',system-ui,sans-serif;background:#0f172a;color:#cbd5e1;-webkit-font-smoothing:antialiased}
-    h1,h2,h3,h4{font-family:'Cormorant Garamond',Georgia,serif}
-
-    /* ==== UTILITY CLASSES (same as index) ==== */
-    .gold-divider{width:100%;height:1px;background:linear-gradient(90deg,transparent,rgba(217,119,6,.28),transparent);margin:2rem 0}
-    .amber-rule{display:block;width:52px;height:2px;background:linear-gradient(90deg,#d97706,#f59e0b);border-radius:2px;margin-bottom:1rem}
-    .btn-gold{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#d97706,#f59e0b);color:#fff;font-weight:600;font-size:.875rem;padding:.85rem 1.75rem;border-radius:8px;transition:opacity .2s,transform .2s;text-decoration:none}
-    .btn-gold:hover{opacity:.88;transform:translateY(-1px)}
-    .btn-outline{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(217,119,6,.45);color:#f59e0b;font-weight:600;font-size:.875rem;padding:.85rem 1.75rem;border-radius:8px;transition:background .2s,border-color .2s;text-decoration:none}
-    .btn-outline:hover{background:rgba(217,119,6,.1);border-color:#d97706}
-    .pill{display:inline-flex;align-items:center;background:rgba(217,119,6,.09);border:1px solid rgba(217,119,6,.24);border-radius:100px;padding:3px 12px;font-size:.7rem;font-weight:600;letter-spacing:.05em;color:#f59e0b}
-    .nav-link{position:relative;padding-bottom:2px;text-decoration:none}
-    .nav-link::after{content:'';position:absolute;left:0;bottom:0;width:0;height:1.5px;background:#d97706;transition:width .2s}
-    .nav-link:hover::after{width:100%}
-    #mobile-menu{display:none}
-    #mobile-menu.open{display:block}
-    .city-link-grid{display:flex;flex-wrap:wrap;gap:.45rem}
-    .city-link{display:inline-flex;align-items:center;gap:.3rem;background:rgba(30,41,59,.6);border:1px solid rgba(71,85,105,.3);border-radius:6px;padding:.38rem .85rem;font-size:.78rem;color:#94a3b8;text-decoration:none;transition:all .18s}
-    .city-link:hover{background:rgba(217,119,6,.1);border-color:rgba(217,119,6,.38);color:#f59e0b}
-    .city-link-dot{width:5px;height:5px;background:#d97706;border-radius:50%;flex-shrink:0}
-    .section-title{font-size:1.8rem;font-weight:700;color:#fff;margin-bottom:0.5rem}
-    .region-header{font-size:1.4rem;font-weight:600;color:#e2e8f0;margin:1.5rem 0 1rem;border-left:3px solid #f59e0b;padding-left:1rem}
-    .coming-soon{opacity:0.6;cursor:default;background:rgba(30,41,59,.3);border-color:rgba(71,85,105,.2);color:#64748b}
-    .coming-soon:hover{background:rgba(30,41,59,.3);border-color:rgba(71,85,105,.2);color:#64748b;transform:none}
-    .market-count{font-size:0.7rem;color:#64748b;margin-left:0.5rem;font-weight:normal}
-    .note{background:rgba(217,119,6,.05);border-left:3px solid #f59e0b;padding:1rem;margin:2rem 0;border-radius:0 8px 8px 0;font-size:0.85rem;color:#94a3b8}
-    .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease}
-    .revealed{opacity:1;transform:translateY(0)}
+    /* (mantén los mismos estilos que tienes en tu sitio) */
+    body{font-family:'DM Sans',system-ui,sans-serif;background:#0f172a;color:#cbd5e1;margin:0}
+    .max-w-7xl{margin:0 auto;padding:2rem}
+    h1{font-size:2.5rem;color:#fff}
+    .region{margin-top:2rem}
+    .region h2{font-size:1.8rem;color:#f59e0b;border-left:4px solid #f59e0b;padding-left:1rem}
+    .city-list{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem}
+    .city-item{background:rgba(30,41,59,.6);padding:0.4rem 0.9rem;border-radius:6px;font-size:0.9rem}
+    .city-item a{color:#f59e0b;text-decoration:none}
+    .city-item a:hover{text-decoration:underline}
+    .city-item span{color:#94a3b8}
+    .note{background:rgba(217,119,6,.1);padding:1rem;border-radius:8px;margin:2rem 0}
+    footer{margin-top:3rem;text-align:center;color:#475569;font-size:0.8rem}
   </style>
 </head>
 <body>
+<div class="max-w-7xl">
+  <h1>All Markets Covered</h1>
+  <p>Explore mortgage and refinance intelligence for cities across the United States and the world.  
+  <strong style="color:#f59e0b">Markets with a link</strong> have in‑depth guides available.  
+  All other cities are coming soon – we're working to bring you detailed analysis for every market.</p>
 
-<!-- ========== HEADER (consistent with index) ========== -->
-<header style="background:rgba(2,6,23,.96);border-bottom:1px solid rgba(71,85,105,.28);backdrop-filter:blur(14px);" class="sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <a href="/" class="flex items-center gap-2.5" style="text-decoration:none;" aria-label="Loan Compare Hub home">
-        <div style="width:32px;height:32px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-          <svg style="width:16px;height:16px;flex-shrink:0;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg>
-        </div>
-        <span style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
-      </a>
-      <nav class="hidden lg:flex items-center gap-6" aria-label="Primary navigation">
-        <a href="/" class="nav-link text-sm font-medium" style="color:#94a3b8;">Home</a>
-        <a href="/refinance/new-york-ny.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">New York</a>
-        <a href="/refinance/miami-fl.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">Miami</a>
-        <a href="/refinance/austin-tx.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">Austin</a>
-        <a href="/refinance/san-francisco-ca.html" class="nav-link text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
-        <a href="/#calculators" class="nav-link text-sm font-medium" style="color:#94a3b8;">Calculators</a>
-        <a href="/#guides-complete" class="nav-link text-sm font-medium" style="color:#94a3b8;">Guides</a>
-        <a href="/all-markets.html" class="btn-gold" style="padding:.6rem 1.25rem;font-size:.8rem;">All Markets <svg style="width:14px;height:14px;flex-shrink:0;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg></a>
-      </nav>
-      <button id="menu-btn" class="lg:hidden p-2 rounded-md" style="color:#94a3b8;" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg id="icon-open" style="width:20px;height:20px;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M3.75 17.25h16.5"/></svg>
-        <svg id="icon-close" style="width:20px;height:20px;display:none;" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/></svg>
-      </button>
-    </div>
-    <nav id="mobile-menu" style="border-top:1px solid rgba(71,85,105,.28);" class="py-3 pb-4">
-      <div class="flex flex-col gap-1">
-        <a href="/" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Home</a>
-        <a href="/refinance/new-york-ny.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">New York</a>
-        <a href="/refinance/miami-fl.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Miami</a>
-        <a href="/refinance/austin-tx.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Austin</a>
-        <a href="/refinance/san-francisco-ca.html" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">San Francisco</a>
-        <a href="/#calculators" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Calculators</a>
-        <a href="/#guides-complete" class="px-3 py-2.5 rounded-md text-sm font-medium" style="color:#94a3b8;">Guides</a>
-        <a href="/all-markets.html" class="mt-2 btn-gold justify-center" style="font-size:.85rem;">All Markets</a>
-      </div>
-    </nav>
-  </div>
-</header>
-
-<!-- ========== MAIN CONTENT ========== -->
-<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12" style="background:#0f172a;">
-  <div class="reveal">
-    <div class="max-w-2xl mb-8">
-      <span class="amber-rule"></span>
-      <h1 class="section-title">All Markets <span style="color:#f59e0b;">Covered</span></h1>
-      <p class="text-lg text-gray-400 mt-2">Explore mortgage and refinance intelligence for cities across the United States and around the world. Each market is analyzed through the lens of local lending practices, tax structures, and economic drivers.</p>
-    </div>
-    <div class="note">
-      <strong style="color:#f59e0b;">📌 How to use this page</strong><br>
-      Click on any city name to access the full guide. Markets marked with a dot (•) are already available with in‑depth analysis. Those without a dot are coming soon — we're working hard to bring you detailed intelligence for every city. All pages are part of our educational platform.
-    </div>
-  </div>
-
-  <!-- ===== UNITED STATES (major cities from the list) ===== -->
-  <div class="reveal">
-    <h2 class="region-header">United States <span class="market-count">(32 markets)</span></h2>
-    <div class="city-link-grid">
-      <!-- Existing guides (with link) -->
-      <a href="/refinance/new-york-ny.html" class="city-link"><span class="city-link-dot"></span>New York, NY</a>
-      <a href="/refinance/miami-fl.html" class="city-link"><span class="city-link-dot"></span>Miami, FL</a>
-      <a href="/refinance/austin-tx.html" class="city-link"><span class="city-link-dot"></span>Austin, TX</a>
-      <a href="/refinance/san-francisco-ca.html" class="city-link"><span class="city-link-dot"></span>San Francisco, CA</a>
-
-      <!-- Upcoming / consolidated (no link yet, but will redirect to this page via .htaccess) -->
-      <!-- We list them as text with "coming soon" style so they are not broken links -->
-      <span class="city-link coming-soon">Atlanta, GA</span>
-      <span class="city-link coming-soon">Baltimore, MD</span>
-      <span class="city-link coming-soon">Boise, ID</span>
-      <span class="city-link coming-soon">Boston, MA</span>
-      <span class="city-link coming-soon">Charlotte, NC</span>
-      <span class="city-link coming-soon">Chicago, IL</span>
-      <span class="city-link coming-soon">Cleveland, OH</span>
-      <span class="city-link coming-soon">Columbus, OH</span>
-      <span class="city-link coming-soon">Dallas, TX</span>
-      <span class="city-link coming-soon">Denver, CO</span>
-      <span class="city-link coming-soon">Detroit, MI</span>
-      <span class="city-link coming-soon">El Paso, TX</span>
-      <span class="city-link coming-soon">Fort Worth, TX</span>
-      <span class="city-link coming-soon">Houston, TX</span>
-      <span class="city-link coming-soon">Indianapolis, IN</span>
-      <span class="city-link coming-soon">Jacksonville, FL</span>
-      <span class="city-link coming-soon">Kansas City, MO</span>
-      <span class="city-link coming-soon">Las Vegas, NV</span>
-      <span class="city-link coming-soon">Los Angeles, CA</span>
-      <span class="city-link coming-soon">Louisville, KY</span>
-      <span class="city-link coming-soon">Memphis, TN</span>
-      <span class="city-link coming-soon">Minneapolis, MN</span>
-      <span class="city-link coming-soon">Nashville, TN</span>
-      <span class="city-link coming-soon">Oklahoma City, OK</span>
-      <span class="city-link coming-soon">Orlando, FL</span>
-      <span class="city-link coming-soon">Philadelphia, PA</span>
-      <span class="city-link coming-soon">Phoenix, AZ</span>
-      <span class="city-link coming-soon">Pittsburgh, PA</span>
-      <span class="city-link coming-soon">Portland, OR</span>
-      <span class="city-link coming-soon">Raleigh, NC</span>
-      <span class="city-link coming-soon">Richmond, VA</span>
-      <span class="city-link coming-soon">Salt Lake City, UT</span>
-      <span class="city-link coming-soon">San Antonio, TX</span>
-      <span class="city-link coming-soon">San Diego, CA</span>
-      <span class="city-link coming-soon">San Jose, CA</span>
-      <span class="city-link coming-soon">Seattle, WA</span>
-      <span class="city-link coming-soon">St. Louis, MO</span>
-      <span class="city-link coming-soon">Tampa, FL</span>
-      <span class="city-link coming-soon">Washington, DC</span>
+  <!-- United States -->
+  <div class="region">
+    <h2>🇺🇸 United States</h2>
+    <div class="city-list">
+      <div class="city-item"><a href="/refinance/austin-tx.html">Austin, TX</a></div>
+      <div class="city-item"><a href="/refinance/new-york-ny.html">New York, NY</a></div>
+      <div class="city-item"><a href="/refinance/miami-fl.html">Miami, FL</a></div>
+      <div class="city-item"><a href="/refinance/san-francisco-ca.html">San Francisco, CA</a></div>
+      <div class="city-item"><span>Atlanta, GA</span></div>
+      <div class="city-item"><span>Baltimore, MD</span></div>
+      <div class="city-item"><span>Boise, ID</span></div>
+      <div class="city-item"><span>Boston, MA</span></div>
+      <div class="city-item"><span>Charlotte, NC</span></div>
+      <div class="city-item"><span>Chicago, IL</span></div>
+      <div class="city-item"><span>Cleveland, OH</span></div>
+      <div class="city-item"><span>Columbus, OH</span></div>
+      <div class="city-item"><span>Dallas, TX</span></div>
+      <div class="city-item"><span>Denver, CO</span></div>
+      <div class="city-item"><span>Detroit, MI</span></div>
+      <div class="city-item"><span>El Paso, TX</span></div>
+      <div class="city-item"><span>Fort Worth, TX</span></div>
+      <div class="city-item"><span>Houston, TX</span></div>
+      <div class="city-item"><span>Indianapolis, IN</span></div>
+      <div class="city-item"><span>Jacksonville, FL</span></div>
+      <div class="city-item"><span>Kansas City, MO</span></div>
+      <div class="city-item"><span>Las Vegas, NV</span></div>
+      <div class="city-item"><span>Los Angeles, CA</span></div>
+      <div class="city-item"><span>Louisville, KY</span></div>
+      <div class="city-item"><span>Memphis, TN</span></div>
+      <div class="city-item"><span>Minneapolis, MN</span></div>
+      <div class="city-item"><span>Nashville, TN</span></div>
+      <div class="city-item"><span>Oklahoma City, OK</span></div>
+      <div class="city-item"><span>Orlando, FL</span></div>
+      <div class="city-item"><span>Philadelphia, PA</span></div>
+      <div class="city-item"><span>Phoenix, AZ</span></div>
+      <div class="city-item"><span>Pittsburgh, PA</span></div>
+      <div class="city-item"><span>Portland, OR</span></div>
+      <div class="city-item"><span>Raleigh, NC</span></div>
+      <div class="city-item"><span>Richmond, VA</span></div>
+      <div class="city-item"><span>Salt Lake City, UT</span></div>
+      <div class="city-item"><span>San Antonio, TX</span></div>
+      <div class="city-item"><span>San Diego, CA</span></div>
+      <div class="city-item"><span>San Jose, CA</span></div>
+      <div class="city-item"><span>Seattle, WA</span></div>
+      <div class="city-item"><span>St. Louis, MO</span></div>
+      <div class="city-item"><span>Tampa, FL</span></div>
+      <div class="city-item"><span>Washington, DC</span></div>
     </div>
   </div>
 
-  <!-- ===== CANADA ===== -->
-  <div class="reveal">
-    <h2 class="region-header">Canada <span class="market-count">(6 markets)</span></h2>
-    <div class="city-link-grid">
-      <a href="/refinance/toronto-on.html" class="city-link"><span class="city-link-dot"></span>Toronto, ON</a>
-      <a href="/refinance/vancouver-bc.html" class="city-link"><span class="city-link-dot"></span>Vancouver, BC</a>
-      <span class="city-link coming-soon">Calgary, AB</span>
-      <span class="city-link coming-soon">Edmonton, AB</span>
-      <span class="city-link coming-soon">Montreal, QC</span>
-      <span class="city-link coming-soon">Ottawa, ON</span>
-      <span class="city-link coming-soon">Quebec City, QC</span>
+  <!-- Canada -->
+  <div class="region">
+    <h2>🇨🇦 Canada</h2>
+    <div class="city-list">
+      <div class="city-item"><a href="/refinance/toronto-on.html">Toronto, ON</a></div>
+      <div class="city-item"><a href="/refinance/vancouver-bc.html">Vancouver, BC</a></div>
+      <div class="city-item"><span>Calgary, AB</span></div>
+      <div class="city-item"><span>Edmonton, AB</span></div>
+      <div class="city-item"><span>Montreal, QC</span></div>
+      <div class="city-item"><span>Ottawa, ON</span></div>
+      <div class="city-item"><span>Quebec City, QC</span></div>
+      <div class="city-item"><span>London, ON</span></div>
     </div>
   </div>
 
-  <!-- ===== EUROPE ===== -->
-  <div class="reveal">
-    <h2 class="region-header">Europe <span class="market-count">(30+ markets)</span></h2>
-    <div class="city-link-grid">
-      <a href="/refinance/zurich-ch.html" class="city-link"><span class="city-link-dot"></span>Zurich, Switzerland</a>
-      <a href="/refinance/stockholm-se.html" class="city-link"><span class="city-link-dot"></span>Stockholm, Sweden</a>
-      <span class="city-link coming-soon">Amsterdam, Netherlands</span>
-      <span class="city-link coming-soon">Basel, Switzerland</span>
-      <span class="city-link coming-soon">Bergen, Norway</span>
-      <span class="city-link coming-soon">Berlin, Germany</span>
-      <span class="city-link coming-soon">Bern, Switzerland</span>
-      <span class="city-link coming-soon">Birmingham, UK</span>
-      <span class="city-link coming-soon">Bordeaux, France</span>
-      <span class="city-link coming-soon">Cologne, Germany</span>
-      <span class="city-link coming-soon">Düsseldorf, Germany</span>
-      <span class="city-link coming-soon">Edinburgh, UK</span>
-      <span class="city-link coming-soon">Eindhoven, Netherlands</span>
-      <span class="city-link coming-soon">Frankfurt, Germany</span>
-      <span class="city-link coming-soon">Geneva, Switzerland</span>
-      <span class="city-link coming-soon">Glasgow, UK</span>
-      <span class="city-link coming-soon">Gothenburg, Sweden</span>
-      <span class="city-link coming-soon">Hamburg, Germany</span>
-      <span class="city-link coming-soon">Lausanne, Switzerland</span>
-      <span class="city-link coming-soon">Leeds, UK</span>
-      <span class="city-link coming-soon">Liverpool, UK</span>
-      <span class="city-link coming-soon">London, UK (London, ON is Canadian)</span>
-      <span class="city-link coming-soon">Lyon, France</span>
-      <span class="city-link coming-soon">Malmö, Sweden</span>
-      <span class="city-link coming-soon">Manchester, UK</span>
-      <span class="city-link coming-soon">Marseille, France</span>
-      <span class="city-link coming-soon">Munich, Germany</span>
-      <span class="city-link coming-soon">Nice, France</span>
-      <span class="city-link coming-soon">Oslo, Norway</span>
-      <span class="city-link coming-soon">Paris, France</span>
-      <span class="city-link coming-soon">Rotterdam, Netherlands</span>
-      <span class="city-link coming-soon">Stuttgart, Germany</span>
-      <span class="city-link coming-soon">The Hague, Netherlands</span>
-      <span class="city-link coming-soon">Toulouse, France</span>
-      <span class="city-link coming-soon">Trondheim, Norway</span>
-      <span class="city-link coming-soon">Utrecht, Netherlands</span>
+  <!-- Europe -->
+  <div class="region">
+    <h2>🇪🇺 Europe</h2>
+    <div class="city-list">
+      <div class="city-item"><a href="/refinance/zurich-ch.html">Zurich, Switzerland</a></div>
+      <div class="city-item"><a href="/refinance/stockholm-se.html">Stockholm, Sweden</a></div>
+      <div class="city-item"><span>Amsterdam, Netherlands</span></div>
+      <div class="city-item"><span>Basel, Switzerland</span></div>
+      <div class="city-item"><span>Bergen, Norway</span></div>
+      <div class="city-item"><span>Berlin, Germany</span></div>
+      <div class="city-item"><span>Bern, Switzerland</span></div>
+      <div class="city-item"><span>Birmingham, UK</span></div>
+      <div class="city-item"><span>Bordeaux, France</span></div>
+      <div class="city-item"><span>Cologne, Germany</span></div>
+      <div class="city-item"><span>Düsseldorf, Germany</span></div>
+      <div class="city-item"><span>Edinburgh, UK</span></div>
+      <div class="city-item"><span>Eindhoven, Netherlands</span></div>
+      <div class="city-item"><span>Frankfurt, Germany</span></div>
+      <div class="city-item"><span>Geneva, Switzerland</span></div>
+      <div class="city-item"><span>Glasgow, UK</span></div>
+      <div class="city-item"><span>Gothenburg, Sweden</span></div>
+      <div class="city-item"><span>Hamburg, Germany</span></div>
+      <div class="city-item"><span>Lausanne, Switzerland</span></div>
+      <div class="city-item"><span>Leeds, UK</span></div>
+      <div class="city-item"><span>Liverpool, UK</span></div>
+      <div class="city-item"><span>Lyon, France</span></div>
+      <div class="city-item"><span>Malmö, Sweden</span></div>
+      <div class="city-item"><span>Manchester, UK</span></div>
+      <div class="city-item"><span>Marseille, France</span></div>
+      <div class="city-item"><span>Munich, Germany</span></div>
+      <div class="city-item"><span>Nice, France</span></div>
+      <div class="city-item"><span>Oslo, Norway</span></div>
+      <div class="city-item"><span>Paris, France</span></div>
+      <div class="city-item"><span>Rotterdam, Netherlands</span></div>
+      <div class="city-item"><span>Stuttgart, Germany</span></div>
+      <div class="city-item"><span>The Hague, Netherlands</span></div>
+      <div class="city-item"><span>Toulouse, France</span></div>
+      <div class="city-item"><span>Trondheim, Norway</span></div>
+      <div class="city-item"><span>Utrecht, Netherlands</span></div>
     </div>
   </div>
 
-  <!-- ===== AUSTRALIA ===== -->
-  <div class="reveal">
-    <h2 class="region-header">Australia <span class="market-count">(3 markets)</span></h2>
-    <div class="city-link-grid">
-      <span class="city-link coming-soon">Adelaide, SA</span>
-      <span class="city-link coming-soon">Brisbane, QLD</span>
-      <span class="city-link coming-soon">Melbourne, VIC</span>
-      <span class="city-link coming-soon">Perth, WA</span>
-      <span class="city-link coming-soon">Sydney, NSW</span>
+  <!-- Australia -->
+  <div class="region">
+    <h2>🇦🇺 Australia</h2>
+    <div class="city-list">
+      <div class="city-item"><span>Adelaide, SA</span></div>
+      <div class="city-item"><span>Brisbane, QLD</span></div>
+      <div class="city-item"><span>Melbourne, VIC</span></div>
+      <div class="city-item"><span>Perth, WA</span></div>
+      <div class="city-item"><span>Sydney, NSW</span></div>
     </div>
   </div>
 
-  <!-- ===== ADDITIONAL NOTE ===== -->
-  <div class="reveal gold-divider mt-8 mb-6"></div>
-  <div class="note text-center">
-    <p class="text-sm text-gray-500">More than 90 markets tracked globally. New city analyses are added regularly. If you don't see your city, check back soon — or <a href="/contact.html" style="color:#f59e0b; text-decoration:underline;">let us know</a> which market you're interested in.</p>
+  <div class="note">
+    📍 More than 90 markets tracked globally. New city analyses are added regularly.  
+    If you don’t see your city, check back soon — or <a href="/contact.html" style="color:#f59e0b">let us know</a> which market you're interested in.
   </div>
 
-  <!-- ===== BACK TO TOP LINK ===== -->
-  <div class="text-center mt-8 reveal">
-    <a href="#" class="btn-outline" style="font-size:0.85rem;">↑ Back to top</a>
-  </div>
-</main>
-
-<div class="gold-divider"></div>
-
-<!-- ========== FOOTER (consistent with index) ========== -->
-<footer style="background:#020617;border-top:1px solid rgba(71,85,105,.22);">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
-    <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 mb-12">
-      <div class="sm:col-span-2 lg:col-span-2">
-        <a href="/" style="display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.25rem;text-decoration:none;">
-          <div style="width:30px;height:30px;background:linear-gradient(135deg,#d97706,#f59e0b);border-radius:7px;display:flex;align-items:center;justify-content:center;"><svg style="width:14px;height:14px;color:#fff;" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 6l9-3 9 3M3 6v12l9 3m-9-15 9 3m0 12V9m0 12 9-3V6m-9 15L3 18"/></svg></div>
-          <span style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:#fff;">Loan <span style="color:#f59e0b;">Compare</span> Hub</span>
-        </a>
-        <p style="font-size:.8rem;color:#334155;line-height:1.75;max-width:280px;">Independent mortgage and loan market intelligence for borrowers worldwide. 20+ markets tracked across North America and Europe.</p>
-      </div>
-      <div>
-        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Markets</h4>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/refinance/new-york-ny.html" style="color:#475569;font-size:.875rem;text-decoration:none;">New York</a></li>
-          <li><a href="/refinance/miami-fl.html" style="color:#475569;font-size:.875rem;text-decoration:none;">Miami</a></li>
-          <li><a href="/refinance/austin-tx.html" style="color:#475569;font-size:.875rem;text-decoration:none;">Austin</a></li>
-          <li><a href="/refinance/san-francisco-ca.html" style="color:#475569;font-size:.875rem;text-decoration:none;">San Francisco</a></li>
-          <li><a href="/all-markets.html" style="color:#475569;font-size:.875rem;text-decoration:none;">All Markets</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Resources</h4>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/#calculators" style="color:#475569;font-size:.875rem;text-decoration:none;">Calculators</a></li>
-          <li><a href="/#guides-complete" style="color:#475569;font-size:.875rem;text-decoration:none;">Guides</a></li>
-          <li><a href="/sitemap.xml" style="color:#475569;font-size:.875rem;text-decoration:none;">Sitemap</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4 style="font-size:.7rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#475569;margin-bottom:.85rem;">Legal</h4>
-        <ul style="list-style:none;display:flex;flex-direction:column;gap:.6rem;">
-          <li><a href="/privacy.html" style="color:#475569;font-size:.875rem;text-decoration:none;">Privacy Policy</a></li>
-          <li><a href="/terms.html" style="color:#475569;font-size:.875rem;text-decoration:none;">Terms of Use</a></li>
-        </ul>
-      </div>
-    </div>
-    <div style="background:rgba(15,23,42,.6);border:1px solid rgba(71,85,105,.18);border-radius:10px;padding:1.25rem;margin-bottom:1.5rem;">
-      <p style="font-size:.72rem;color:#334155;line-height:1.8;"><strong style="color:#475569;">Disclaimer:</strong> Loan Compare Hub is an independent educational publishing platform. We are not a registered investment advisor, mortgage lender, mortgage broker, law firm, or accounting firm. All content is provided for educational and informational purposes only. Calculator results are estimates. Always consult qualified, licensed professionals before making any financial, borrowing, legal, or tax decisions.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:.75rem;">
-      <p style="font-size:.75rem;color:#1e293b;">&copy; <span id="yr"></span> Loan Compare Hub. All rights reserved.</p>
-      <p style="font-size:.75rem;color:#1e293b;">Educational content only · Global</p>
-    </div>
-  </div>
-</footer>
-
-<script>
-  // Dynamic year
-  document.getElementById('yr').textContent = new Date().getFullYear();
-
-  // Mobile menu toggle
-  (function() {
-    var btn = document.getElementById('menu-btn');
-    var nav = document.getElementById('mobile-menu');
-    var io  = document.getElementById('icon-open');
-    var ic  = document.getElementById('icon-close');
-    if (btn && nav && io && ic) {
-      btn.addEventListener('click', function() {
-        var isOpen = nav.classList.toggle('open');
-        btn.setAttribute('aria-expanded', String(isOpen));
-        io.style.display = isOpen ? 'none' : '';
-        ic.style.display = isOpen ? '' : 'none';
-      });
-    }
-  })();
-
-  // Reveal animations (same as index)
-  if ('IntersectionObserver' in window) {
-    var obs = new IntersectionObserver(function(entries) {
-      entries.forEach(function(entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          obs.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.08 });
-    document.querySelectorAll('.reveal').forEach(function(el) { obs.observe(el); });
-  } else {
-    document.querySelectorAll('.reveal').forEach(function(el) { el.classList.add('revealed'); });
-  }
-</script>
+  <footer>
+    &copy; 2026 Loan Compare Hub – Independent mortgage intelligence
+  </footer>
+</div>
 </body>
 </html>
