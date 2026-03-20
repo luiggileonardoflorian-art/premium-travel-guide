@@ -1,161 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>All Markets | Loan Compare Hub</title>
-  <meta name="description" content="Complete list of cities and regions covered by Loan Compare Hub – mortgage and refinance intelligence for markets worldwide.">
-  <link rel="canonical" href="https://loancomparehub.net/all-markets.html">
-  <style>
-    /* (mantén los mismos estilos que tienes en tu sitio) */
-    body{font-family:'DM Sans',system-ui,sans-serif;background:#0f172a;color:#cbd5e1;margin:0}
-    .max-w-7xl{margin:0 auto;padding:2rem}
-    h1{font-size:2.5rem;color:#fff}
-    .region{margin-top:2rem}
-    .region h2{font-size:1.8rem;color:#f59e0b;border-left:4px solid #f59e0b;padding-left:1rem}
-    .city-list{display:flex;flex-wrap:wrap;gap:0.5rem;margin-top:1rem}
-    .city-item{background:rgba(30,41,59,.6);padding:0.4rem 0.9rem;border-radius:6px;font-size:0.9rem}
-    .city-item a{color:#f59e0b;text-decoration:none}
-    .city-item a:hover{text-decoration:underline}
-    .city-item span{color:#94a3b8}
-    .note{background:rgba(217,119,6,.1);padding:1rem;border-radius:8px;margin:2rem 0}
-    footer{margin-top:3rem;text-align:center;color:#475569;font-size:0.8rem}
-  </style>
-</head>
-<body>
-<div class="max-w-7xl">
-  <h1>All Markets Covered</h1>
-  <p>Explore mortgage and refinance intelligence for cities across the United States and the world.  
-  <strong style="color:#f59e0b">Markets with a link</strong> have in‑depth guides available.  
-  All other cities are coming soon – we're working to bring you detailed analysis for every market.</p>
-
-  <!-- United States -->
-  <div class="region">
-    <h2>🇺🇸 United States</h2>
-    <div class="city-list">
-      <div class="city-item"><a href="/refinance/austin-tx.html">Austin, TX</a></div>
-      <div class="city-item"><a href="/refinance/new-york-ny.html">New York, NY</a></div>
-      <div class="city-item"><a href="/refinance/miami-fl.html">Miami, FL</a></div>
-      <div class="city-item"><a href="/refinance/san-francisco-ca.html">San Francisco, CA</a></div>
-      <div class="city-item"><span>Atlanta, GA</span></div>
-      <div class="city-item"><span>Baltimore, MD</span></div>
-      <div class="city-item"><span>Boise, ID</span></div>
-      <div class="city-item"><span>Boston, MA</span></div>
-      <div class="city-item"><span>Charlotte, NC</span></div>
-      <div class="city-item"><span>Chicago, IL</span></div>
-      <div class="city-item"><span>Cleveland, OH</span></div>
-      <div class="city-item"><span>Columbus, OH</span></div>
-      <div class="city-item"><span>Dallas, TX</span></div>
-      <div class="city-item"><span>Denver, CO</span></div>
-      <div class="city-item"><span>Detroit, MI</span></div>
-      <div class="city-item"><span>El Paso, TX</span></div>
-      <div class="city-item"><span>Fort Worth, TX</span></div>
-      <div class="city-item"><span>Houston, TX</span></div>
-      <div class="city-item"><span>Indianapolis, IN</span></div>
-      <div class="city-item"><span>Jacksonville, FL</span></div>
-      <div class="city-item"><span>Kansas City, MO</span></div>
-      <div class="city-item"><span>Las Vegas, NV</span></div>
-      <div class="city-item"><span>Los Angeles, CA</span></div>
-      <div class="city-item"><span>Louisville, KY</span></div>
-      <div class="city-item"><span>Memphis, TN</span></div>
-      <div class="city-item"><span>Minneapolis, MN</span></div>
-      <div class="city-item"><span>Nashville, TN</span></div>
-      <div class="city-item"><span>Oklahoma City, OK</span></div>
-      <div class="city-item"><span>Orlando, FL</span></div>
-      <div class="city-item"><span>Philadelphia, PA</span></div>
-      <div class="city-item"><span>Phoenix, AZ</span></div>
-      <div class="city-item"><span>Pittsburgh, PA</span></div>
-      <div class="city-item"><span>Portland, OR</span></div>
-      <div class="city-item"><span>Raleigh, NC</span></div>
-      <div class="city-item"><span>Richmond, VA</span></div>
-      <div class="city-item"><span>Salt Lake City, UT</span></div>
-      <div class="city-item"><span>San Antonio, TX</span></div>
-      <div class="city-item"><span>San Diego, CA</span></div>
-      <div class="city-item"><span>San Jose, CA</span></div>
-      <div class="city-item"><span>Seattle, WA</span></div>
-      <div class="city-item"><span>St. Louis, MO</span></div>
-      <div class="city-item"><span>Tampa, FL</span></div>
-      <div class="city-item"><span>Washington, DC</span></div>
-    </div>
-  </div>
-
-  <!-- Canada -->
-  <div class="region">
-    <h2>🇨🇦 Canada</h2>
-    <div class="city-list">
-      <div class="city-item"><a href="/refinance/toronto-on.html">Toronto, ON</a></div>
-      <div class="city-item"><a href="/refinance/vancouver-bc.html">Vancouver, BC</a></div>
-      <div class="city-item"><span>Calgary, AB</span></div>
-      <div class="city-item"><span>Edmonton, AB</span></div>
-      <div class="city-item"><span>Montreal, QC</span></div>
-      <div class="city-item"><span>Ottawa, ON</span></div>
-      <div class="city-item"><span>Quebec City, QC</span></div>
-      <div class="city-item"><span>London, ON</span></div>
-    </div>
-  </div>
-
-  <!-- Europe -->
-  <div class="region">
-    <h2>🇪🇺 Europe</h2>
-    <div class="city-list">
-      <div class="city-item"><a href="/refinance/zurich-ch.html">Zurich, Switzerland</a></div>
-      <div class="city-item"><a href="/refinance/stockholm-se.html">Stockholm, Sweden</a></div>
-      <div class="city-item"><span>Amsterdam, Netherlands</span></div>
-      <div class="city-item"><span>Basel, Switzerland</span></div>
-      <div class="city-item"><span>Bergen, Norway</span></div>
-      <div class="city-item"><span>Berlin, Germany</span></div>
-      <div class="city-item"><span>Bern, Switzerland</span></div>
-      <div class="city-item"><span>Birmingham, UK</span></div>
-      <div class="city-item"><span>Bordeaux, France</span></div>
-      <div class="city-item"><span>Cologne, Germany</span></div>
-      <div class="city-item"><span>Düsseldorf, Germany</span></div>
-      <div class="city-item"><span>Edinburgh, UK</span></div>
-      <div class="city-item"><span>Eindhoven, Netherlands</span></div>
-      <div class="city-item"><span>Frankfurt, Germany</span></div>
-      <div class="city-item"><span>Geneva, Switzerland</span></div>
-      <div class="city-item"><span>Glasgow, UK</span></div>
-      <div class="city-item"><span>Gothenburg, Sweden</span></div>
-      <div class="city-item"><span>Hamburg, Germany</span></div>
-      <div class="city-item"><span>Lausanne, Switzerland</span></div>
-      <div class="city-item"><span>Leeds, UK</span></div>
-      <div class="city-item"><span>Liverpool, UK</span></div>
-      <div class="city-item"><span>Lyon, France</span></div>
-      <div class="city-item"><span>Malmö, Sweden</span></div>
-      <div class="city-item"><span>Manchester, UK</span></div>
-      <div class="city-item"><span>Marseille, France</span></div>
-      <div class="city-item"><span>Munich, Germany</span></div>
-      <div class="city-item"><span>Nice, France</span></div>
-      <div class="city-item"><span>Oslo, Norway</span></div>
-      <div class="city-item"><span>Paris, France</span></div>
-      <div class="city-item"><span>Rotterdam, Netherlands</span></div>
-      <div class="city-item"><span>Stuttgart, Germany</span></div>
-      <div class="city-item"><span>The Hague, Netherlands</span></div>
-      <div class="city-item"><span>Toulouse, France</span></div>
-      <div class="city-item"><span>Trondheim, Norway</span></div>
-      <div class="city-item"><span>Utrecht, Netherlands</span></div>
-    </div>
-  </div>
-
-  <!-- Australia -->
-  <div class="region">
-    <h2>🇦🇺 Australia</h2>
-    <div class="city-list">
-      <div class="city-item"><span>Adelaide, SA</span></div>
-      <div class="city-item"><span>Brisbane, QLD</span></div>
-      <div class="city-item"><span>Melbourne, VIC</span></div>
-      <div class="city-item"><span>Perth, WA</span></div>
-      <div class="city-item"><span>Sydney, NSW</span></div>
-    </div>
-  </div>
-
-  <div class="note">
-    📍 More than 90 markets tracked globally. New city analyses are added regularly.  
-    If you don’t see your city, check back soon — or <a href="/contact.html" style="color:#f59e0b">let us know</a> which market you're interested in.
-  </div>
-
-  <footer>
-    &copy; 2026 Loan Compare Hub – Independent mortgage intelligence
-  </footer>
-</div>
-</body>
-</html>
+{
+  "redirects": [
+    { "source": "/refinance/adelaide-sa.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/amsterdam-nl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/atlanta-ga.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/baltimore-md.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/basel-ch.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/bergen-no.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/berlin-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/bern-ch.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/birmingham-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/boise-id.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/bordeaux-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/boston-ma.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/brisbane-qld.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/calgary-ab.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/charlotte-nc.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/chicago-il.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/cleveland-oh.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/cologne-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/columbus-oh.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/dallas-tx.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/denver-co.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/detroit-mi.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/dusseldorf-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/edinburgh-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/edmonton-ab.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/eindhoven-nl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/el-paso-tx.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/fort-worth-tx.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/frankfurt-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/geneva-ch.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/glasgow-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/gothenburg-se.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/hamburg-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/houston-tx.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/indianapolis-in.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/jacksonville-fl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/kansas-city-mo.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/las-vegas-nv.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/lausanne-ch.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/leeds-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/liverpool-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/london-on.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/los-angeles-ca.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/louisville-ky.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/lyon-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/malmo-se.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/manchester-uk.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/marseille-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/melbourne-vic.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/memphis-tn.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/minneapolis-mn.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/montreal-qc.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/munich-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/nashville-tn.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/nice-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/oklahoma-city-ok.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/orlando-fl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/oslo-no.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/ottawa-on.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/paris-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/perth-wa.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/philadelphia-pa.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/phoenix-az.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/pittsburgh-pa.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/portland-or.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/quebec-city-qc.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/raleigh-nc.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/richmond-va.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/rotterdam-nl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/salt-lake-city-ut.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/san-antonio-tx.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/san-diego-ca.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/san-jose-ca.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/seattle-wa.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/st-louis-mo.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/stuttgart-de.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/sydney-nsw.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/tampa-fl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/the-hague-nl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/toulouse-fr.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/trondheim-no.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/utrecht-nl.html", "destination": "/all-markets.html", "permanent": true },
+    { "source": "/refinance/washington-dc.html", "destination": "/all-markets.html", "permanent": true }
+  ]
+}
