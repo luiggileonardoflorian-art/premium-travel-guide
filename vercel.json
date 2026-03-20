@@ -1,0 +1,414 @@
+{
+  "redirects": [
+    {
+      "source": "/refinance/adelaide-sa.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/amsterdam-nl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/atlanta-ga.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/baltimore-md.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/basel-ch.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/bergen-no.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/berlin-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/bern-ch.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/birmingham-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/boise-id.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/bordeaux-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/boston-ma.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/brisbane-qld.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/calgary-ab.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/charlotte-nc.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/cleveland-oh.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/cologne-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/columbus-oh.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/dallas-tx.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/denver-co.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/detroit-mi.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/dusseldorf-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/edinburgh-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/edmonton-ab.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/eindhoven-nl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/el-paso-tx.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/fort-worth-tx.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/frankfurt-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/geneva-ch.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/glasgow-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/gothenburg-se.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/hamburg-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/houston-tx.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/indianapolis-in.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/jacksonville-fl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/kansas-city-mo.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/las-vegas-nv.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/lausanne-ch.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/leeds-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/liverpool-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/london-on.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/los-angeles-ca.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/louisville-ky.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/lyon-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/malmo-se.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/manchester-uk.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/marseille-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/melbourne-vic.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/memphis-tn.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/minneapolis-mn.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/montreal-qc.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/munich-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/nashville-tn.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/nice-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/oklahoma-city-ok.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/orlando-fl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/oslo-no.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/ottawa-on.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/paris-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/perth-wa.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/philadelphia-pa.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/phoenix-az.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/pittsburgh-pa.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/portland-or.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/quebec-city-qc.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/raleigh-nc.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/richmond-va.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/rotterdam-nl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/salt-lake-city-ut.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/san-antonio-tx.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/san-diego-ca.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/san-jose-ca.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/seattle-wa.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/st-louis-mo.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/stuttgart-de.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/sydney-nsw.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/tampa-fl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/the-hague-nl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/toulouse-fr.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/trondheim-no.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/utrecht-nl.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    },
+    {
+      "source": "/refinance/washington-dc.html",
+      "destination": "/all-markets.html",
+      "permanent": true
+    }
+  ]
+}
